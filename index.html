@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="dyaa-edition" content="Knowledge Practice — Fractions, Decimals, Percentages, Ratios and Algebra">
+  <title>DYAA Knowledge Practice</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Keep generated questions as normal continuous sentences.
+       This overrides the grid layout that placed each <strong> value
+       on a separate line. Long questions still wrap naturally. */
+    #questionText.question {
+      display: block;
+      min-height: 94px;
+      padding: 24px 20px;
+      line-height: 1.3;
+      text-align: center;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+  </style>
+</head>
+<body>
+  <section class="identity-overlay" id="identityOverlay" aria-modal="true" role="dialog" aria-labelledby="identityTitle">
+    <div class="identity-card">
+      <div class="identity-logo">🚀</div>
+      <h1 id="identityTitle">Welcome to DYAA</h1>
+      <p>Enter your name before starting a knowledge-point practice session.</p>
+      <label for="studentNameInput">Student name</label>
+      <input id="studentNameInput" type="text" maxlength="40" autocomplete="name" placeholder="Enter your full name">
+      <div class="form-error" id="studentNameError" aria-live="polite"></div>
+      <button class="btn btn-primary" id="continueBtn" type="button">Continue to Practice</button>
+    </div>
+  </section>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-row">
+        <span class="brand-dot"></span>
+        <span class="brand">DYAA</span>
+        <span class="title" id="pageTitle">Knowledge Practice</span>
+      </div>
+      <div class="student-tools">
+        <span>👤 <b id="studentNameDisplay">Student</b></span>
+        <button class="topbar-btn" id="changeStudentBtn" type="button">Change Student</button>
+        <span>⭐ <b id="totalStars">0</b></span>
+      </div>
+    </header>
+
+    <section class="content">
+      <section class="setup-card">
+        <div class="control">
+          <label for="topicSelect">Topic</label>
+          <select id="topicSelect"></select>
+        </div>
+
+        <div class="control control-wide">
+          <label>Practice Point</label>
+          <details class="picker" id="groupPicker">
+            <summary id="groupSummary">All practice points selected</summary>
+            <div class="picker-panel">
+              <div class="picker-actions">
+                <button class="mini-btn" id="selectAllBtn" type="button">Select All</button>
+                <button class="mini-btn" id="clearBtn" type="button">Clear</button>
+                <button class="mini-btn mini-btn-primary" id="doneBtn" type="button">Done</button>
+              </div>
+              <div id="groupCheckboxes" class="group-checkboxes"></div>
+              <p class="selection-help" id="selectionHelp"></p>
+            </div>
+          </details>
+        </div>
+
+        <div class="control">
+          <label for="levelSelect">Difficulty</label>
+          <select id="levelSelect"></select>
+        </div>
+
+        <div class="control">
+          <label for="timeSelect">Practice Length</label>
+          <select id="timeSelect">
+            <option value="60">1 Minute</option>
+            <option value="180">3 Minutes</option>
+            <option value="300" selected>5 Minutes</option>
+            <option value="600">10 Minutes</option>
+            <option value="900">15 Minutes</option>
+            <option value="1200">20 Minutes</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="action-row">
+        <button class="btn btn-primary" id="startBtn" type="button">Start Practice</button>
+        <button class="btn btn-secondary" id="reviewBtn" type="button">Review Saved Mistakes (<span id="savedCountTop">0</span>)</button>
+        <button class="btn btn-secondary" id="testBtn" type="button">Test 100 Questions</button>
+        <button class="btn btn-secondary" id="printBtn" type="button">Print Selected 50 Questions</button>
+        <button class="btn btn-danger hidden" id="finishBtn" type="button">Finish Early</button>
+      </section>
+
+      <section class="framework-status" id="frameworkStatus">
+        <div>
+          <strong>Framework status</strong>
+          <span id="frameworkStatusText">Loading knowledge-point banks…</span>
+        </div>
+        <div class="status-track"><div class="status-fill" id="frameworkStatusFill"></div></div>
+      </section>
+
+      <section class="knowledge-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Knowledge map</p>
+            <h2 id="knowledgeMapTitle">Knowledge Practice Structure</h2>
+          </div>
+          <p id="knowledgeMapIntro">Each practice point combines closely related small knowledge points.</p>
+        </div>
+        <div class="knowledge-grid" id="knowledgeGrid"></div>
+      </section>
+
+      <section class="dashboard">
+        <article class="stat-card">
+          <span class="stat-label">Time</span>
+          <strong id="timerValue">05:00</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Score</span>
+          <strong id="scoreValue">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Correct</span>
+          <strong id="correctValue">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Answered</span>
+          <strong id="answeredValue">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Accuracy</span>
+          <strong id="accuracyValue">—</strong>
+        </article>
+      </section>
+
+      <section class="play-card" id="playCard">
+        <div class="mode-row">
+          <span class="mode-badge" id="modeBadge">Knowledge Practice</span>
+          <span id="questionSubtopic">Choose a topic and practice point.</span>
+        </div>
+        <div class="question" id="questionText">Choose a topic and start practising.</div>
+        <div class="answer-row">
+          <input id="answerInput" type="text" inputmode="text" autocomplete="off" placeholder="Type your answer" disabled>
+          <button class="btn btn-primary" id="submitBtn" type="button" disabled>Submit</button>
+        </div>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+        <div class="hint" id="hint"></div>
+      </section>
+
+      <section class="summary-card hidden" id="summaryCard">
+        <h2>Practice Complete</h2>
+        <div class="summary-grid">
+          <div><span>Score</span><strong id="summaryScore">0</strong></div>
+          <div><span>Correct</span><strong id="summaryCorrect">0</strong></div>
+          <div><span>Answered</span><strong id="summaryAnswered">0</strong></div>
+          <div><span>Accuracy</span><strong id="summaryAccuracy">—</strong></div>
+        </div>
+        <button class="btn btn-primary" id="playAgainBtn" type="button">Back to Setup</button>
+      </section>
+
+      <section class="review-card hidden" id="reviewCard">
+        <div class="section-heading compact">
+          <div><p class="eyebrow">Saved practice</p><h2>Mistake Bank</h2></div>
+          <button class="mini-btn" id="closeReviewBtn" type="button">Close</button>
+        </div>
+        <div id="reviewTable" class="review-table"></div>
+        <button class="btn btn-danger" id="clearMistakesBtn" type="button">Clear Saved Mistakes</button>
+      </section>
+
+      <section class="teacher-note" id="teacherNote">
+        <strong>Teacher note:</strong>
+        This series is organised by knowledge points rather than year levels.
+      </section>
+
+      <footer>
+        <span>DYAA Education</span>
+        <span>Together We Learn, Together We Grow 🚀</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/topics/fractions.js"></script>
+  <script src="js/topics/decimals.js"></script>
+  <script src="js/topics/percentages.js"></script>
+  <script src="js/topics/ratios.js"></script>
+  <script src="js/topics/algebra.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

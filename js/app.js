@@ -30,6 +30,8 @@ const knowledgeMapIntro = $('knowledgeMapIntro');
 const knowledgeGrid = $('knowledgeGrid');
 const timerValue = $('timerValue');
 const scoreValue = $('scoreValue');
+const streakValue = $('streakValue');
+const bestStreakValue = $('bestStreakValue');
 const correctValue = $('correctValue');
 const answeredValue = $('answeredValue');
 const accuracyValue = $('accuracyValue');
@@ -105,6 +107,7 @@ const feedback = $('feedback');
 const hint = $('hint');
 const summaryCard = $('summaryCard');
 const summaryScore = $('summaryScore');
+const summaryBestStreak = $('summaryBestStreak');
 const summaryCorrect = $('summaryCorrect');
 const summaryAnswered = $('summaryAnswered');
 const summaryAccuracy = $('summaryAccuracy');
@@ -241,6 +244,8 @@ function updateSelectionUI() {
 function updateDashboard() {
   timerValue.textContent = formatTime(state.remaining);
   scoreValue.textContent = state.score;
+  streakValue.textContent = state.currentStreak;
+  bestStreakValue.textContent = state.bestStreak;
   correctValue.textContent = state.correct;
   answeredValue.textContent = state.answered;
   accuracyValue.textContent = state.answered ? `${Math.round(state.correct / state.answered * 100)}%` : '—';
@@ -278,6 +283,7 @@ function showQuestion() {
   feedback.className = 'feedback';
   hint.textContent = '';
   state.locked = false;
+  state.questionStartedAt = performance.now();
   updateAlgebraInputTools();
   answerInput.focus();
 }
@@ -290,6 +296,9 @@ function startPractice() {
   state.duration = Number(timeSelect.value);
   state.remaining = state.duration;
   state.score = 0;
+  state.currentStreak = 0;
+  state.bestStreak = 0;
+  state.questionStartedAt = 0;
   state.correct = 0;
   state.answered = 0;
   state.current = null;
@@ -332,12 +341,27 @@ function submitAnswer() {
 
   if (correct) {
     state.correct += 1;
-    state.score += 10;
+    state.currentStreak += 1;
+    state.bestStreak = Math.max(state.bestStreak, state.currentStreak);
+
+    const basePoints = 10;
+    const answerTimeMs = state.questionStartedAt ? performance.now() - state.questionStartedAt : Infinity;
+    const speedBonus = answerTimeMs < 5000 ? 3 : 0;
+    const streakBonus = state.currentStreak >= 3 ? 3 : 0;
+    const pointsEarned = basePoints + speedBonus + streakBonus;
+
+    state.score += pointsEarned;
     state.totalStars += 1;
-    feedback.textContent = 'Correct!';
+
+    const bonuses = [];
+    if (speedBonus) bonuses.push('Speed +3');
+    if (streakBonus) bonuses.push(`Streak ${state.currentStreak} +3`);
+    feedback.textContent = bonuses.length
+      ? `Correct! +${basePoints} · ${bonuses.join(' · ')}`
+      : `Correct! +${basePoints}`;
     feedback.className = 'feedback correct';
   } else {
-    state.score = Math.max(0, state.score - 2);
+    state.currentStreak = 0;
     feedback.textContent = `Not quite. Correct answer: ${state.current.displayAnswer}`;
     feedback.className = 'feedback incorrect';
     hint.textContent = state.current.hint || '';
@@ -404,7 +428,7 @@ function buildPracticeRecord() {
     correct: state.correct,
     accuracy: state.answered ? Math.round(state.correct / state.answered * 100) : 0,
     score: state.score,
-    bestStreak: 0
+    bestStreak: state.bestStreak
   };
 }
 
@@ -519,6 +543,7 @@ function finishPractice() {
   updateAlgebraInputTools();
 
   summaryScore.textContent = state.score;
+  summaryBestStreak.textContent = state.bestStreak;
   summaryCorrect.textContent = state.correct;
   summaryAnswered.textContent = state.answered;
   summaryAccuracy.textContent = state.answered ? `${Math.round(state.correct / state.answered * 100)}%` : '—';

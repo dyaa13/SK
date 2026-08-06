@@ -72,10 +72,12 @@ function ensureAlgebraInputTools() {
   algebraInputTools.className = 'algebra-input-tools';
   algebraInputTools.setAttribute('aria-label', 'Algebra answer input tools');
   algebraInputTools.innerHTML = `
-    <button type="button" data-insert="x" aria-label="Insert x">x</button>
-    <button type="button" data-insert="²" aria-label="Insert squared">²</button>
-    <button type="button" data-insert="³" aria-label="Insert cubed">³</button>
-    <small>Use the ² or ³ button, or type <strong>x^2</strong> or <strong>x^3</strong>.</small>
+    <button type="button" data-tool="variable" data-insert="x" aria-label="Insert x">x</button>
+    <button type="button" data-tool="power" data-insert="²" aria-label="Insert squared">²</button>
+    <button type="button" data-tool="power" data-insert="³" aria-label="Insert cubed">³</button>
+    <button type="button" data-tool="integer-only" data-insert="⁴" aria-label="Insert power four">⁴</button>
+    <button type="button" data-tool="integer-only" data-insert="×" aria-label="Insert multiplication sign">×</button>
+    <small>Use the power buttons, or type powers with <strong>^</strong>.</small>
   `;
 
   const answerRow = answerInput.closest('.answer-row');
@@ -90,15 +92,24 @@ function ensureAlgebraInputTools() {
 }
 
 function questionNeedsPowerInput(question) {
-  if (!question || state.topic !== 'algebra') return false;
+  if (!question || !['algebra', 'integers'].includes(state.topic)) return false;
   const accepted = Array.isArray(question.acceptedAnswers) ? question.acceptedAnswers : [];
   const expected = [question.answer, question.displayAnswer, ...accepted].join(' ');
-  return /[a-z](?:\^-?\d+|[⁰¹²³⁴⁵⁶⁷⁸⁹])/.test(expected);
+  return /[a-z0-9](?:\^-?\d+|[⁰¹²³⁴⁵⁶⁷⁸⁹])/.test(expected);
 }
 
 function updateAlgebraInputTools() {
   const tools = ensureAlgebraInputTools();
   const visible = state.running && !state.locked && !answerInput.disabled && questionNeedsPowerInput(state.current);
+  const integerMode = state.topic === 'integers';
+  tools.querySelectorAll('[data-tool="variable"]').forEach(button => { button.style.display = integerMode ? 'none' : ''; });
+  tools.querySelectorAll('[data-tool="integer-only"]').forEach(button => { button.style.display = integerMode ? '' : 'none'; });
+  const note = tools.querySelector('small');
+  if (note) {
+    note.innerHTML = integerMode
+      ? 'Use ², ³ or ⁴, or type powers with <strong>^</strong>. Use × or * between prime factors.'
+      : 'Use the ² or ³ button, or type <strong>x^2</strong> or <strong>x^3</strong>.';
+  }
   tools.classList.toggle('visible', visible);
   tools.setAttribute('aria-hidden', visible ? 'false' : 'true');
 }
@@ -257,7 +268,11 @@ function updateDashboard() {
 function configureTopic() {
   const config = currentConfig();
   pageTitle.textContent = config.pageTitle;
-  state.selectedGroups = config.groups.map(group => group.id);
+  const configuredDefaults = Array.isArray(config.defaultSelectedGroups)
+    ? config.defaultSelectedGroups
+    : config.groups.map(group => group.id);
+  const validGroupIds = new Set(config.groups.map(group => group.id));
+  state.selectedGroups = configuredDefaults.filter(groupId => validGroupIds.has(groupId));
   renderLevels();
   renderGroupPicker();
   renderKnowledgeMap();

@@ -121,7 +121,11 @@ function answersMatch(userAnswer, question) {
   }
 
   if (question.answerType === 'fraction-structure') {
-    const normalise = value => String(value).trim().replace(/\s+/g, '').replace(/[−–—]/g, '-');
+    const normalise = value => {
+      let text = String(value).trim().replace(/\s+/g, '').replace(/[−–—]/g, '-');
+      if (state.topic === 'algebra') text = text.toLowerCase();
+      return text;
+    };
     const user = normalise(userAnswer);
     return accepted.some(answer => normalise(answer) === user);
   }

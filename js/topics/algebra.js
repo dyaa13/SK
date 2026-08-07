@@ -81,15 +81,15 @@ const ALGEBRA_KNOWLEDGE_LABELS = [
   'Expand a Bracket with a Decimal Coefficient',
   'Identify an Incorrect Single-Bracket Expansion',
 
-  'Expand (x + a)(x + b)',
-  'Expand (x + a)(x − b)',
-  'Expand (x − a)(x − b)',
-  'Expand Double Brackets with Coefficients',
+  'Expand Two Brackets with Positive Terms',
+  'Expand Two Brackets with Mixed Signs',
+  'Expand Two Brackets with Negative Constants',
+  'Expand Double Brackets with Integer Coefficients',
   'Expand and Collect Like Terms from Double Brackets',
-  'Expand the Square of a Sum',
-  'Expand the Square of a Difference',
-  'Expand a Difference of Two Squares',
-  'Find a Coefficient after Expanding',
+  'Expand the Square of a Linear Expression',
+  'Expand the Square of a Linear Expression with Subtraction',
+  'Expand a Difference of Two Squares with Coefficients',
+  'Find a Coefficient after Expanding General Double Brackets',
 
   'Find a Common Numerical Factor',
   'Find a Common Variable Factor',
@@ -226,6 +226,7 @@ function aTermDisplay(coefficient, variable = 'x', power = 1) {
   const variablePart = aPowerDisplay(variable, power);
   if (coefficient === 1) return variablePart;
   if (coefficient === -1) return `−${variablePart}`;
+  if (coefficient < 0) return `−${Math.abs(coefficient)}${variablePart}`;
   return `${coefficient}${variablePart}`;
 }
 
@@ -239,6 +240,42 @@ function aLinearDisplay(coefficient, constant, variable = 'x') {
   const term = aTermDisplay(coefficient, variable);
   if (constant === 0) return term;
   return `${term}${constant > 0 ? ' + ' : ' − '}${Math.abs(constant)}`;
+}
+
+function aBracketCoefficient(allowNegative = true) {
+  const max = state.level === 'foundation' ? 4 : state.level === 'core' ? 5 : 7;
+  const magnitude = Math.random() < 0.18 ? 1 : randInt(2, max);
+  const negativeChance = state.level === 'foundation' ? 0.2 : state.level === 'core' ? 0.35 : 0.5;
+  return allowNegative && Math.random() < negativeChance ? -magnitude : magnitude;
+}
+
+function aFactorDisplay(coefficient, constant, variable = 'x') {
+  return `(${aLinearDisplay(coefficient, constant, variable)})`;
+}
+
+function aPolynomialInput(terms) {
+  let result = '';
+  for (const { coefficient, variable = 'x', power = 0 } of terms) {
+    if (coefficient === 0) continue;
+    const magnitude = Math.abs(coefficient);
+    const body = power === 0
+      ? String(magnitude)
+      : `${magnitude === 1 ? '' : magnitude}${aPowerInput(variable, power)}`;
+    if (!result) {
+      result = coefficient < 0 ? `-${body}` : body;
+    } else {
+      result += coefficient < 0 ? `-${body}` : `+${body}`;
+    }
+  }
+  return result || '0';
+}
+
+function aQuadraticInput(quadratic, linear, constant) {
+  return aPolynomialInput([
+    { coefficient: quadratic, power: 2 },
+    { coefficient: linear, power: 1 },
+    { coefficient: constant, power: 0 }
+  ]);
 }
 
 function aSuperscriptAnswer(value) {
@@ -626,41 +663,62 @@ function generateAlgebraPoint(point) {
       return aChoiceQuestion(72, 'Which is the correct expansion of 3(x − 4)?<br><strong>1.</strong> 3x − 4 &nbsp;&nbsp; <strong>2.</strong> 3x − 12', 2);
 
     case 73: {
-      const a = randInt(1, 8), b = randInt(1, 8);
-      return aExpressionQuestion(73, `Expand (x + ${a})(x + ${b}).`, `x^2+${a + b}x+${a * b}`);
+      const a = aBracketCoefficient(false), b = randInt(1, 8);
+      const c = aBracketCoefficient(false), d = randInt(1, 8);
+      const answer = aQuadraticInput(a * c, a * d + b * c, b * d);
+      return aExpressionQuestion(73, `Expand ${aFactorDisplay(a, b)}${aFactorDisplay(c, d)}.`, answer);
     }
     case 74: {
-      const a = randInt(1, 8), b = randInt(1, 8), middle = a - b;
-      const answer = middle === 0 ? `x^2-${a * b}` : `x^2${middle > 0 ? '+' : ''}${middle}x-${a * b}`;
-      return aExpressionQuestion(74, `Expand (x + ${a})(x − ${b}).`, answer);
+      const a = aBracketCoefficient(true), b = randInt(1, 8);
+      const c = aBracketCoefficient(true), d = randInt(1, 8);
+      const answer = aQuadraticInput(a * c, -a * d + b * c, -b * d);
+      return aExpressionQuestion(74, `Expand ${aFactorDisplay(a, b)}${aFactorDisplay(c, -d)}.`, answer);
     }
     case 75: {
-      const a = randInt(1, 8), b = randInt(1, 8);
-      return aExpressionQuestion(75, `Expand (x − ${a})(x − ${b}).`, `x^2-${a + b}x+${a * b}`);
+      const a = aBracketCoefficient(true), b = randInt(1, 8);
+      const c = aBracketCoefficient(true), d = randInt(1, 8);
+      const answer = aQuadraticInput(a * c, -a * d - b * c, b * d);
+      return aExpressionQuestion(75, `Expand ${aFactorDisplay(a, -b)}${aFactorDisplay(c, -d)}.`, answer);
     }
     case 76: {
-      const a = randInt(2, 5), b = randInt(1, 6), c = randInt(2, 5), d = randInt(1, 6);
-      return aExpressionQuestion(76, `Expand (${a}x + ${b})(${c}x + ${d}).`, `${a * c}x^2+${a * d + b * c}x+${b * d}`);
+      const a = aBracketCoefficient(true), b = aNonZero(-7, 7);
+      const c = aBracketCoefficient(true), d = aNonZero(-7, 7);
+      const answer = aQuadraticInput(a * c, a * d + b * c, b * d);
+      return aExpressionQuestion(76, `Expand ${aFactorDisplay(a, b)}${aFactorDisplay(c, d)}.`, answer);
     }
     case 77: {
-      const a = randInt(1, 6), b = randInt(1, 6), c = randInt(2, 6);
-      return aExpressionQuestion(77, `Expand and simplify (x + ${a})(x + ${b}) + ${c}x.`, `x^2+${a + b + c}x+${a * b}`);
+      const a = aBracketCoefficient(true), b = aNonZero(-6, 6);
+      const c = aBracketCoefficient(true), d = aNonZero(-6, 6);
+      const extra = aNonZero(-7, 7);
+      const answer = aQuadraticInput(a * c, a * d + b * c + extra, b * d);
+      const extraText = `${extra > 0 ? '+' : '−'} ${aTermDisplay(Math.abs(extra))}`;
+      return aExpressionQuestion(77, `Expand and simplify ${aFactorDisplay(a, b)}${aFactorDisplay(c, d)} ${extraText}.`, answer);
     }
     case 78: {
-      const a = randInt(1, 9);
-      return aExpressionQuestion(78, `Expand (x + ${a})².`, `x^2+${2 * a}x+${a * a}`);
+      const a = aBracketCoefficient(true), b = randInt(1, 8);
+      const answer = aQuadraticInput(a * a, 2 * a * b, b * b);
+      return aExpressionQuestion(78, `Expand ${aFactorDisplay(a, b)}².`, answer);
     }
     case 79: {
-      const a = randInt(1, 9);
-      return aExpressionQuestion(79, `Expand (x − ${a})².`, `x^2-${2 * a}x+${a * a}`);
+      const a = aBracketCoefficient(true), b = randInt(1, 8);
+      const answer = aQuadraticInput(a * a, -2 * a * b, b * b);
+      return aExpressionQuestion(79, `Expand ${aFactorDisplay(a, -b)}².`, answer);
     }
     case 80: {
-      const a = randInt(1, 9);
-      return aExpressionQuestion(80, `Expand (x − ${a})(x + ${a}).`, `x^2-${a * a}`);
+      const a = aBracketCoefficient(true), b = randInt(1, 9);
+      const answer = aQuadraticInput(a * a, 0, -b * b);
+      return aExpressionQuestion(80, `Expand ${aFactorDisplay(a, -b)}${aFactorDisplay(a, b)}.`, answer);
     }
     case 81: {
-      const a = randInt(1, 8), b = randInt(1, 8);
-      return aNumberQuestion(81, `Find the coefficient of x after expanding (x + ${a})(x + ${b}).`, a + b);
+      let a, b, c, d, coefficient;
+      do {
+        a = aBracketCoefficient(true);
+        b = aNonZero(-8, 8);
+        c = aBracketCoefficient(true);
+        d = aNonZero(-8, 8);
+        coefficient = a * d + b * c;
+      } while (coefficient === 0);
+      return aNumberQuestion(81, `Find the coefficient of x after expanding ${aFactorDisplay(a, b)}${aFactorDisplay(c, d)}.`, coefficient);
     }
 
     case 82: {

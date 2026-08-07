@@ -123,7 +123,7 @@ function answersMatch(userAnswer, question) {
   if (question.answerType === 'fraction-structure') {
     const normalise = value => {
       let text = String(value).trim().replace(/\s+/g, '').replace(/[−–—]/g, '-');
-      if (state.topic === 'algebra') text = text.toLowerCase();
+      if (['algebra', 'linear_equation_word_problems'].includes(state.topic)) text = text.toLowerCase();
       return text;
     };
     const user = normalise(userAnswer);

@@ -31,7 +31,7 @@ const INTEGER_LABELS = [
   'Find the Absolute Value of an Integer',
   'Compare Absolute Values',
   'Find the Distance Between Two Integers',
-  'Add Two Positive Integers',
+  'Add a Positive Integer and a Negative Integer',
   'Add Two Negative Integers',
   'Add a Positive and a Negative Integer',
   'Add Integers with Equal Absolute Values',
@@ -41,8 +41,8 @@ const INTEGER_LABELS = [
   'Find a Missing Addend',
   'Find a Missing Integer in an Addition Equation',
   'Addition Word Problems with Negative Integers',
-  'Subtract a Positive Integer from a Positive Integer',
-  'Subtract a Larger Positive Integer from a Smaller One',
+  'Subtract with a Negative Starting Integer',
+  'Subtract a Negative Integer',
   'Subtract a Positive Integer from a Negative Integer',
   'Subtract a Negative Integer from a Positive Integer',
   'Subtract a Negative Integer from a Negative Integer',
@@ -51,12 +51,12 @@ const INTEGER_LABELS = [
   'Subtract Integers Using a Number Line',
   'Find a Missing Integer in a Subtraction Equation',
   'Subtraction Word Problems with Negative Integers',
-  'Multiply Two Positive Integers',
+  'Multiply a Positive Integer by a Negative Integer',
   'Multiply Two Negative Integers',
   'Multiply Integers with Different Signs',
   'Multiply an Integer by Zero',
   'Multiply More Than Two Signed Integers',
-  'Divide Two Positive Integers',
+  'Divide a Positive Integer by a Negative Integer',
   'Divide Two Negative Integers',
   'Divide Integers with Different Signs',
   'Find a Missing Signed Factor or Divisor',
@@ -473,7 +473,8 @@ function generateIntegerPoint(point) {
 
     case 31: {
       const a = randInt(1, limit), b = randInt(1, limit);
-      return intgNumber(31, `Calculate <strong>${a} + ${b}</strong>.`, a + b);
+      if (chance(0.5)) return intgNumber(31, `Calculate <strong>${intgSign(-a)} + ${b}</strong>.`, -a + b);
+      return intgNumber(31, `Calculate <strong>${a} + (${intgSign(-b)})</strong>.`, a - b);
     }
     case 32: {
       const a = randInt(1, limit), b = randInt(1, limit);
@@ -488,37 +489,40 @@ function generateIntegerPoint(point) {
       return intgNumber(34, `Calculate <strong>${a} + (${intgSign(-a)})</strong>.`, 0);
     }
     case 35: {
-      const a = randInt(-limit, limit);
+      const a = -randInt(1, limit);
       return intgNumber(35, `Calculate <strong>${intgSign(a)} + 0</strong>.`, a);
     }
     case 36: {
-      const start = randInt(-limit, limit), move = randInt(-Math.min(10, limit), Math.min(10, limit));
+      const maxMove = Math.min(10, limit);
+      const startNegative = chance(0.5);
+      const start = startNegative ? -randInt(1, limit) : randInt(0, limit);
+      const move = startNegative ? randInt(-maxMove, maxMove) : -randInt(1, maxMove);
       return intgNumber(36, `Start at ${intgSign(start)} on a number line and add ${intgSign(move)}. Where do you finish?`, start + move);
     }
     case 37: {
-      const a = randInt(-limit, limit), b = randInt(-limit, limit), c = randInt(-limit, limit);
+      const a = -randInt(1, limit), b = randInt(-limit, limit), c = randInt(-limit, limit);
       return intgNumber(37, `Calculate <strong>${intgSign(a)} + (${intgSign(b)}) + (${intgSign(c)})</strong>.`, a + b + c);
     }
     case 38: {
-      const a = randInt(-limit, limit), x = randInt(-limit, limit), total = a + x;
+      const a = -randInt(1, limit), x = randInt(-limit, limit), total = a + x;
       return intgNumber(38, `<strong>${intgSign(a)} + ? = ${intgSign(total)}</strong>`, x);
     }
     case 39: {
-      const x = randInt(-limit, limit), b = randInt(-limit, limit), total = x + b;
+      const x = randInt(-limit, limit), b = -randInt(1, limit), total = x + b;
       return intgNumber(39, `<strong>? + (${intgSign(b)}) = ${intgSign(total)}</strong>`, x);
     }
     case 40: {
-      const start = randInt(-10, 10), change = randInt(-10, 10);
+      const start = -randInt(1, 10), change = randInt(-10, 10);
       return intgNumber(40, `The temperature starts at ${intgSign(start)}°C and changes by ${intgSign(change)}°C. What is the new temperature?`, start + change);
     }
 
     case 41: {
       const a = randInt(1, limit), b = randInt(1, limit);
-      return intgNumber(41, `Calculate <strong>${a} − ${b}</strong>.`, a - b);
+      return intgNumber(41, `Calculate <strong>${intgSign(-a)} − ${b}</strong>.`, -a - b);
     }
     case 42: {
-      const b = randInt(2, limit), a = randInt(1, b - 1);
-      return intgNumber(42, `Calculate <strong>${a} − ${b}</strong>.`, a - b);
+      const a = randInt(1, limit), b = randInt(1, limit);
+      return intgNumber(42, `Calculate <strong>${a} − (${intgSign(-b)})</strong>.`, a + b);
     }
     case 43: {
       const a = randInt(1, limit), b = randInt(1, limit);
@@ -533,29 +537,33 @@ function generateIntegerPoint(point) {
       return intgNumber(45, `Calculate <strong>${intgSign(-a)} − (${intgSign(-b)})</strong>.`, -a + b);
     }
     case 46: {
-      const a = randInt(-limit, limit);
+      const a = -randInt(1, limit);
       return intgNumber(46, `Calculate <strong>${intgSign(a)} − 0</strong>.`, a);
     }
     case 47: {
-      const a = randInt(-limit, limit), b = randInt(-limit, limit);
+      const firstNegative = chance(0.5);
+      const a = firstNegative ? -randInt(1, limit) : randInt(0, limit);
+      const b = firstNegative ? randInt(-limit, limit) : -randInt(1, limit);
       return intgNumber(47, `Rewrite and calculate: <strong>${intgSign(a)} − (${intgSign(b)})</strong>.`, a - b, { hint: 'Subtracting an integer is the same as adding its opposite.' });
     }
     case 48: {
-      const start = randInt(-limit, limit), sub = randInt(-10, 10);
+      const firstNegative = chance(0.5);
+      const start = firstNegative ? -randInt(1, limit) : randInt(0, limit);
+      const sub = firstNegative ? randInt(-10, 10) : -randInt(1, 10);
       return intgNumber(48, `Start at ${intgSign(start)} on a number line and subtract ${intgSign(sub)}. Where do you finish?`, start - sub);
     }
     case 49: {
-      const a = randInt(-limit, limit), x = randInt(-limit, limit), result = a - x;
+      const a = -randInt(1, limit), x = randInt(-limit, limit), result = a - x;
       return intgNumber(49, `<strong>${intgSign(a)} − ? = ${intgSign(result)}</strong>`, x);
     }
     case 50: {
-      const start = randInt(-10, 10), drop = randInt(1, 12);
+      const start = -randInt(1, 10), drop = randInt(1, 12);
       return intgNumber(50, `At noon the temperature is ${intgSign(start)}°C. It falls by ${drop}°C. What is the temperature later?`, start - drop);
     }
 
     case 51: {
       const a = randInt(2, 12), b = randInt(2, 12);
-      return intgNumber(51, `Calculate <strong>${a} × ${b}</strong>.`, a * b);
+      return intgNumber(51, `Calculate <strong>${a} × (${intgSign(-b)})</strong>.`, -a * b);
     }
     case 52: {
       const a = randInt(2, 12), b = randInt(2, 12);
@@ -566,16 +574,16 @@ function generateIntegerPoint(point) {
       return intgNumber(53, `Calculate <strong>${intgSign(-a)} × ${b}</strong>.`, -a * b);
     }
     case 54: {
-      const a = randInt(-limit, limit);
+      const a = -randInt(1, limit);
       return intgNumber(54, `Calculate <strong>${intgSign(a)} × 0</strong>.`, 0);
     }
     case 55: {
-      const a = pick([-5, -4, -3, 2, 3, 4]), b = pick([-5, -4, -3, 2, 3, 4]), c = pick([-5, -4, -3, 2, 3, 4]);
+      const a = pick([-5, -4, -3]), b = pick([-5, -4, -3, 2, 3, 4]), c = pick([-5, -4, -3, 2, 3, 4]);
       return intgNumber(55, `Calculate <strong>${intgSign(a)} × ${intgSign(b)} × ${intgSign(c)}</strong>.`, a * b * c);
     }
     case 56: {
       const divisor = randInt(2, 12), quotient = randInt(2, 12);
-      return intgNumber(56, `Calculate <strong>${divisor * quotient} ÷ ${divisor}</strong>.`, quotient);
+      return intgNumber(56, `Calculate <strong>${divisor * quotient} ÷ (${intgSign(-divisor)})</strong>.`, -quotient);
     }
     case 57: {
       const divisor = randInt(2, 12), quotient = randInt(2, 12);
@@ -586,55 +594,57 @@ function generateIntegerPoint(point) {
       return intgNumber(58, `Calculate <strong>${intgSign(-divisor * quotient)} ÷ ${divisor}</strong>.`, -quotient);
     }
     case 59: {
-      const factor = pick([-12, -9, -8, -7, -6, -5, 5, 6, 7, 8, 9, 12]), missing = pick([-8, -6, -5, -4, 4, 5, 6, 8]);
+      const factor = pick([-12, -9, -8, -7, -6, -5]), missing = pick([-8, -6, -5, -4, 4, 5, 6, 8]);
       return intgNumber(59, `<strong>${intgSign(factor)} × ? = ${intgSign(factor * missing)}</strong>`, missing);
     }
     case 60: {
-      const same = chance(0.5);
-      return intgChoice(60, `What is the sign of a product of two ${same ? 'integers with the same sign' : 'integers with different signs'}?<br><strong>1.</strong> Positive &nbsp;&nbsp; <strong>2.</strong> Negative`, same ? 1 : 2);
+      const same = chance(0.5), a = randInt(2, 9), b = randInt(2, 9);
+      const expression = same ? `(${intgSign(-a)}) × (${intgSign(-b)})` : `(${intgSign(-a)}) × ${b}`;
+      return intgChoice(60, `What is the sign of <strong>${expression}</strong>?<br><strong>1.</strong> Positive &nbsp;&nbsp; <strong>2.</strong> Negative`, same ? 1 : 2);
     }
 
     case 61: {
-      const a = randInt(-limit, limit), b = randInt(-limit, limit), c = randInt(-limit, limit);
+      const a = -randInt(1, limit), b = randInt(-limit, limit), c = randInt(-limit, limit);
       return intgNumber(61, `Calculate <strong>${intgSign(a)} + (${intgSign(b)}) − (${intgSign(c)})</strong>.`, a + b - c);
     }
     case 62: {
-      const a = pick([-9, -8, -6, 6, 8, 9]), b = pick([-8, -6, -4, 4, 6, 8]), divisor = pick([2, 3, 4]);
-      const product = a * b;
-      const adjusted = product - (product % divisor);
-      return intgNumber(62, `Calculate <strong>(${intgSign(adjusted)}) ÷ ${divisor}</strong>.`, adjusted / divisor);
+      const divisor = pick([2, 3, 4]), quotient = randInt(2, 18);
+      const adjusted = -(divisor * quotient);
+      return intgNumber(62, `Calculate <strong>(${intgSign(adjusted)}) ÷ ${divisor}</strong>.`, -quotient);
     }
     case 63: {
-      const a = randInt(-12, 12), b = randInt(2, 8), c = randInt(-8, 8), d = randInt(1, 6);
+      const a = randInt(-12, 12), b = randInt(2, 8), c = -randInt(1, 8), d = randInt(1, 6);
       return intgNumber(63, `Calculate <strong>${intgSign(a)} + ${b} × (${intgSign(c)}) − ${d}</strong>.`, a + b * c - d);
     }
     case 64: {
-      const a = randInt(-10, 10), b = randInt(2, 8), c = randInt(-8, 8);
+      const a = randInt(-10, 10), b = randInt(2, 8), c = -randInt(1, 8);
       return intgNumber(64, `Calculate <strong>${intgSign(a)} + ${b} × (${intgSign(c)})</strong>.`, a + b * c);
     }
     case 65: {
-      const a = randInt(-10, 10), b = randInt(-10, 10), c = randInt(2, 8);
+      const a = -randInt(1, 10), b = randInt(-10, 10), c = randInt(2, 8);
       return intgNumber(65, `Calculate <strong>(${intgSign(a)} + ${intgSign(b)}) × ${c}</strong>.`, (a + b) * c);
     }
     case 66: {
-      const a = randInt(-8, 8), b = randInt(-8, 8), c = randInt(-8, 8), d = randInt(2, 6);
+      const a = -randInt(1, 8), b = randInt(-8, 8), c = randInt(-8, 8), d = randInt(2, 6);
       return intgNumber(66, `Calculate <strong>(${intgSign(a)} − ${intgSign(b)}) × (${intgSign(c)} + ${d})</strong>.`, (a - b) * (c + d));
     }
     case 67: {
-      const a = randInt(-10, 10), b = randInt(-10, 10), c = randInt(2, 5);
+      const a = randInt(-10, 10), b = -randInt(1, 10), c = randInt(2, 5);
       return intgNumber(67, `Evaluate <strong>${intgSign(a)} − ${c}(${intgSign(b)})</strong>.`, a - c * b);
     }
     case 68: {
-      const a = randInt(-10, 10), b = randInt(-10, 10), sum = a + b;
-      return intgText(68, `<strong>${intgSign(a)} __ (${intgSign(b)}) = ${intgSign(sum)}</strong><br>Enter + or −.`, '+', ['plus']);
+      const a = -randInt(1, 10), b = randInt(-10, 10), useAddition = chance(0.5);
+      const result = useAddition ? a + b : a - b;
+      const symbol = useAddition ? '+' : '−';
+      return intgText(68, `<strong>${intgSign(a)} __ (${intgSign(b)}) = ${intgSign(result)}</strong><br>Enter + or −.`, symbol, useAddition ? ['plus'] : ['-', 'minus']);
     }
     case 69: {
-      const a = randInt(-10, 10), b = randInt(-10, 10), shownTrue = chance(0.5);
+      const a = -randInt(1, 10), b = randInt(-10, 10), shownTrue = chance(0.5);
       const shown = shownTrue ? a - b : a - b + pick([-2, -1, 1, 2]);
       return intgChoice(69, `Is <strong>${intgSign(a)} − (${intgSign(b)}) = ${intgSign(shown)}</strong> true?<br><strong>1.</strong> Yes &nbsp;&nbsp; <strong>2.</strong> No`, shownTrue ? 1 : 2);
     }
     case 70: {
-      const a = randInt(-20, 20), b = randInt(-15, 15), c = randInt(2, 8), d = randInt(-8, 8);
+      const a = randInt(-20, 20), b = randInt(-15, 15), c = randInt(2, 8), d = -randInt(1, 8);
       return intgNumber(70, `Calculate <strong>${intgSign(a)} + (${intgSign(b)}) − ${c} × (${intgSign(d)})</strong>.`, a + b - c * d);
     }
 

@@ -112,7 +112,7 @@ const LWP_KNOWLEDGE_LABELS = [
   'Solve a Sharing Problem with a Fixed Extra Amount',
   'Solve a Multi-Step Ratio-and-Sharing Equation',
   'Find Time from Distance and Speed',
-  'Find Distance from Speed and Unknown Time',
+  'Find Time after Removing a Fixed Distance',
   'Find Speed from Distance and Unknown Time',
   'Find an Unknown Time in a Two-Part Journey',
   'Find an Unknown Distance in a Two-Part Journey',
@@ -135,11 +135,11 @@ const LWP_KNOWLEDGE_LABELS = [
   'Find a Missing Value from the Average of Four Numbers',
   'Find a Missing Test Score from an Average',
   'Find a Missing Age from an Average',
-  'Find a Total from a Given Average',
+  'Find a Missing Group Total from an Overall Average',
   'Find an Average after Adding One New Value',
   'Find a Missing Value When the Average Changes',
   'Find Two Equal Missing Values from an Average',
-  'Use a Weighted Total with Equal Groups',
+  'Find an Equal Group Value from an Overall Average',
   'Solve a Multi-Step Average-and-Total Problem',
   'Solve a Fixed-Fee Plus Unit-Cost Problem',
   'Solve a Multi-Step Rectangle Problem',
@@ -185,9 +185,9 @@ TOPIC_CONFIGS.linear_equation_word_problems = {
     { id: 'moneyShopping', practiceNumber: 9, label: 'Money and Shopping Problems', description: 'Model item prices, fixed charges, budgets and ticket costs.', knowledgePoints: lwpPoints(81, 90) },
     { id: 'perimeterGeometry', practiceNumber: 10, label: 'Perimeter and Geometry Problems', description: 'Represent related side lengths and use perimeter equations.', knowledgePoints: lwpPoints(91, 100) },
     { id: 'ratioSharing', practiceNumber: 11, label: 'Ratio and Sharing with Equations', description: 'Use one variable to represent equal ratio units and related shares.', knowledgePoints: lwpPoints(101, 110) },
-    { id: 'distanceSpeedTime', practiceNumber: 12, label: 'Distance, Speed and Time', description: 'Use d = st in simple linear journey problems with friendly numbers.', knowledgePoints: lwpPoints(111, 120) },
+    { id: 'distanceSpeedTime', practiceNumber: 12, label: 'Distance, Speed and Time', description: 'Build one-variable distance, speed and time equations with friendly numbers.', knowledgePoints: lwpPoints(111, 120) },
     { id: 'percentageEquations', practiceNumber: 13, label: 'Percentage Problems with Equations', description: 'Use easy percentages such as 10%, 20%, 25% and 50% in reverse problems.', knowledgePoints: lwpPoints(121, 130) },
-    { id: 'averageTotal', practiceNumber: 14, label: 'Average and Total Problems', description: 'Use average × number of items = total to find missing values.', knowledgePoints: lwpPoints(131, 140) },
+    { id: 'averageTotal', practiceNumber: 14, label: 'Average and Total Problems', description: 'Build average-and-total equations to find missing values, group totals and equal unknowns.', knowledgePoints: lwpPoints(131, 140) },
     { id: 'multiStepWordProblems', practiceNumber: 15, label: 'Multi-Step Equation Word Problems', description: 'Choose a model, build the equation and solve mixed multi-step situations.', knowledgePoints: lwpPoints(141, 150) }
   ]
 };
@@ -221,6 +221,19 @@ function lwpQuestion(point, text, answer, extra = {}) {
 }
 
 function lwpChoice(point, text, answer, hint = '') {
+  // Shuffle standard three-option questions so students cannot learn a fixed answer position.
+  const match = text.match(/^([\s\S]*?)<br>1\.\s*([\s\S]*?)\s*&nbsp;&nbsp;\s*2\.\s*([\s\S]*?)\s*&nbsp;&nbsp;\s*3\.\s*([\s\S]*)$/);
+  if (match) {
+    const stem = match[1];
+    const options = [match[2], match[3], match[4]].map((label, index) => ({ label, original: index + 1 }));
+    for (let i = options.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    const shuffledAnswer = options.findIndex(option => option.original === answer) + 1;
+    const shuffledText = `${stem}<br>1. ${options[0].label} &nbsp;&nbsp; 2. ${options[1].label} &nbsp;&nbsp; 3. ${options[2].label}`;
+    return lwpQuestion(point, `${shuffledText}<br><strong>Enter 1, 2 or 3.</strong>`, shuffledAnswer, { hint });
+  }
   return lwpQuestion(point, `${text}<br><strong>Enter 1, 2 or 3.</strong>`, answer, { hint });
 }
 
@@ -279,6 +292,21 @@ function lwpPercent() {
 
 function lwpMoney(value) {
   return `$${value}`;
+}
+
+function lwpHours(value) {
+  return `${value} ${Math.abs(value) === 1 ? 'hour' : 'hours'}`;
+}
+
+function lwpValidTriangleSides() {
+  const x = lwpFriendlyX(4);
+  let d;
+  let k;
+  do {
+    d = Math.max(3, x + randInt(-2, 4));
+    k = Math.max(3, x + randInt(-2, 4));
+  } while (!(x + d > k && x + k > d && d + k > x));
+  return [x, d, k];
 }
 
 function lwpRatioPair() {
@@ -450,7 +478,7 @@ function lwpGenerator(point) {
         return lwpNumber(point, `The larger number is ${d} less than three times the smaller number. Their sum is ${total}. Find the smaller number.`, x);
       case 57:
         d = randInt(2, 7); x = lwpFriendlyX(); total = x + (x+d) + 2*x;
-        return lwpNumber(point, `Three numbers are x, x + ${d}, and 2x. Their total is ${total}. Find the first number.`, x);
+        return lwpNumber(point, `Three numbers are related as follows: the second is ${d} more than the first, and the third is twice the first. Their total is ${total}. Find the first number.`, x);
       case 58:
         k = pick([2,3,4]); x = lwpFriendlyX(); total = k*x;
         return lwpNumber(point, `A larger number is ${k} times a smaller number and equals ${total}. Find the smaller number.`, x);
@@ -481,8 +509,8 @@ function lwpGenerator(point) {
         x = 2*randInt(2, lwpLevel(7,11,15))+1; total = 3*x+6;
         return lwpNumber(point, `Three consecutive odd integers have a sum of ${total}. Find the smallest integer.`, x);
       case 67:
-        x = lwpFriendlyX(); total = 3*(x+1);
-        return lwpNumber(point, `Three consecutive integers begin with x. Their total is ${total}. Find x.`, x);
+        x = lwpFriendlyX(4); d = x-2;
+        return lwpNumber(point, `Three consecutive integers are arranged from smallest to largest. The largest is ${d} less than twice the smallest. Find the smallest integer.`, x);
       case 68:
         x = lwpFriendlyX(); total = 3*x;
         return lwpNumber(point, `Three consecutive integers have a sum of ${total}. Find the middle integer.`, x);
@@ -525,7 +553,7 @@ function lwpGenerator(point) {
         return lwpNumber(point, `${b} is currently ${k} years older than ${a}. In ${d} years, their ages together will be ${2*age+k+2*d}. How old is ${a} now?`, age);
       case 80:
         age = lwpFriendlyX(5); d = randInt(2,6); k = randInt(2,5); total = age + (age+d) + (2*age+k);
-        return lwpNumber(point, `${a} is x years old. ${b} is ${d} years older than ${a}. ${c} is ${k} years older than twice ${a}'s age. Their ages total ${total}. How old is ${a}?`, age);
+        return lwpNumber(point, `${a} is the youngest of three people. ${b} is ${d} years older than ${a}. ${c} is ${k} years older than twice ${a}'s age. Their ages total ${total}. How old is ${a}?`, age);
 
       // Practice 9 — Money and shopping
       case 81:
@@ -545,7 +573,7 @@ function lwpGenerator(point) {
         return lwpNumber(point, `One adult ticket costs ${lwpMoney(d)} more than one child ticket. One adult and one child ticket cost ${lwpMoney(total)}. What is the child ticket price?`, price);
       case 86:
         price = pick([3,4,5,6,8]); count = randInt(3, lwpLevel(8,12,16)); d = randInt(1,price-1); total = price*count+d;
-        return lwpNumber(point, `${a} has ${lwpMoney(total)}. After buying x identical items at ${lwpMoney(price)} each, ${a} has ${lwpMoney(d)} left. How many items were bought?`, count);
+        return lwpNumber(point, `${a} has ${lwpMoney(total)}. After buying some identical items at ${lwpMoney(price)} each, ${a} has ${lwpMoney(d)} left. How many items were bought?`, count);
       case 87:
         count = lwpFriendlyX(3, lwpLevel(8,12,16)); d = randInt(2,6); k = randInt(2,5); total = k*count+d;
         return lwpNumber(point, `Plan A costs ${lwpMoney(k)} per visit plus a ${lwpMoney(d)} fee. ${a} paid ${lwpMoney(total)}. How many visits were made?`, count);
@@ -570,11 +598,11 @@ function lwpGenerator(point) {
         x = lwpFriendlyX(3); k = pick([2,3]); total = 2*x+2*k*x;
         return lwpNumber(point, `A rectangle's length is ${k} times its width. Its perimeter is ${total} cm. Find the width.`, x);
       case 94:
-        x = lwpFriendlyX(4); d = randInt(3,10); k = randInt(3,10); total = x+d+k;
-        return lwpNumber(point, `A triangle has sides x cm, ${d} cm and ${k} cm. Its perimeter is ${total} cm. Find x.`, x);
+        [x, d, k] = lwpValidTriangleSides(); total = x+d+k;
+        return lwpNumber(point, `A triangle has two sides of ${d} cm and ${k} cm. Its perimeter is ${total} cm. Find the third side.`, x);
       case 95:
-        x = lwpFriendlyX(4); d = randInt(3,10); total = 2*x+d;
-        return lwpNumber(point, `An isosceles triangle has two equal sides of x cm and a base of ${d} cm. Its perimeter is ${total} cm. Find the length of each equal side.`, x);
+        x = lwpFriendlyX(4); d = randInt(3, Math.min(2*x-1, x+6)); total = 2*x+d;
+        return lwpNumber(point, `An isosceles triangle has a base of ${d} cm and perimeter ${total} cm. Find the length of each equal side.`, x);
       case 96:
         x = lwpFriendlyX(3); total = 4*x;
         return lwpNumber(point, `A square has perimeter ${total} cm. Find the side length.`, x);
@@ -586,10 +614,10 @@ function lwpGenerator(point) {
         return lwpNumber(point, `A four-sided shape has two equal sides of x cm and two other sides of ${d} cm and ${k} cm. Its perimeter is ${total} cm. Find x.`, x);
       case 99:
         x = lwpFriendlyX(3); d = randInt(2,7); total = 4*x+2*d;
-        return lwpNumber(point, `A rectangle has width x cm and length x + ${d} cm. Its perimeter is ${total} cm. Find x.`, x, `Equation: 2x + 2(x + ${d}) = ${total}.`);
+        return lwpNumber(point, `A rectangle is ${d} cm longer than it is wide. Its perimeter is ${total} cm. Find the width.`, x);
       case 100:
-        x = lwpFriendlyX(3); d = randInt(2,7); k = randInt(2,6); total = 2*(x+k)+2*(x+d);
-        return lwpNumber(point, `A rectangle has width x + ${k} cm and length x + ${d} cm. Its perimeter is ${total} cm. Find x.`, x);
+        x = lwpFriendlyX(3); d = randInt(2,7); k = randInt(2,5); total = 2*(x+k)+2*(x+d+k);
+        return lwpNumber(point, `A rectangle is ${d} cm longer than it is wide. Both its width and length are increased by ${k} cm. The new perimeter is ${total} cm. Find the original width.`, x);
 
       // Practice 11 — Ratio and sharing
       case 101:
@@ -625,23 +653,23 @@ function lwpGenerator(point) {
 
       // Practice 12 — Distance, speed and time
       case 111:
-        speed = pick([4,5,6,8,10,12]); time = randInt(2, lwpLevel(5,7,9)); total = speed*time;
-        return lwpNumber(point, `${a} travels ${total} km at ${speed} km/h. How many hours does the journey take?`, time);
+        speed = pick([4,5,6,8,10,12]); time = randInt(2, lwpLevel(5,7,9)); d = randInt(4,12); total = speed*time+d;
+        return lwpNumber(point, `${a} has already travelled ${d} km. ${a} then continues at ${speed} km/h until the total distance is ${total} km. How many hours does the second part take?`, time);
       case 112:
-        speed = pick([4,5,6,8,10,12]); time = randInt(2, lwpLevel(5,7,9)); total=speed*time;
-        return lwpNumber(point, `${a} travels at ${speed} km/h for x hours and covers ${total} km. Find x.`, time);
+        speed = pick([4,5,6,8,10]); time = randInt(2,6); d = randInt(4,12); total = speed*time+d;
+        return lwpNumber(point, `A journey is ${total} km long. The final ${d} km are travelled separately. The first part is travelled at ${speed} km/h. How many hours does the first part take?`, time);
       case 113:
-        time = randInt(2,6); speed = pick([4,5,6,8,10,12]); total=speed*time;
-        return lwpNumber(point, `${a} travels ${total} km in ${time} hours at a constant speed. Find the speed in km/h.`, speed);
+        time = randInt(2,6); speed = pick([4,5,6,8,10,12]); d = randInt(4,12); total = speed*time+d;
+        return lwpNumber(point, `${a} travels ${d} km by ferry, then travels for ${lwpHours(time)} at a constant speed. The whole journey is ${total} km. Find the speed of the second part in km/h.`, speed);
       case 114:
         speed = pick([4,5,6,8,10]); time = randInt(2,5); d = randInt(5,15); total=speed*time+d;
-        return lwpNumber(point, `${a} travels at ${speed} km/h for x hours, then travels another ${d} km. The total distance is ${total} km. Find x.`, time);
+        return lwpNumber(point, `${a} travels at ${speed} km/h for some time, then travels another ${d} km. The total distance is ${total} km. Find the time spent at ${speed} km/h.`, time);
       case 115:
         speed = pick([4,5,6,8,10]); time = randInt(2,5); d = randInt(4,12); total=speed*time+d;
-        return lwpNumber(point, `${a} travels x km, then another ${d} km. The whole journey is ${total} km. The first part took ${time} hours at ${speed} km/h. Find x.`, speed*time);
+        return lwpNumber(point, `${a} completes a ${total} km journey in two parts. The second part is ${d} km. The first part is travelled at ${speed} km/h for ${lwpHours(time)}. Find the distance of the first part.`, speed*time);
       case 116:
         time = randInt(2,5); d = randInt(1,4); total=time+d;
-        return lwpNumber(point, `A journey takes ${total} hours in total. The first part takes x hours and the second part takes ${d} hours. Find x.`, time);
+        return lwpNumber(point, `A journey takes ${lwpHours(total)} in total. The second part takes ${lwpHours(d)}. Find the time taken by the first part.`, time);
       case 117: {
         const pair = pick([[6, 8], [8, 12], [10, 15], [12, 18]]);
         const speedA = pair[0];
@@ -651,17 +679,21 @@ function lwpGenerator(point) {
         total = baseDistance * multiplier;
         const timeA = total / speedA;
         const timeB = total / speedB;
-        return lwpNumber(point, `${a} travels at ${speedA} km/h for ${timeA} hours. ${b} travels the same distance at ${speedB} km/h. How many hours does ${b} travel?`, timeB);
+        return lwpNumber(point, `${a} travels at ${speedA} km/h for ${lwpHours(timeA)}. ${b} travels the same distance at ${speedB} km/h. How long does ${b} travel?`, timeB);
       }
-      case 118:
-        time = randInt(2,5); speed = pick([4,5,6,8]); d = randInt(2,6); total=speed*time;
-        return lwpNumber(point, `${a} and ${b} travel for the same x hours. ${a} travels at ${speed} km/h and covers ${total} km. Find x.`, time);
+      case 118: {
+        const speedA = pick([4,5,6,8]);
+        const speedB = pick([3,4,5,6]);
+        time = randInt(2,5);
+        total = (speedA + speedB) * time;
+        return lwpNumber(point, `${a} travels at ${speedA} km/h and ${b} travels at ${speedB} km/h for the same amount of time. Together they cover ${total} km. How many hours does each person travel?`, time);
+      }
       case 119:
-        speed = pick([2,3,4,5]); x = randInt(2,6); d = randInt(1,4); total = (speed+d)*x - speed*x;
-        return lwpNumber(point, `${a} travels at ${speed} km/h and ${b} at ${speed+d} km/h in the same direction. After x hours, ${b} is ${total} km ahead. Find x.`, x);
+        speed = pick([2,3,4,5]); time = randInt(2,6); d = randInt(1,4); total = d*time;
+        return lwpNumber(point, `${a} travels at ${speed} km/h and ${b} travels at ${speed+d} km/h in the same direction. After some time, ${b} is ${total} km ahead. How many hours have they travelled?`, time);
       case 120:
-        speed = pick([4,5,6,8]); time = randInt(2,5); d = randInt(4,12); total = speed*time+d;
-        return lwpNumber(point, `${a} travels at ${speed} km/h for x hours, then walks another ${d} km. The total distance is ${total} km. Find x.`, time);
+        speed = pick([4,5,6,8]); time = randInt(2,5); d = randInt(4,12); k = randInt(2,6); total = speed*time+d+k;
+        return lwpNumber(point, `${a} cycles at ${speed} km/h for some time, then walks ${d} km and later travels another ${k} km. The total journey is ${total} km. Find the cycling time.`, time);
 
       // Practice 13 — Percentage problems
       case 121:
@@ -698,36 +730,50 @@ function lwpGenerator(point) {
 
       // Practice 14 — Average and total
       case 131:
-        x = lwpFriendlyX(5); k = randInt(5,15); d = randInt(5,15); total=x+k+d; avg=total/3;
-        // force integer average
+        x = lwpFriendlyX(5); k = randInt(5,15); d = randInt(5,15); total=x+k+d;
         x += (3-(total%3))%3; total=x+k+d; avg=total/3;
-        return lwpNumber(point, `The average of ${k}, ${d} and x is ${avg}. Find x.`, x);
+        return lwpNumber(point, `The average of three numbers is ${avg}. Two of the numbers are ${k} and ${d}. Find the third number.`, x);
       case 132:
-        x = lwpFriendlyX(5); vals=[randInt(5,15),randInt(5,15),randInt(5,15)]; total=x+vals.reduce((s,v)=>s+v,0); x += (4-(total%4))%4; total=x+vals.reduce((s,v)=>s+v,0); avg=total/4;
-        return lwpNumber(point, `The average of ${vals[0]}, ${vals[1]}, ${vals[2]} and x is ${avg}. Find x.`, x);
+        x = lwpFriendlyX(5); vals=[randInt(5,15),randInt(5,15),randInt(5,15)]; total=x+vals.reduce((s,v)=>s+v,0);
+        x += (4-(total%4))%4; total=x+vals.reduce((s,v)=>s+v,0); avg=total/4;
+        return lwpNumber(point, `Four numbers have an average of ${avg}. Three of them are ${vals[0]}, ${vals[1]} and ${vals[2]}. Find the fourth number.`, x);
       case 133:
-        x = randInt(50,90); vals=[randInt(50,80),randInt(50,80),randInt(50,80),randInt(50,80)]; total=x+vals.reduce((s,v)=>s+v,0); x += (5-(total%5))%5; total=x+vals.reduce((s,v)=>s+v,0); avg=total/5;
+        x = randInt(50,90); vals=[randInt(50,80),randInt(50,80),randInt(50,80),randInt(50,80)]; total=x+vals.reduce((s,v)=>s+v,0);
+        x += (5-(total%5))%5; total=x+vals.reduce((s,v)=>s+v,0); avg=total/5;
         return lwpNumber(point, `${a}'s five test scores have an average of ${avg}. Four scores are ${vals.join(', ')}. Find the fifth score.`, x);
-      case 134:
-        x = lwpFriendlyX(8); vals=[randInt(8,20),randInt(8,20)]; total=x+vals[0]+vals[1]; x += (3-(total%3))%3; total=x+vals[0]+vals[1]; avg=total/3;
-        return lwpNumber(point, `The average age of three children is ${avg}. Two children are ${vals[0]} and ${vals[1]} years old. Find the third age.`, x);
+      case 134: {
+        let childA;
+        let childB;
+        do {
+          x = randInt(6,17);
+          childA = randInt(6,17);
+          childB = randInt(6,17);
+          total = x + childA + childB;
+        } while (total % 3 !== 0);
+        avg = total/3;
+        return lwpNumber(point, `The average age of three children is ${avg}. Two children are ${childA} and ${childB} years old. Find the third age.`, x);
+      }
       case 135:
-        count=randInt(3,6); avg=randInt(10,lwpLevel(25,40,60)); total=count*avg;
-        return lwpNumber(point, `${count} numbers have an average of ${avg}. Find their total.`, total);
+        count = pick([4,6,8]); avg = randInt(10,25); total = count*avg; d = randInt(Math.max(8, Math.floor(total/4)), Math.max(9, Math.floor(total*3/4))); x = total-d;
+        return lwpNumber(point, `${count} values have an overall average of ${avg}. Some of the values have a total of ${d}. Find the total of the remaining values.`, x);
       case 136:
-        count=randInt(3,5); avg=randInt(10,25); total=count*avg; x=randInt(10,25); newAvg=(total+x)/(count+1); x += ((count+1)-((total+x)%(count+1)))%(count+1); newAvg=(total+x)/(count+1);
+        count=randInt(3,5); avg=randInt(10,25); total=count*avg; x=randInt(10,25);
+        x += ((count+1)-((total+x)%(count+1)))%(count+1); newAvg=(total+x)/(count+1);
         return lwpNumber(point, `${count} scores have an average of ${avg}. One new score is added and the new average becomes ${newAvg}. Find the new score.`, x);
       case 137:
-        count=4; avg=randInt(10,25); total=count*avg; x=randInt(5,25); newTotal=total+x; targetAvg=Math.floor(newTotal/5); x += (5-(newTotal%5))%5; newTotal=total+x; targetAvg=newTotal/5;
-        return lwpNumber(point, `Four values have an average of ${avg}. After adding one value x, the average becomes ${targetAvg}. Find x.`, x);
+        count=4; avg=randInt(10,25); total=count*avg; x=randInt(5,25); newTotal=total+x;
+        x += (5-(newTotal%5))%5; newTotal=total+x; targetAvg=newTotal/5;
+        return lwpNumber(point, `Four values have an average of ${avg}. After one new value is added, the average becomes ${targetAvg}. Find the new value.`, x);
       case 138:
         k=pick([6,8,10,12,14,16]); d=pick([6,8,10,12,14,16]); x=lwpFriendlyX(5); total=k+d+2*x;
-        if (total % 4 !== 0) { x += 1; total = k+d+2*x; }
+        while (total % 4 !== 0) { x += 1; total = k+d+2*x; }
         avg=total/4;
-        return lwpNumber(point, `Four numbers are ${k}, ${d}, x and x. Their average is ${avg}. Find x.`, x);
+        return lwpNumber(point, `Four numbers have an average of ${avg}. Two numbers are ${k} and ${d}; the other two numbers are equal. Find each of the equal numbers.`, x);
       case 139:
-        count=randInt(2,4); k=randInt(5,15); d=randInt(5,15); total=count*k+count*d;
-        return lwpNumber(point, `There are ${count} values equal to ${k} and ${count} values equal to ${d}. Find the total of all the values.`, total);
+        count=randInt(2,4); k=randInt(5,15); d=randInt(5,15);
+        if ((k+d)%2 !== 0) d += 1;
+        avg=(k+d)/2;
+        return lwpNumber(point, `There are ${count} values equal to ${k} and ${count} other values that are all equal to the same unknown number. The average of all ${2*count} values is ${avg}. Find the unknown value.`, d);
       case 140:
         count=randInt(3,5); avg=randInt(10,25); total=count*avg; x=randInt(6, Math.min(30, total - 6)); d=total-x;
         return lwpNumber(point, `${count} values have an average of ${avg}. The sum of all but one value is ${d}. Find the missing value.`, x);
@@ -740,8 +786,8 @@ function lwpGenerator(point) {
         x=lwpFriendlyX(3); d=randInt(2,8); total=2*x+2*(x+d);
         return lwpNumber(point, `A rectangle is ${d} cm longer than its width. Its perimeter is ${total} cm. Find the width.`, x);
       case 143:
-        x=lwpFriendlyX(6); d=randInt(2,6); total=2*x;
-        return lwpNumber(point, `${a} has ${x+d} cards. ${b} has x cards. ${a} gives ${d} cards to ${b}, and then they have the same number. How many cards did ${b} have originally?`, x);
+        x=lwpFriendlyX(6); d=randInt(2,6);
+        return lwpNumber(point, `${a} has ${x+2*d} cards and ${b} has fewer cards. ${a} gives ${d} cards to ${b}. They then have the same number of cards. How many cards did ${b} have originally?`, x);
       case 144:
         age=lwpFriendlyX(7); d=randInt(3,9); k=randInt(2,5); total=age+(age+d)+2*k;
         return lwpNumber(point, `${b} is ${d} years older than ${a}. In ${k} years, their ages will total ${total}. How old is ${a} now?`, age);
@@ -753,16 +799,16 @@ function lwpGenerator(point) {
         return lwpNumber(point, `The larger number is ${d} more than ${k} times the smaller number. Their total is ${total}. Find the smaller number.`, x);
       case 147:
         speed=pick([4,5,6,8]); time=randInt(2,5); d=randInt(4,12); total=speed*time+d;
-        return lwpNumber(point, `${a} cycles at ${speed} km/h for x hours, then walks ${d} km. The total journey is ${total} km. Find x.`, time);
+        return lwpNumber(point, `${a} cycles at ${speed} km/h for some time, then walks ${d} km. The total journey is ${total} km. Find the cycling time in hours.`, time);
       case 148:
         x=10*randInt(3,lwpLevel(8,12,16)); d=randInt(4,10); total=x*4/5+d;
         return lwpNumber(point, `An item is discounted by 20%, then a ${lwpMoney(d)} fee is added. The final price is ${lwpMoney(total)}. Find the original price.`, x);
       case 149:
         x=lwpFriendlyX(); k=randInt(2,5); d=randInt(2,8); total=k*x+d;
-        return lwpChoice(point, `${k} identical items cost $x each and there is a ${lwpMoney(d)} fixed fee. The total cost is ${lwpMoney(total)}. Which equation should be solved?<br>1. ${k}x + ${d} = ${total} &nbsp;&nbsp; 2. x + ${k} + ${d} = ${total} &nbsp;&nbsp; 3. ${d}x + ${k} = ${total}`, 1, 'Multiply the unit price by the number of items, then add the fixed fee.');
+        return lwpNumber(point, `${k} identical items have the same price and there is a ${lwpMoney(d)} fixed fee. The total cost is ${lwpMoney(total)}. The possible models are: 1. ${k}x + ${d} = ${total}; 2. ${k+d}x = ${total}; 3. ${k}x − ${d} = ${total}. Choose the correct model and use it to find the price of one item. Enter the price only.`, x, 'The fixed fee is added once after multiplying the unit price by the number of items.');
       case 150:
         x=lwpFriendlyX(4); k=pick([2,3]); d=randInt(2,7); fee=randInt(2,6); total=k*x+d+fee;
-        return lwpNumber(point, `${a} buys ${k} identical items at $x each, one extra item costing ${lwpMoney(d)}, and pays a ${lwpMoney(fee)} fee. The total is ${lwpMoney(total)}. Find the price x of each identical item.`, x);
+        return lwpNumber(point, `${a} buys ${k} identical items at the same price, one extra item costing ${lwpMoney(d)}, and pays a ${lwpMoney(fee)} fee. The total is ${lwpMoney(total)}. Find the price of each identical item.`, x);
 
       default:
         return lwpNumber(point, 'Find x if x + 5 = 12.', 7);

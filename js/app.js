@@ -39,6 +39,7 @@ const accuracyValue = $('accuracyValue');
 const playCard = $('playCard');
 const modeBadge = $('modeBadge');
 const questionSubtopic = $('questionSubtopic');
+const methodHint = $('methodHint');
 const questionText = $('questionText');
 const answerInput = $('answerInput');
 const submitBtn = $('submitBtn');
@@ -131,6 +132,216 @@ const closeReviewBtn = $('closeReviewBtn');
 const clearMistakesBtn = $('clearMistakesBtn');
 const savedCountTop = $('savedCountTop');
 const teacherNote = $('teacherNote');
+
+
+const GENERAL_METHOD_HINTS = {
+  fractions: {
+    fractionParts: 'Identify what the numerator and denominator represent, then use the correct part of the fraction.',
+    fractionTypes: 'Compare the numerator and denominator, and remember the denominator cannot be zero.',
+    equivalentSimplify: 'Multiply or divide the numerator and denominator by the same number; simplify using their greatest common factor.',
+    compareConvert: 'Use a common denominator to compare, or convert between mixed and improper forms first.',
+    addFractionsDetailed: 'Find a common denominator → rewrite the fractions → add the numerators → simplify.',
+    subtractFractionsDetailed: 'Find a common denominator → rewrite the fractions → subtract the numerators → simplify.',
+    multiplyFractionsDetailed: 'Multiply the numerators → multiply the denominators → simplify; cancel common factors first when helpful.',
+    divideFractionsDetailed: 'Keep the first fraction → flip the second fraction → multiply → simplify.',
+    mixedAddSubtract: 'Work with the whole-number and fraction parts, use a common denominator, then simplify the final answer.',
+    mixedMultiplyDivide: 'Convert mixed numbers to improper fractions → multiply or divide → simplify → convert back if needed.',
+    fractionPartWhole: 'To find a fraction of a number: divide by the denominator, then multiply by the numerator. To find the whole, work backwards.',
+    wordPartWholeRemainingDetailed: 'Identify the whole, the part and what remains → write the fraction relationship → calculate.',
+    wordCompareMultiStepDetailed: 'Underline the quantities being compared → solve one step at a time → check the final amount.',
+    wordDivisionRelationships: 'Translate the relationship into multiplication or division, then solve for the unknown quantity.',
+    wordCombinedReverseDetailed: 'Work backwards from the final information, undoing each operation in reverse order.'
+  },
+  decimals: {
+    decimalPlaceValue: 'Line up the decimal places and use place value: ones, tenths, hundredths, thousandths.',
+    compareOrderDecimals: 'Line up decimal points, add trailing zeros if useful, then compare digits from left to right.',
+    roundEstimateDecimals: 'Find the rounding digit → look one place to the right → 5 or more round up, otherwise keep it.',
+    addSubtractDecimals: 'Line up the decimal points → add zeros if needed → calculate column by column.',
+    powersOfTen: 'Move the decimal point: ×10/100/1000 moves right; ÷10/100/1000 moves left.',
+    multiplyDecimals: 'Multiply as whole numbers first → count total decimal places → place the decimal point in the product.',
+    divideDecimals: 'Make the divisor a whole number by moving both decimals equally → divide normally.',
+    mixedDecimalOperations: 'Use the order of operations and keep decimal points aligned for addition or subtraction.',
+    fractionsDecimalsPercentages: 'Convert everything to one form first, then compare or calculate.',
+    decimalMoney: 'Write money with two decimal places, line up decimal points, then calculate.',
+    decimalMeasurementsTime: 'Use the conversion factor first, then multiply or divide in the correct direction.',
+    patternsBasicWordProblems: 'Find the pattern or identify the operation needed, then apply it step by step.',
+    ratesMultiStepDecimals: 'Find the unit rate or one-step value first, then scale to the required amount.',
+    calculatorAnswerFormat: 'Calculate carefully, then round or format the answer exactly as requested.',
+    advancedDecimals: 'Break the problem into smaller operations, estimate first, then check the decimal size.'
+  },
+  percentages: {
+    percentageFoundations: 'Remember percent means “out of 100”; use benchmark percentages such as 50%, 25%, 10% and 1%.',
+    fractionDecimalPercent: 'Percent ↔ decimal: divide or multiply by 100. Convert fractions by division or an equivalent denominator of 100.',
+    percentageOfAmount: 'Convert the percentage to a fraction or decimal → multiply by the amount.',
+    whatPercentage: 'Write part ÷ whole → multiply by 100%.',
+    findWhole: 'Write percentage × whole = known part, then divide by the percentage as a decimal.',
+    increaseDecrease: 'Find the percentage change, then add it for an increase or subtract it for a decrease.',
+    percentageChange: 'Find the change → divide by the original amount → multiply by 100%.',
+    reversePercentages: 'Write the final amount as a percentage of the original, then divide to find 100%.',
+    discountTaxShopping: 'Find the discount or tax first, then subtract or add it to the original price.',
+    profitLoss: 'Profit/loss = selling price − cost price; percentage is based on the cost price.',
+    successiveChanges: 'Apply each percentage change one after another; do not simply add the percentages.',
+    interestGrowth: 'Find the growth for one period, then apply it to the new amount for each following period.',
+    percentageApplications: 'Identify the original amount, percentage and final amount → choose the missing relationship → solve.',
+    ratiosRatesData: 'Convert the data to a common form, then use part ÷ whole × 100% where needed.',
+    estimationEquations: 'Estimate first, then form the percentage equation and solve for the unknown.'
+  },
+  ratios: {
+    understandingRatios: 'Identify the two quantities in the stated order and compare them using the same units.',
+    writingRatios: 'Write the quantities in the order asked, using a colon, then simplify if required.',
+    simplifyingWholeRatios: 'Find the greatest common factor and divide every part of the ratio by it.',
+    simplifyingFractionRatios: 'Clear decimals or fractions first, then divide all parts by their common factor.',
+    differentUnits: 'Convert both quantities to the same unit before writing or simplifying the ratio.',
+    equivalentRatios: 'Multiply or divide every part of the ratio by the same number.',
+    comparingRatios: 'Make one part equal, or convert each ratio to a unit rate, then compare.',
+    ratioAndWhole: 'Add the ratio parts → find the value of one part → scale to the required amount.',
+    sharingRatio: 'Add the ratio parts → divide the total by that sum → multiply by each ratio part.',
+    ratioConversionsRecipes: 'Find the scale factor from the original quantity to the new quantity, then multiply every part by it.',
+    scalesCombinedRatios: 'Use the scale factor or match the shared quantity before combining ratios.',
+    changingRatios: 'Write the original amounts from the ratio, apply the change, then form the new ratio and simplify.',
+    totalsDifferences: 'Use the ratio parts with the given total or difference to find one part, then find each quantity.',
+    ratioContexts: 'Identify what each ratio part represents, find one part, then answer the question in context.',
+    geometryMultiStep: 'Translate the geometry information into ratio parts, solve one part first, then complete the remaining steps.'
+  },
+  algebra: {
+    algebraLanguage: 'Identify the variable, coefficient, constant and operation shown in the expression.',
+    writingExpressions: 'Translate the words in order: choose the variable → apply multiplication/division → then addition/subtraction.',
+    contextExpressions: 'Let the unknown be a variable, then turn each relationship in the story into an algebraic expression.',
+    substitution: 'Replace each variable with its value → use brackets for negatives → calculate using order of operations.',
+    collectingTerms: 'Group like terms with the same variable and power → add or subtract their coefficients.',
+    multiplyDivideTerms: 'Multiply or divide the number coefficients and then combine the variable factors.',
+    indexLaws: 'For the same base: multiply → add powers; divide → subtract powers; power of a power → multiply powers.',
+    singleBrackets: 'Multiply the term outside the bracket by every term inside the bracket.',
+    doubleBrackets: 'Multiply every term in the first bracket by every term in the second → collect like terms.',
+    factorising: 'Find the greatest common factor of all terms → place it outside brackets → divide each term by it.',
+    oneStepEquations: 'Undo the single operation using the inverse operation on both sides.',
+    multiStepEquations: 'Simplify if needed → undo addition/subtraction → undo multiplication/division → check.',
+    bothSidesEquations: 'Move variable terms to one side and constants to the other → simplify → solve.',
+    inequalities: 'Solve like an equation, but reverse the inequality sign if multiplying or dividing by a negative number.',
+    formulaeSequences: 'For formulae, substitute known values and solve. For sequences, find the term-to-term rule first.'
+  },
+  whole_numbers: {
+    wholeFoundations: 'Read the number carefully and use counting, odd/even or whole-number facts.',
+    placeValue: 'Identify each digit by its place: ones, tens, hundreds, thousands and beyond.',
+    numberRepresentation: 'Break the number into place values, or combine the place-value parts to rebuild it.',
+    compareOrderLines: 'Compare digits from the highest place value first, or use their positions on a number line.',
+    roundingEstimation: 'Find the rounding place → look one digit to the right → round up for 5–9.',
+    addition: 'Line up place values → add from right to left → regroup when needed.',
+    subtraction: 'Line up place values → subtract from right to left → exchange when needed.',
+    multiplication: 'Use place value or long multiplication: multiply by each digit, shift the second row, then add.',
+    divisionRemainders: 'Use short/long division: divide → multiply → subtract → bring down; interpret any remainder.',
+    mentalStrategies: 'Look for friendly numbers: partition, compensate, double/halve, or use known facts.',
+    mixedOperations: 'Use brackets first, then multiplication/division, then addition/subtraction.',
+    factorsMultiples: 'Factors divide exactly; multiples come from repeated multiplication. Use divisibility rules to check quickly.',
+    patternsApplications: 'Find the rule or relationship first, then apply it consistently to the missing value or context.'
+  },
+  integers: {
+    negativeFoundations: 'Use the sign and its distance from zero: negative values are below or left of zero.',
+    integerNumberLine: 'Right means increase; left means decrease. Count the signed steps from the starting integer.',
+    compareAbsolute: 'On a number line, the number farther right is greater; absolute value is distance from zero.',
+    integerAddition: 'Same signs: add and keep the sign. Different signs: subtract absolute values and keep the sign of the larger absolute value.',
+    integerSubtraction: 'Change subtraction to adding the opposite, then use the integer addition rule.',
+    integerMultiplyDivide: 'Same signs give a positive answer; different signs give a negative answer.',
+    integerMixed: 'Use order of operations and apply the sign rule at every step.',
+    primeComposite: 'A prime has exactly two positive factors: 1 and itself. A composite has more than two.',
+    primeFactorisation: 'Split the number into factors repeatedly until every factor is prime.',
+    hcfLcm: 'HCF uses common prime factors with the smallest powers; LCM uses all required prime factors with the largest powers.',
+    squaresCubesPowers: 'The exponent tells how many times the base is multiplied by itself.',
+    roots: 'A root reverses a power: square root undoes squaring; cube root undoes cubing.',
+    negativePowers: 'Apply the exponent before an outside negative sign; brackets make the negative part of the base.',
+    integerCoordinates: 'Read x first, then y; signs tell left/right and down/up.',
+    integerApplications: 'Translate each real-life change into a signed operation, then calculate in order.'
+  },
+  angles: {
+    angleFoundations: 'Identify the vertex and arms, then think about the amount of turn measured in degrees.',
+    angleTypes: 'Compare the angle with 90°, 180° and 360° to classify it.',
+    turnsRotation: 'Quarter turn = 90°, half turn = 180°, three-quarter turn = 270°, full turn = 360°.',
+    measureEstimate: 'Estimate first, then choose the correct degree scale and check whether the angle size is reasonable.',
+    complementary: 'Complementary angles add to 90° → subtract the known angle from 90°.',
+    straightLine: 'Angles on a straight line add to 180° → subtract the known angle(s) from 180°.',
+    aroundPoint: 'Angles around a point add to 360° → subtract the known angle(s) from 360°.',
+    verticalOpposite: 'Vertically opposite angles are equal; adjacent angles on a straight line add to 180°.',
+    triangleAngles: 'Angles in a triangle add to 180° → subtract the known angles.',
+    specialTriangles: 'Use the triangle type: equilateral angles are 60°; isosceles base angles are equal; right triangle contains 90°.',
+    quadrilateralAngles: 'Interior angles of a quadrilateral add to 360° → use shape properties and subtract known angles.',
+    parallelLines: 'Corresponding and alternate angles are equal; co-interior angles add to 180°.',
+    clockReasoning: 'Each hour mark is 30°. Count the hour gaps, then choose the smaller or reflex angle as asked.'
+  },
+  linear_equation_word_problems: {
+    chooseUnknown: 'Read what the question asks → choose one unknown quantity → write “Let x = …”.',
+    contextExpressions: 'Let one quantity be x, then express every related quantity using x.',
+    findEquality: 'Find the sentence that says two totals or quantities are equal; that becomes the equation.',
+    writeEquation: 'Choose x → write the related expressions → connect the two equal quantities with =.',
+    simpleNumberProblems: 'Translate the words into an equation → undo operations in reverse order → solve.',
+    numberRelationships: 'Let the simpler number be x → express the other number from the relationship → use the total/difference.',
+    consecutiveIntegers: 'Use x, x+1, x+2 for consecutive integers; use steps of 2 for consecutive even or odd integers.',
+    ageProblems: 'Let x be a present age → adjust every person by the same number of years for past/future → form the equation.',
+    moneyShopping: 'Write total cost = fixed cost + (number × unit price), then solve for the unknown.',
+    perimeterGeometry: 'Express the unknown side(s) with x → write the perimeter formula → solve.',
+    ratioSharing: 'Represent ratio parts as multiples of x, add them to the total, then solve for x.',
+    distanceSpeedTime: 'Use distance = speed × time; express the unknown part with x and form one equation.',
+    percentageEquations: 'Convert the percentage to a decimal or fraction, then write percentage × original = known amount.',
+    averageTotal: 'Use total = mean × number of values; write the missing value as x.',
+    multiStepWordProblems: 'Choose x → express related quantities → find the equality → write and solve the equation → check the answer in context.'
+  },
+  measurement_geometry: {
+    lengthMetric: 'Use metric place relationships and convert everything to the same unit before comparing or calculating.',
+    massCapacity: 'Convert to the same unit first: 1000 g = 1 kg and 1000 mL = 1 L.',
+    mixedUnits: 'Convert mixed measurements to one unit, calculate, then convert back if the question asks.',
+    perimeterBasics: 'Perimeter is the distance around a shape → add all outside side lengths.',
+    missingPerimeterSides: 'Write the total perimeter → subtract the known sides → use equal-side properties if needed.',
+    rectangleSquareArea: 'Rectangle area = length × width; square area = side × side.',
+    triangleArea: 'Triangle area = base × perpendicular height ÷ 2.',
+    parallelogramTrapezium: 'Parallelogram area = base × perpendicular height; trapezium area = (parallel sides added) × height ÷ 2.',
+    compositeArea: 'Split the shape into simple shapes or subtract a missing part → find each area → combine.',
+    areaApplications: 'Find the required area first, then use coverage or cost per square unit.',
+    volumePrisms: 'Volume of a rectangular prism = length × width × height; keep all dimensions in the same unit.',
+    missingVolumeDimensions: 'Use volume = length × width × height → divide by the known dimensions to find the missing one.',
+    surfaceArea: 'Find the area of each exposed face, then add all face areas.',
+    measurementApplications: 'Decide whether the problem needs length, area or volume → convert units → apply the correct formula.',
+    multiStepMeasurement: 'Find any missing length first → convert units → apply the geometry formula → complete the final context step.'
+  },
+  statistics: {
+    readingTables: 'Read the correct row and column first, then compare, add or subtract only the needed values.',
+    frequencyTables: 'Frequency tells how many times each value occurs; use value × frequency for totals.',
+    rawData: 'Sort or tally the raw values first, then count each value carefully.',
+    mean: 'Add all the values → divide by the number of values.',
+    missingMean: 'Find the required total using mean × number of values → subtract the known values.',
+    median: 'Put the values in order → take the middle value, or average the two middle values.',
+    mode: 'Count how often each value appears → the most frequent value is the mode.',
+    range: 'Range = largest value − smallest value.',
+    mixedStatistics: 'Sort the data first, then calculate each requested measure using its own rule.',
+    compareDataSets: 'Compare the centres (mean/median) and the spread (range); use both pieces of information.',
+    changedData: 'Use totals to track how adding, removing or correcting a value changes the mean and other statistics.',
+    multiStepStatistics: 'Convert means to totals first, follow each data change, then recalculate the required statistic.'
+  },
+  time_timetables: {
+    timeUnits: 'Use 60 seconds = 1 minute, 60 minutes = 1 hour, 24 hours = 1 day and 7 days = 1 week.',
+    readingTime: 'Read the hour and minutes carefully; “past” counts after the hour and “to” counts to the next hour.',
+    amPm: 'Use the context: am is midnight to before noon; pm is noon to before midnight.',
+    hour24: 'For pm times after 12 noon, add 12 to the hour; for 24-hour times above 12, subtract 12 and use pm.',
+    convertingTime: 'Convert to one unit first using 60 minutes per hour and 60 seconds per minute.',
+    duration: 'Count from the start time to the finish time, often by jumping to the next full hour first.',
+    finishTime: 'Start at the given time and add the duration in hours and minutes.',
+    startTime: 'Work backwards from the finish time by subtracting the duration.',
+    crossingMidnight: 'Count to midnight first, then continue from 00:00 or 12:00 am.',
+    dates: 'Use the correct number of days in each month and move forward or backward one day at a time across month boundaries.',
+    calendarReasoning: 'Use groups of 7 days; complete weeks keep the same weekday, then use the remainder.',
+    readingTimetables: 'Find the correct service row, then compare departure and arrival times carefully.',
+    journeyWaiting: 'Separate travel time, walking/transfer time and waiting time, then combine only the times asked for.',
+    realLifeTime: 'Create a simple timeline: start → activities/breaks → finish, and include or exclude breaks as asked.',
+    multiStepTime: 'Work one stage at a time on a timeline; for deadlines, work backwards from the required arrival time.'
+  }
+};
+
+function getGeneralMethodHint(question) {
+  if (!question) return 'Read the question → identify what is known → choose the correct rule → calculate → check.';
+  const topicHints = GENERAL_METHOD_HINTS[state.topic] || {};
+  return topicHints[question.group]
+    || question.hint
+    || 'Read the question → identify what is known → choose the correct rule → calculate → check.';
+}
+
 
 function renderTopicOptions() {
   topicSelect.innerHTML = Object.entries(TOPIC_CONFIGS)
@@ -318,6 +529,7 @@ function showQuestion(reuseCurrent = false) {
     questionSubtopic.textContent = state.current.subtopic || '';
   }
 
+  methodHint.textContent = `Hint: ${getGeneralMethodHint(state.current)}`;
   questionText.innerHTML = state.current.text;
   answerInput.value = '';
   answerInput.disabled = false;
@@ -796,6 +1008,7 @@ function togglePause() {
     answerInput.disabled = true;
     submitBtn.disabled = true;
     updateAlgebraInputTools();
+    methodHint.textContent = '';
     questionText.textContent = 'Paused';
     modeBadge.textContent = 'Take a break';
     feedback.textContent = '';

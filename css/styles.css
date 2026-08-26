@@ -206,6 +206,19 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 .feedback.incorrect { color: var(--red); }
 .hint { min-height: 24px; color: var(--muted); text-align: center; }
 
+.method-hint {
+  margin: 12px 0 8px;
+  padding: 10px 14px;
+  border: 1px solid #cfe0f5;
+  border-radius: 10px;
+  background: #f5f9ff;
+  color: #31557f;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: left;
+  font-weight: 600;
+}
+
 .summary-card h2 { margin-top: 0; color: var(--navy); text-align: center; }
 .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0; }
 .summary-grid div { padding: 15px; border-radius: 12px; background: var(--blue-soft); text-align: center; }

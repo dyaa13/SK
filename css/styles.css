@@ -208,6 +208,31 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 
 .method-hint {
   margin: 12px 0 8px;
+  text-align: left;
+}
+
+.method-hint-button {
+  padding: 7px 14px;
+  border: 1px solid #9ebce3;
+  border-radius: 9px;
+  background: #f5f9ff;
+  color: #1f4f86;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.method-hint-button:hover:not(:disabled) {
+  background: #eaf3ff;
+}
+
+.method-hint-button:disabled {
+  opacity: .55;
+  cursor: default;
+}
+
+.method-hint-text {
+  margin-top: 8px;
   padding: 10px 14px;
   border: 1px solid #cfe0f5;
   border-radius: 10px;
@@ -215,7 +240,6 @@ button:disabled { cursor: not-allowed; opacity: .55; }
   color: #31557f;
   font-size: 14px;
   line-height: 1.45;
-  text-align: left;
   font-weight: 600;
 }
 

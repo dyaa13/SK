@@ -40,6 +40,8 @@ const playCard = $('playCard');
 const modeBadge = $('modeBadge');
 const questionSubtopic = $('questionSubtopic');
 const methodHint = $('methodHint');
+const methodHintButton = $('methodHintButton');
+const methodHintText = $('methodHintText');
 const questionText = $('questionText');
 const answerInput = $('answerInput');
 const submitBtn = $('submitBtn');
@@ -343,6 +345,34 @@ function getGeneralMethodHint(question) {
 }
 
 
+
+function resetMethodHint() {
+  if (!methodHintButton || !methodHintText) return;
+
+  const available = Boolean(state.current) && !state.paused;
+  methodHintButton.disabled = !available;
+  methodHintButton.textContent = 'Hint';
+  methodHintButton.setAttribute('aria-expanded', 'false');
+  methodHintText.classList.add('hidden');
+  methodHintText.textContent = available ? getGeneralMethodHint(state.current) : '';
+}
+
+function toggleMethodHint() {
+  if (!methodHintButton || !methodHintText || methodHintButton.disabled) return;
+
+  const isHidden = methodHintText.classList.contains('hidden');
+  if (isHidden) {
+    methodHintText.textContent = getGeneralMethodHint(state.current);
+    methodHintText.classList.remove('hidden');
+    methodHintButton.textContent = 'Hide Hint';
+    methodHintButton.setAttribute('aria-expanded', 'true');
+  } else {
+    methodHintText.classList.add('hidden');
+    methodHintButton.textContent = 'Hint';
+    methodHintButton.setAttribute('aria-expanded', 'false');
+  }
+}
+
 function renderTopicOptions() {
   topicSelect.innerHTML = Object.entries(TOPIC_CONFIGS)
     .map(([id, config]) => `<option value="${id}">${config.title}</option>`)
@@ -529,7 +559,7 @@ function showQuestion(reuseCurrent = false) {
     questionSubtopic.textContent = state.current.subtopic || '';
   }
 
-  methodHint.textContent = `Hint: ${getGeneralMethodHint(state.current)}`;
+  resetMethodHint();
   questionText.innerHTML = state.current.text;
   answerInput.value = '';
   answerInput.disabled = false;
@@ -1008,7 +1038,7 @@ function togglePause() {
     answerInput.disabled = true;
     submitBtn.disabled = true;
     updateAlgebraInputTools();
-    methodHint.textContent = '';
+    resetMethodHint();
     questionText.textContent = 'Paused';
     modeBadge.textContent = 'Take a break';
     feedback.textContent = '';
@@ -1099,6 +1129,7 @@ clearBtn.addEventListener('click', () => {
   renderKnowledgeMap();
 });
 doneBtn.addEventListener('click', () => { groupPicker.open = false; });
+methodHintButton.addEventListener('click', toggleMethodHint);
 startBtn.addEventListener('click', startPractice);
 pauseBtn.addEventListener('click', togglePause);
 finishBtn.addEventListener('click', () => {

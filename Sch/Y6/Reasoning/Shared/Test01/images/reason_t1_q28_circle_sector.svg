@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="260" viewBox="0 0 340 260">
+<rect width="340" height="260" fill="white"/>
+<text x="170" y="25" text-anchor="middle" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#0d47a1">Total circle area = 180 cm²</text>
+<circle cx="170" cy="145" r="82" fill="#90caf9" stroke="#333" stroke-width="2"/>
+<path d="M170 145 L170 63 A82 82 0 0 1 241.0 186 Z" fill="white" stroke="#333" stroke-width="2"/>
+<text x="208" y="112" font-family="Segoe UI,Arial" font-size="16" font-weight="700">120°</text>
+</svg>

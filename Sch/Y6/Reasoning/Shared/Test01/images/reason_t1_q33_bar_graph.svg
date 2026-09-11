@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+<rect width="480" height="320" fill="white"/>
+<text x="240" y="25" text-anchor="middle" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#0d47a1">Favourite sports</text>
+<g transform="translate(65,45)" font-family="Segoe UI,Arial" font-size="13">
+<line x1="0" y1="210" x2="370" y2="210" stroke="#333" stroke-width="2"/><line x1="0" y1="0" x2="0" y2="210" stroke="#333" stroke-width="2"/>
+<g stroke="#ddd"><line x1="0" y1="175" x2="370" y2="175"/><line x1="0" y1="140" x2="370" y2="140"/><line x1="0" y1="105" x2="370" y2="105"/><line x1="0" y1="70" x2="370" y2="70"/><line x1="0" y1="35" x2="370" y2="35"/></g>
+<g fill="#1976d2"><rect x="35" y="0" width="55" height="210"/><rect x="125" y="70" width="55" height="140"/><rect x="215" y="35" width="55" height="175"/><rect x="305" y="105" width="55" height="105"/></g>
+<g fill="#333" text-anchor="middle"><text x="62" y="233">Football</text><text x="152" y="233">Netball</text><text x="242" y="233">Swimming</text><text x="332" y="233">Tennis</text></g>
+<g fill="#333" text-anchor="end"><text x="-8" y="214">0</text><text x="-8" y="179">1</text><text x="-8" y="144">2</text><text x="-8" y="109">3</text><text x="-8" y="74">4</text><text x="-8" y="39">5</text><text x="-8" y="5">6</text></g>
+</g></svg>

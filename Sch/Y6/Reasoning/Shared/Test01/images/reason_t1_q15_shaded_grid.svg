@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="220" viewBox="0 0 430 220">
+<rect width="430" height="220" fill="white"/>
+<text x="215" y="28" text-anchor="middle" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#0d47a1">All small squares are equal</text>
+<g transform="translate(55,60)" stroke="#333" stroke-width="2">
+<rect x="0" y="0" width="320" height="120" fill="#fff"/>
+<rect x="0" y="0" width="80" height="60" fill="#90caf9"/>
+<rect x="160" y="0" width="80" height="60" fill="#90caf9"/>
+<rect x="240" y="60" width="80" height="60" fill="#90caf9"/>
+<path d="M80 0V120 M160 0V120 M240 0V120 M0 60H320" fill="none"/>
+</g></svg>

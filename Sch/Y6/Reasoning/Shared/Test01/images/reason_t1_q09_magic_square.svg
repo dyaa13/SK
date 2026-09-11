@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="250" viewBox="0 0 360 250">
+<rect width="360" height="250" fill="white"/>
+<text x="180" y="28" text-anchor="middle" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#0d47a1">Each row and column totals 24</text>
+<g transform="translate(90,45)" stroke="#333" stroke-width="2" fill="none">
+<rect x="0" y="0" width="180" height="180"/>
+<path d="M60 0V180 M120 0V180 M0 60H180 M0 120H180"/>
+</g>
+<g font-family="Segoe UI,Arial" font-size="25" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#222">
+<text x="120" y="75">?</text><text x="180" y="75">7</text><text x="240" y="75">11</text>
+<text x="120" y="135">13</text><text x="180" y="135">8</text><text x="240" y="135">3</text>
+<text x="120" y="195">5</text><text x="180" y="195">9</text><text x="240" y="195">10</text>
+</g></svg>

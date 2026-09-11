@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="330" viewBox="0 0 560 330">
+<rect width="100%" height="100%" fill="white"/>
+<text x="300" y="28" text-anchor="middle" font-size="22" font-family="Arial">Distance from start (km)</text>
+<line x1="80" y1="50" x2="80" y2="270" stroke="#333" stroke-width="2"/>
+<line x1="80" y1="270" x2="495" y2="270" stroke="#333" stroke-width="2"/>
+<line x1="75" y1="270.0" x2="470" y2="270.0" stroke="#ddd"/>
+<text x="68" y="275.0" text-anchor="end" font-size="14" font-family="Arial">0</text>
+<line x1="75" y1="240.0" x2="470" y2="240.0" stroke="#ddd"/>
+<text x="68" y="245.0" text-anchor="end" font-size="14" font-family="Arial">20</text>
+<line x1="75" y1="210.0" x2="470" y2="210.0" stroke="#ddd"/>
+<text x="68" y="215.0" text-anchor="end" font-size="14" font-family="Arial">40</text>
+<line x1="75" y1="180.0" x2="470" y2="180.0" stroke="#ddd"/>
+<text x="68" y="185.0" text-anchor="end" font-size="14" font-family="Arial">60</text>
+<line x1="75" y1="150.0" x2="470" y2="150.0" stroke="#ddd"/>
+<text x="68" y="155.0" text-anchor="end" font-size="14" font-family="Arial">80</text>
+<line x1="75" y1="120.0" x2="470" y2="120.0" stroke="#ddd"/>
+<text x="68" y="125.0" text-anchor="end" font-size="14" font-family="Arial">100</text>
+<line x1="75" y1="90.0" x2="470" y2="90.0" stroke="#ddd"/>
+<text x="68" y="95.0" text-anchor="end" font-size="14" font-family="Arial">120</text>
+<line x1="75" y1="60.0" x2="470" y2="60.0" stroke="#ddd"/>
+<text x="68" y="65.0" text-anchor="end" font-size="14" font-family="Arial">140</text>
+<line x1="75" y1="30.0" x2="470" y2="30.0" stroke="#ddd"/>
+<text x="68" y="35.0" text-anchor="end" font-size="14" font-family="Arial">160</text>
+<circle cx="80" cy="270.0" r="4" fill="#333"/>
+<text x="80" y="295" text-anchor="middle" font-size="14" font-family="Arial">9 am</text>
+<circle cx="145" cy="225.0" r="4" fill="#333"/>
+<text x="145" y="295" text-anchor="middle" font-size="14" font-family="Arial">10 am</text>
+<circle cx="210" cy="225.0" r="4" fill="#333"/>
+<text x="210" y="295" text-anchor="middle" font-size="14" font-family="Arial">11 am</text>
+<circle cx="275" cy="135.0" r="4" fill="#333"/>
+<text x="275" y="295" text-anchor="middle" font-size="14" font-family="Arial">12 pm</text>
+<circle cx="340" cy="105.0" r="4" fill="#333"/>
+<text x="340" y="295" text-anchor="middle" font-size="14" font-family="Arial">1 pm</text>
+<circle cx="405" cy="60.0" r="4" fill="#333"/>
+<text x="405" y="295" text-anchor="middle" font-size="14" font-family="Arial">2 pm</text>
+<circle cx="470" cy="180.0" r="4" fill="#333"/>
+<text x="470" y="295" text-anchor="middle" font-size="14" font-family="Arial">3 pm</text>
+<polyline points="80,270.0 145,225.0 210,225.0 275,135.0 340,105.0 405,60.0 470,180.0" fill="none" stroke="#2a6f97" stroke-width="3"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="290" viewBox="0 0 420 290">
+<rect width="420" height="290" fill="white"/>
+<text x="210" y="25" text-anchor="middle" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#0d47a1">Squares are built on all three sides</text>
+<g stroke="#333" stroke-width="2" fill="none">
+<polygon points="160,200 160,110 280,200" fill="#fff"/>
+<rect x="70" y="110" width="90" height="90" fill="#e3f2fd"/>
+<polygon points="160,110 232,14 328,86 256,182" fill="#fff3e0"/>
+<rect x="160" y="200" width="120" height="70" fill="#e8f5e9"/>
+</g>
+<text x="115" y="160" text-anchor="middle" font-family="Segoe UI,Arial" font-size="22" font-weight="700">9</text>
+<text x="245" y="78" text-anchor="middle" font-family="Segoe UI,Arial" font-size="22" font-weight="700">25</text>
+<text x="220" y="240" text-anchor="middle" font-family="Segoe UI,Arial" font-size="22" font-weight="700">?</text>
+</svg>

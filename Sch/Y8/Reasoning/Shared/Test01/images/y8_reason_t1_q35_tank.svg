@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="330" viewBox="0 0 620 330">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="150" y="85" width="300" height="170" fill="none" stroke="#333" stroke-width="3"/>
+<rect x="150" y="165" width="300" height="90" fill="#bde0fe" opacity="0.85"/>
+<line x1="150" y1="165" x2="450" y2="165" stroke="#2a6f97" stroke-width="2"/>
+<text x="300" y="290" text-anchor="middle" font-size="18" font-family="Arial">Base: 40 cm × 25 cm</text>
+<text x="465" y="215" font-size="18" font-family="Arial">12 cm</text>
+<rect x="265" y="185" width="70" height="55" fill="#888" opacity="0.8"/>
+<text x="300" y="215" text-anchor="middle" font-size="14" fill="white" font-family="Arial">3500 cm³</text>
+</svg>

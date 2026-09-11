@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="330" viewBox="0 0 600 330">
+<rect width="100%" height="100%" fill="white"/>
+<polygon points="180,245 180,105 420,245" fill="none" stroke="#333" stroke-width="4"/>
+<rect x="95" y="105" width="85" height="140" fill="#eef7ff" stroke="#2a6f97" stroke-width="2"/>
+<text x="137" y="180" text-anchor="middle" font-size="21" font-family="Arial">25 cm²</text>
+<polygon points="180,105 420,245 500,108 260,-32" fill="#f3e5f5" stroke="#8e5ea2" stroke-width="2" opacity="0.85"/>
+<text x="370" y="95" text-anchor="middle" font-size="21" font-family="Arial">169 cm²</text>
+<text x="300" y="295" text-anchor="middle" font-size="18" font-family="Arial">Find the length of the missing leg</text>
+</svg>

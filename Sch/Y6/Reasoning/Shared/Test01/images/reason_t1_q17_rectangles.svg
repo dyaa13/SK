@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+<rect width="360" height="300" fill="white"/>
+<text x="180" y="28" text-anchor="middle" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#0d47a1">P and Q join to make a square</text>
+<g transform="translate(105,55)" stroke="#333" stroke-width="2">
+<rect x="0" y="0" width="150" height="150" fill="#fff"/>
+<line x1="0" y1="84.375" x2="150" y2="84.375"/>
+</g>
+<text x="180" y="100" text-anchor="middle" font-family="Segoe UI,Arial" font-size="24" font-weight="700">P</text>
+<text x="180" y="180" text-anchor="middle" font-family="Segoe UI,Arial" font-size="24" font-weight="700">Q</text>
+<text x="180" y="235" text-anchor="middle" font-family="Segoe UI,Arial" font-size="15">Perimeter P = 50 cm</text>
+<text x="180" y="258" text-anchor="middle" font-family="Segoe UI,Arial" font-size="15">Perimeter Q = 46 cm</text>
+</svg>

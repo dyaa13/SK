@@ -103,6 +103,18 @@ function sendResult(payload,statusEl){
 }
 function finishExam(reason){if(submitted)return;saveCurrentAnswer();submitted=true;submitReason=reason;examEndMs=Date.now();stopTimer();clearState();sidebarEl.style.display="none";const s=scoreExam();quizContent.innerHTML=`<h3>Test Completed</h3><p><strong>${escapeHtml(studentName)}</strong><br>${escapeHtml(selectedSet.label)}</p><div class="summary-grid"><div class="summary-card"><div class="k">Score</div><div class="v">${s.score} / ${s.total}</div></div><div class="summary-card"><div class="k">Correct</div><div class="v">${s.correct}</div></div><div class="summary-card"><div class="k">Wrong</div><div class="v">${s.wrong}</div></div><div class="summary-card"><div class="k">Unanswered</div><div class="v">${s.unanswered}</div></div></div><p><strong>Percentage:</strong> ${s.percentage}%<br><strong>Time Used:</strong> ${formatDuration(elapsedMs())}</p><div id="sheetStatus" class="status">Sending result to Google Sheet...</div><div class="rule-box">Correct answers are not displayed on the student result page.</div><div class="start-row"><button id="backBtn" class="primary-btn">Back to Scholarship Index</button></div>`;document.getElementById("backBtn").onclick=showStartScreen;sendResult(buildPayload(reason),document.getElementById("sheetStatus"))}
 function sendUnloadSubmission(){if(submitted||unloadSubmissionSent||!selectedSet||examStartMs===null||!canManualSubmit())return;saveCurrentAnswer();unloadSubmissionSent=true;const url=String(SCHOLARSHIP_CONFIG.googleAppsScriptUrl||"").trim();if(!url)return;const payload=buildPayload("Left / Refreshed Page");try{const blob=new Blob([JSON.stringify(payload)],{type:"text/plain;charset=UTF-8"});navigator.sendBeacon(url,blob)}catch(e){}clearState()}
-window.addEventListener("beforeunload",e=>{if(!submitted&&selectedSet&&examStartMs!==null){if(canManualSubmit())sendUnloadSubmission();else{saveCurrentAnswer();e.preventDefault();e.returnValue=""}}});
-async function tryResume(){const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return false;try{const st=JSON.parse(raw),set=CATALOG.find(x=>x.key===st.key);if(!set)return false;const allowed=getAllowedCatalog(st.studentName||"");if(!allowed.some(x=>x.key===st.key)){clearState();return false}selectedSet=set;studentName=st.studentName;examStartMs=Number(st.examStartMs);examEndMs=null;await loadClassicScript(set.questionsScript);const bank=window[set.bankVar];if(!Array.isArray(bank)||!bank.length){clearState();return false}questions=bank.map((q,i)=>({...q,n:i+1}));userAnswers=Array(questions.length).fill("");(st.userAnswers||[]).slice(0,questions.length).forEach((v,i)=>userAnswers[i]=v);currentQuestionIndex=Math.min(Math.max(Number(st.currentQuestionIndex)||0,0),questions.length-1);if(elapsedMs()>=durationMs()){finishExam("Time Expired");return true}submitted=false;unloadSubmissionSent=false;document.getElementById("pageTitle").textContent=set.label;document.getElementById("modeTag").textContent=set.version;renderQuestion();startTimer();return true}catch(e){clearState();return false}}
-(async function init(){localStorage.removeItem(LEGACY_NAME_KEY);const resumed=await tryResume();if(!resumed)showStartScreen()})();
+window.addEventListener("beforeunload",()=>{
+  if(!submitted&&selectedSet&&examStartMs!==null){
+    // Refreshing or leaving never resumes an unfinished exam.
+    // After 10 minutes, preserve the existing auto-submit rule.
+    if(canManualSubmit())sendUnloadSubmission();
+    else clearState();
+  }
+});
+
+(function init(){
+  // Always start from a clean Scholarship Index after refresh/reopen.
+  localStorage.removeItem(LEGACY_NAME_KEY);
+  clearState();
+  showStartScreen();
+})();

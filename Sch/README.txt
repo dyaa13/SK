@@ -1,3 +1,6 @@
+DYAA Scholarship Online Modular v10.4
+Access/cache fix: EthanM receives all current and future Y6 catalog entries (case-insensitive). Core scripts are cache-busted from index.html so updated access rules are loaded after deployment.
+
 DYAA Arithmetic/Scholarship Mathematics v10.3
 
 
@@ -478,3 +481,10 @@ Y6 Arithmetic Advance Test 22 added in v9.6; follows Advance backend Set 22.
 Y6 Arithmetic Advance Test 23 added in v9.7; follows Advance backend Set 23.
 Y6 Arithmetic Advance Test 24 added in v9.8; follows Advance backend Set 24.
 Y6 Arithmetic Advance Test 25 added in v9.9; follows Advance backend Set 25.
+
+v10.5 refresh behaviour update
+- Refresh/reopen always returns to the blank Scholarship Index; unfinished exams are no longer resumed from localStorage.
+- If the student refreshes/leaves after 10 minutes, the existing auto-submit behaviour is preserved.
+- If the student refreshes/leaves before 10 minutes, the unfinished attempt is discarded and is not submitted.
+- Student Name is blank on every fresh Index load.
+

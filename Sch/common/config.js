@@ -6,12 +6,14 @@ window.DYAA_SCHOLARSHIP_CONFIG = {
   resultSheetName: "Scholarship",
 
   // Exam settings.
-  // TEMP TEST MODE: allow immediate submission. Change 0 back to 10 for normal use.
-  minSubmitMinutes: 0,
+  // Students may manually submit after 10 minutes.
+  minSubmitMinutes: 10,
 
-  // TEMP TEST MODE: prefill the student name for quick testing.
-  // Change this to "" before going live.
-  defaultStudentName: "AngelaD",
+  // Leave the student name blank on the index.
+  defaultStudentName: "",
+
+  // When the signed-in student can access multiple year levels, select Y6 first.
+  defaultYear: "Y6",
 
   teacherName: "DYAA"
 };

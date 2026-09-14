@@ -1,5 +1,25 @@
-DYAA Scholarship Online Modular v10.4
-Access/cache fix: EthanM receives all current and future Y6 catalog entries (case-insensitive). Core scripts are cache-busted from index.html so updated access rules are loaded after deployment.
+DYAA Scholarship Online Modular v10.8
+
+V10.8 Y6 LANGUAGE CLARITY REVIEW:
+- Reviewed all 2,250 Y6 Arithmetic questions: Standard Tests 1–25 and Advance Tests 1–25.
+- Refined 41 question stems where the English was unnecessarily awkward or could slow comprehension.
+- Changes are wording-only: Type Codes, numerical conditions, answers, choices, answer formats and difficulty are unchanged.
+- Common fixes include natural wording for reverse-fraction statements, discount questions, timetable durations, unit-price comparisons and several percentage/ratio contexts.
+- Y6 question scripts now use v10.8 cache-busting so browsers load the revised wording immediately.
+- Existing Y7 Tests 1–4, EthanM Y6 access, DYAA/df access, refresh-to-start-index behaviour, 10-minute submit rule, stacked fraction rendering and A4 2×3 PDF export are retained.
+
+
+V10.6 Y7 ARITHMETIC STANDARD UPDATE:
+- Added Y7 Arithmetic Standard Test 4 from reviewed backend Set 04 (Bank v1.1), in exact 45-question Type Code order.
+- Test 4 uses 45 different Major Areas and 45 different Standard Fine Type Codes.
+- All 45 answers were independently recalculated; MCQ keys, strict representation formats and constraint uniqueness were checked.
+- Test 4 was screened against the existing question bank for exact duplicates, number-template repeats and high-similarity stems; all scans returned 0 matches.
+- Existing EthanM Year 6 access, DYAA/df access, refresh-to-start-index behaviour, 10-minute submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+V10.5 REFRESH / START INDEX UPDATE:
+- Refreshing or reopening the page returns to the blank Scholarship Index instead of restoring the previous student/exam.
+- Exams at or beyond the 10-minute threshold still auto-submit on refresh/leave; earlier refresh abandons local progress and returns to the blank index.
+- EthanM Year 6 access and all existing access rules remain unchanged.
 
 DYAA Arithmetic/Scholarship Mathematics v10.3
 
@@ -488,3 +508,9 @@ v10.5 refresh behaviour update
 - If the student refreshes/leaves before 10 minutes, the unfinished attempt is discarded and is not submitted.
 - Student Name is blank on every fresh Index load.
 
+
+Y7 LANGUAGE CLARITY REVIEW (v10.7)
+- Reviewed all 180 questions in Y7 Arithmetic Standard Tests 1–4 for student-facing English clarity.
+- Revised unclear or unnatural wording only; Type Codes, numerical data, mathematical structure and stored answers were preserved.
+- Examples fixed include “4 lots of 6 m”, awkward fraction-group grammar, “validly catch”, “belongs to the 9-times table”, and an unclear radius label.
+- Added cache-busting to Y7 Test 1–4 question scripts so revised wording is loaded after deployment.

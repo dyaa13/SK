@@ -1,3 +1,7 @@
+LANGUAGE CLARITY REVIEW (v10.8)
+- Standard Tests 1–25 were reviewed for natural, student-friendly English.
+- Wording-only refinements were made where needed; Type Codes, values, answers and difficulty are unchanged.
+
 CURRENT NAMING (v7.3)
 - Tests 1–25 in this completed Y6 Arithmetic series are labelled STANDARD.
 - Their questions, backend knowledge plan and Type Codes are unchanged; this is a naming change only.

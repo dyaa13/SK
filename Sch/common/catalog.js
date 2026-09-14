@@ -48,7 +48,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic set generated from the original 25-test backend type plan. Difficulty: Standard. This series follows the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 1 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test01/questions.js",
+    questionsScript: "Y6/Arithmetic/Test01/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T01"
   },
   {
@@ -61,7 +61,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic set generated from the original 25-test backend type plan. Difficulty: Standard. This series follows the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 2 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test02/questions.js",
+    questionsScript: "Y6/Arithmetic/Test02/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T02"
   },
   {
@@ -74,7 +74,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic set generated from the original 25-test backend type plan. Difficulty: Standard. This series follows the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 3 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test03/questions.js",
+    questionsScript: "Y6/Arithmetic/Test03/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T03"
   },
   {
@@ -87,7 +87,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 4 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test04/questions.js",
+    questionsScript: "Y6/Arithmetic/Test04/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T04"
   },
   {
@@ -100,7 +100,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 5 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test05/questions.js",
+    questionsScript: "Y6/Arithmetic/Test05/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T05"
   },
   {
@@ -113,7 +113,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 6 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test06/questions.js",
+    questionsScript: "Y6/Arithmetic/Test06/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T06"
   },
   {
@@ -126,7 +126,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 7 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test07/questions.js",
+    questionsScript: "Y6/Arithmetic/Test07/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T07"
   },
   {
@@ -139,7 +139,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 8 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test08/questions.js",
+    questionsScript: "Y6/Arithmetic/Test08/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T08"
   },
   {
@@ -152,7 +152,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 9 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test09/questions.js",
+    questionsScript: "Y6/Arithmetic/Test09/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T09"
   },
   {
@@ -165,7 +165,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 10 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test10/questions.js",
+    questionsScript: "Y6/Arithmetic/Test10/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T10"
   },
   {
@@ -178,7 +178,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 11 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test11/questions.js",
+    questionsScript: "Y6/Arithmetic/Test11/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T11"
   },
   {
@@ -191,7 +191,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 12 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test12/questions.js",
+    questionsScript: "Y6/Arithmetic/Test12/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T12"
   },
   {
@@ -204,7 +204,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 13 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test13/questions.js",
+    questionsScript: "Y6/Arithmetic/Test13/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T13"
   },
   {
@@ -217,7 +217,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 14 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test14/questions.js",
+    questionsScript: "Y6/Arithmetic/Test14/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T14"
   },
   {
@@ -230,7 +230,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 15 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test15/questions.js",
+    questionsScript: "Y6/Arithmetic/Test15/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T15"
   },
   {
@@ -243,7 +243,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 16 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test16/questions.js",
+    questionsScript: "Y6/Arithmetic/Test16/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T16"
   },
   {
@@ -256,7 +256,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 17 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test17/questions.js",
+    questionsScript: "Y6/Arithmetic/Test17/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T17"
   },
   {
@@ -269,7 +269,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 18 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test18/questions.js",
+    questionsScript: "Y6/Arithmetic/Test18/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T18"
   },
   {
@@ -282,7 +282,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 19 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test19/questions.js",
+    questionsScript: "Y6/Arithmetic/Test19/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T19"
   },
   {
@@ -295,7 +295,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 20 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test20/questions.js",
+    questionsScript: "Y6/Arithmetic/Test20/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T20"
   },
   {
@@ -308,7 +308,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 21 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test21/questions.js",
+    questionsScript: "Y6/Arithmetic/Test21/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T21"
   },
   {
@@ -321,7 +321,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 22 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test22/questions.js",
+    questionsScript: "Y6/Arithmetic/Test22/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T22"
   },
   {
@@ -334,7 +334,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 23 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test23/questions.js",
+    questionsScript: "Y6/Arithmetic/Test23/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T23"
   },
   {
@@ -347,7 +347,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 24 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test24/questions.js",
+    questionsScript: "Y6/Arithmetic/Test24/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T24"
   },
   {
@@ -360,7 +360,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 25 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test25/questions.js",
+    questionsScript: "Y6/Arithmetic/Test25/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T25"
   },
   {
@@ -373,7 +373,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows the Advance 25-set backend allocation and raises difficulty through larger numbers, reverse problems, multi-step arithmetic, mixed units and mixed forms.",
     label: "Year 6 Arithmetic · Test 1 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test01/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test01/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T01"
   },
   {
@@ -386,7 +386,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 02 and increases difficulty through larger numbers, reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 2 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test02/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test02/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T02"
   },
   {
@@ -399,7 +399,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 03 and increases difficulty through close-value comparisons, reverse problems, multi-step arithmetic, mixed units and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 3 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test03/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test03/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T03"
   },
   {
@@ -412,7 +412,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 04 and increases difficulty through larger numbers, reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 4 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test04/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test04/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T04"
   },
   {
@@ -425,7 +425,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 05 and increases difficulty through larger numbers, reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 5 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test05/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test05/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T05"
   },
   {
@@ -438,7 +438,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 06 and increases difficulty through reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 6 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test06/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test06/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T06"
   },
   {
@@ -451,7 +451,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 07 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 7 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test07/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test07/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T07"
   },
   {
@@ -464,7 +464,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 08 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 8 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test08/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test08/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T08"
   },
   {
@@ -477,7 +477,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 09 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 9 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test09/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test09/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T09"
   },
   {
@@ -490,7 +490,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 10 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 10 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test10/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test10/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T10"
   },
   {
@@ -503,7 +503,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 11 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 11 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test11/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test11/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T11"
   },
   {
@@ -516,7 +516,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 12 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 12 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test12/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test12/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T12"
   },
   {
@@ -529,7 +529,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 13 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 13 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test13/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test13/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T13"
   },
   {
@@ -542,7 +542,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 14 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 14 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test14/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test14/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T14"
   },
   {
@@ -555,7 +555,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 15 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test15/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test15/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T15"
   },
   {
@@ -568,7 +568,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 16 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test16/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test16/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T16"
   },
   {
@@ -581,7 +581,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 17 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test17/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test17/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T17"
   },
   {
@@ -594,7 +594,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 18 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test18/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test18/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T18"
   },
   {
@@ -607,7 +607,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 19 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test19/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test19/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T19"
   },
   {
@@ -620,7 +620,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 20 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test20/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test20/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T20"
   },
   {
@@ -633,7 +633,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 21 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test21/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test21/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T21"
   },
   {
@@ -646,7 +646,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 22 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test22/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test22/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T22"
   },
   {
@@ -659,7 +659,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 23 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test23/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test23/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T23"
   },
   {
@@ -672,7 +672,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 24 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test24/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test24/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T24"
   },
   {
@@ -685,7 +685,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 25 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test25/questions.js",
+    questionsScript: "Y6/Arithmetic/Advance/Test25/questions.js?v=10.8",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T25"
   },
   {
@@ -722,7 +722,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from the reviewed Y7 25-set backend allocation (Bank v1.1). Y7 Standard removes many repeatedly practised Y6 basics as standalone types and emphasises mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 1 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test01/questions.js",
+    questionsScript: "Y7/Arithmetic/Test01/questions.js?v=10.7",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T01"
   },
   {
@@ -735,7 +735,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 02 (Bank v1.1), with mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 2 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test02/questions.js",
+    questionsScript: "Y7/Arithmetic/Test02/questions.js?v=10.7",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T02"
   },
   {
@@ -748,8 +748,21 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 03 (Bank v1.1), with mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 3 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test03/questions.js",
+    questionsScript: "Y7/Arithmetic/Test03/questions.js?v=10.7",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T03"
+  },
+  {
+    key: "Y7_ARITH_T04",
+    year: "Y7",
+    paper: "Arithmetic",
+    test: "Test 4",
+    version: "Written Answer",
+    difficulty: "Standard",
+    description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 04 (Bank v1.1), with mixed, inverse, applied and less-routine arithmetic.",
+    label: "Year 7 Arithmetic · Test 4 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y7/Arithmetic/Test04/questions.js?v=10.7",
+    bankVar: "SCHOLARSHIP_Y7_ARITH_T04"
   },
   {
     key: "Y8_ARITH_T01",

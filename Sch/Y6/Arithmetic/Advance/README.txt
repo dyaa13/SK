@@ -1,3 +1,7 @@
+LANGUAGE CLARITY REVIEW (v10.8)
+- Advance Tests 1–25 were reviewed for clear, natural English while preserving the rule that stems must not reveal solution steps.
+- Wording-only refinements were made where needed; Type Codes, values, answers and difficulty are unchanged.
+
 DYAA Y6 Arithmetic – Advance
 ============================
 

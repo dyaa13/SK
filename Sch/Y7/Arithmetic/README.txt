@@ -16,6 +16,7 @@ Current online sets:
 - Test 1 · Standard · 45 minutes
 - Test 2 · Standard · 45 minutes
 - Test 3 · Standard · 45 minutes
+- Test 4 · Standard · 45 minutes
 
 Test 1 Type Codes:
 Q01  10.4  Negative Numbers
@@ -158,3 +159,52 @@ Q42  33.3  Unit Rates
 Q43  28.5  Ratio Simplification – Advanced
 Q44  60.2  Pie Chart Arithmetic
 Q45  27.4  Successive Percentage Changes
+
+Test 4 Type Codes:
+Q01  49.7  Reverse Area
+Q02  56.6  Combined / Weighted Average
+Q03  50.4  Circle Arithmetic
+Q04  11.2  Fraction Comparison & Ordering
+Q05  52.2  Reverse Volume
+Q06  7.3  LCM
+Q07  37.4  Unit Price & Best Buy
+Q08  55.1  Reverse Average
+Q09  36.7  Multi-step Money Arithmetic
+Q10  12.3  Fraction Addition & Subtraction
+Q11  45.6  Time Difference & Time Zones
+Q12  28.6  Ratio Simplification – Advanced
+Q13  10.1  Negative Numbers
+Q14  59.4  Graph Arithmetic
+Q15  47.2  Triangle & Parallelogram Area
+Q16  23.2  Reverse Percentage
+Q17  48.5  Composite Area
+Q18  29.5  Ratio Sharing
+Q19  8.1  Powers
+Q20  57.4  Median / Mode / Range – Applied
+Q21  44.7  Timetables
+Q22  4.1  Divisibility & Number Properties
+Q23  16.3  Fraction of a Quantity – Advanced
+Q24  27.7  Successive Percentage Changes
+Q25  40.2  Profit & Loss
+Q26  15.5  Mixed Fraction Operations
+Q27  24.6  Percentage Increase
+Q28  1.4  Whole Number Mixed & Reverse Operations
+Q29  53.2  Volume & Capacity
+Q30  39.2  GST / Tax / Surcharge
+Q31  60.7  Pie Chart Arithmetic
+Q32  5.7  Prime Factorisation
+Q33  31.6  Ratio with Mixed Units
+Q34  18.1  Decimal Mixed Operations
+Q35  41.5  Mixed Metric Conversions
+Q36  54.2  Mean – Advanced
+Q37  3.2  Rounding, Bounds & Estimation
+Q38  22.6  Percentage of a Quantity – Advanced
+Q39  17.3  Reverse Fraction Problems
+Q40  46.6  Reverse Perimeter
+Q41  43.6  Complex Elapsed Time
+Q42  30.1  Missing Ratio & Equivalent Ratio
+Q43  20.5  FDP Conversion – Non-trivial
+Q44  6.3  HCF
+Q45  38.5  Discount
+
+Language clarity review v10.7: Tests 1–4 reviewed; unclear/unnatural wording revised without changing Type Codes, numbers, answers or difficulty.

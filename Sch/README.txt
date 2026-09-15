@@ -1,4 +1,86 @@
-DYAA Scholarship Online Modular v10.8
+DYAA Scholarship Online Modular v12.2
+
+V12.2 Y8 MATHEMATICS STANDARD + ADVANCE SET 4 UPDATE:
+- Rechecked Y8 Mathematics Standard Test 3 and Advance Test 3 against their authoritative Backend v1.0 Set 03 allocations.
+- Corrected Standard Test 3 Q2: LCM(16,24,40)=240 minutes, so the next common reset after 8:25 am is 12:25 pm.
+- Clarified Standard Test 3 Q12 so the 197 answer unambiguously applies to one crate after the initial equal share; Type Code, numerical structure and answer are retained.
+- Advance Test 3 required no correction.
+- Added Y8 Mathematics Standard Test 4 and Advance Test 4 in exact Backend Set 04 Type Code order; each has 45 unique Major Areas and 45 unique Fine Type Codes.
+- Independently revalidated all 90 new Set 4 answers, MCQ keys, strict representations and constraint/geometry/data conditions.
+- Set 4 stems were screened against the active corpus: exact duplicates = 0, number-template duplicates = 0, high-similarity stems (>=0.88) = 0; Standard-vs-Advance Set 4 high-similarity stems = 0.
+- Radical vinculum rendering from v12.0, EthanM Y6-only access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit and A4 2×3 PDF export are retained.
+
+
+V12.0 MATHEMATICAL RADICAL DISPLAY FIX:
+- Added global radical rendering for square roots and cube roots in Y6/Y7 Arithmetic and Y8 Mathematics.
+- Expressions such as √144, √196, √225 and ∛3375 now render with a vinculum extending over the radicand instead of relying on the plain Unicode root symbol alone.
+- The same radical formatting is applied to online questions, MCQ choices and A4 PDF export.
+- Question content, answers, Type Codes, access rules, submit behaviour and existing stacked-fraction rendering are unchanged.
+
+
+V11.9 Y8 MATHEMATICS STANDARD + ADVANCE SET 2 UPDATE:
+- Rechecked Y8 Mathematics Standard Test 1 and Advance Test 1 against their authoritative Backend v1.0 Set 01 allocations; both remain 45/45 Type Code aligned with 45 unique Major Areas and no correction required.
+- Independently revalidated all 90 Set 1 answers, MCQ keys, strict answer representations, key constraints, diagrams/tables and Standard-vs-Advance difficulty separation.
+- Added Y8 Mathematics Standard Test 2 from Standard Backend Set 02 and Advance Test 2 from Advance Backend Set 02, both in exact 45-question Type Code order.
+- Each new Test 2 uses 45 different Major Areas and 45 different Fine Type Codes.
+- All 90 new answers were independently recalculated; MCQ keys, strict fraction/decimal/percentage formats and unique-constraint questions were checked.
+- New Set 2 stems were screened against the active v11.8 corpus: exact duplicate stems = 0, number-only template duplicates = 0, high-similarity stems (>=0.88) = 0; Standard-vs-Advance Set 2 internal high-similarity stems = 0.
+- Existing Y6/Y7 content, EthanM Y6-only access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, stacked fraction rendering and A4 2×3 PDF export are retained.
+
+
+
+V11.8 Y8 MATHEMATICS ADVANCE PREVIEW UPDATE:
+- Added Y8 Mathematics Advance Test 1 from the authoritative Advance Backend v1.0, in exact 45-question Type Code order.
+- Advance Test 1 uses 45 different Major Areas and 45 different Advance Fine Type Codes.
+- It uses the same integrated Y8 Mathematics syllabus as Standard, but with more reverse/original-value, multi-stage, mixed-representation, constraint, optimisation, combined-algebra and reverse/composite-geometry structures.
+- All 45 answers, 14 MCQ keys, strict representations, constraints, diagrams/tables and time-zone calculation were independently checked.
+- Advance Test 1 was screened against the existing active question corpus: exact duplicate stems = 0, number-only template duplicates = 0, high-similarity stems (>=0.88) = 0.
+- Existing Standard Test 1, Y6/Y7 content, EthanM Y6-only access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y8 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+V11.6 Y7 ARITHMETIC STANDARD UPDATE:
+- Rechecked Y7 Arithmetic Standard Test 11 against reviewed backend Set 11 and independently revalidated all 45 answers; no correction was required.
+- Added Y7 Arithmetic Standard Test 12 from backend Set 12 (Bank v1.1), in exact 45-question Type Code order.
+- Test 12 uses 45 different Major Areas and 45 different Standard Fine Type Codes; all answers, MCQ keys, strict representations and constraint uniqueness were independently checked.
+- Test 12 wording was reviewed for clarity and screened against the existing 3,335-question corpus for exact duplicates, number-only templates and high-similarity stems; all scans returned 0 after revisions.
+- Existing EthanM Year 6 access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+V11.5 Y7 ARITHMETIC STANDARD UPDATE:
+- Rechecked Y7 Arithmetic Standard Test 10 against reviewed backend Set 10 and independently revalidated all 45 answers; no correction was required.
+- Added Y7 Arithmetic Standard Test 11 from backend Set 11 (Bank v1.1), in exact 45-question Type Code order.
+- Test 11 uses 45 different Major Areas and 45 different Standard Fine Type Codes; all answers, MCQ keys, strict representations and constraint uniqueness were independently checked.
+- Test 11 wording was reviewed for clarity and screened against the existing question bank for exact duplicates, number-only templates and high-similarity stems; all scans returned 0 after revisions.
+- Existing EthanM Year 6 access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+
+
+V11.4 Y7 ARITHMETIC STANDARD UPDATE:
+- Rechecked Y7 Arithmetic Standard Test 9 against reviewed backend Set 09 and independently revalidated all 45 answers; no correction was required.
+- Added Y7 Arithmetic Standard Test 10 from backend Set 10 (Bank v1.1), in exact 45-question Type Code order.
+- Test 10 uses 45 different Major Areas and 45 different Standard Fine Type Codes; all answers, MCQ keys, strict representations and constraint uniqueness were independently checked.
+- Test 10 wording was reviewed for clarity and screened against the existing Y6/Y7 arithmetic bank for exact duplicates, number-only templates and high-similarity stems; all scans returned 0 after revisions.
+- Existing EthanM Year 6 access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+V11.3 Y7 ARITHMETIC STANDARD UPDATE:
+- Rechecked Y7 Arithmetic Standard Test 8 against reviewed backend Set 08 and independently revalidated all 45 answers; no correction was required.
+- Added Y7 Arithmetic Standard Test 9 from backend Set 09 (Bank v1.1), in exact 45-question Type Code order.
+- Test 9 uses 45 different Major Areas and 45 different Standard Fine Type Codes; all answers, MCQ keys, strict representations and constraint uniqueness were independently checked.
+- Test 9 wording was reviewed for clarity and screened against the existing question bank for exact duplicates, number-only templates and high-similarity stems; all scans returned 0.
+- Existing EthanM Year 6 access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+V11.1 Y7 ARITHMETIC STANDARD UPDATE:
+- Rechecked Y7 Arithmetic Standard Test 6 against reviewed backend Set 06 and independently revalidated all 45 answers; no correction was required.
+- Added Y7 Arithmetic Standard Test 7 from backend Set 07 (Bank v1.1), in exact 45-question Type Code order.
+- Test 7 uses 45 different Major Areas and 45 different Standard Fine Type Codes; all answers, MCQ keys, strict representations and constraint uniqueness were independently checked.
+- Test 7 wording was reviewed for clarity and screened against the existing question bank for exact duplicates, number-only templates and high-similarity stems.
+- Existing EthanM Year 6 access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
+
+
+V11.0 Y7 ARITHMETIC STANDARD UPDATE:
+- Rechecked Y7 Arithmetic Standard Test 5 against reviewed backend Set 05 and independently revalidated all 45 answers; no correction was required.
+- Added Y7 Arithmetic Standard Test 6 from backend Set 06 (Bank v1.1), in exact 45-question Type Code order.
+- Test 6 uses 45 different Major Areas and 45 different Standard Fine Type Codes; all answers, MCQ keys, strict representations and constraint uniqueness were independently checked.
+- Test 6 wording was reviewed for clarity and screened against the existing question bank for exact duplicates, number-only templates and high-similarity stems.
+- Existing EthanM Year 6 access, DYAA/df full access, refresh-to-start-index behaviour, 10-minute Submit rule, Y6/Y7 stacked fraction rendering and A4 2×3 PDF export are retained.
 
 V10.8 Y6 LANGUAGE CLARITY REVIEW:
 - Reviewed all 2,250 Y6 Arithmetic questions: Standard Tests 1–25 and Advance Tests 1–25.
@@ -382,11 +464,10 @@ STRUCTURE:
       Shared/Test01/images/
 
   Y8/
-    Arithmetic/               Test01–Test07 Standard written-answer tests
-    Reasoning/
-      MC/Test01/questions.js
-      Mixed/Test01/questions.js
-      Shared/Test01/images/
+    Mathematics/
+      README.txt
+      Standard/
+        Test01/questions.js
 
 MASTER INDEX FLOW:
   Student Name -> Year -> Paper -> Test -> Version -> Start Test / Export to PDF
@@ -514,3 +595,54 @@ Y7 LANGUAGE CLARITY REVIEW (v10.7)
 - Revised unclear or unnatural wording only; Type Codes, numerical data, mathematical structure and stored answers were preserved.
 - Examples fixed include “4 lots of 6 m”, awkward fraction-group grammar, “validly catch”, “belongs to the 9-times table”, and an unclear radius label.
 - Added cache-busting to Y7 Test 1–4 question scripts so revised wording is loaded after deployment.
+
+
+v10.9:
+- Added Y7 Arithmetic Standard Test 5 from reviewed backend Set 05 (Bank v1.1).
+- Test 5 uses 45 different Major Areas and 45 different Fine Type Codes in backend order.
+- Student-facing wording follows the v10.7 clarity rule: natural, unambiguous English without revealing solution steps.
+- Existing refresh-to-blank-index behaviour and access rules are unchanged.
+
+
+v11.2:
+- Rechecked Y7 Arithmetic Standard Test 7; no corrections were required.
+- Added Y7 Arithmetic Standard Test 8 from reviewed backend Set 08 (Bank v1.1).
+- Test 8 uses 45 different Major Areas and 45 different Fine Type Codes in backend order.
+- Student-facing wording follows the clarity rule: natural, unambiguous English without revealing unnecessary solution steps.
+- Existing refresh-to-blank-index behaviour and access rules are unchanged.
+
+
+v11.7 SYSTEMATIC Y8 RESET
+-------------------------
+- Removed the legacy active Y8 Arithmetic Test 1–8 and legacy Y8 Mathematical Reasoning Test 1 modules from the current catalog and Y8 folder.
+- These older Y8 modules pre-dated the systematic Y8 backend and remain recoverable from earlier releases such as v11.6.
+- Added the new bank-driven Year 8 Mathematics · Standard · Test 1.
+- New authoritative Y8 Standard backend: DYAA_Y8_Mathematics_Standard_25_Set_Backend_Allocation_v1.0.xlsx.
+- Y8 Mathematics Standard Test 1 follows backend Set 01 exactly: 45 different Major Areas and 45 different Standard Type Codes.
+- Y8 Mathematics now includes Number, FDP, Ratio/Rates/Finance, Algebra, Measurement/Geometry, and Data/Probability in one systematic paper.
+- Y8 Mathematics fraction and mixed-number display now uses the same stacked mathematical formatting on-screen and in PDF export as the established Y6/Y7 format.
+- Existing Y4/Y6/Y7 modules, access rules, 10-minute manual-submit rule, refresh-to-start-index behaviour, and Google Sheet submission settings are unchanged.
+
+
+v12.1:
+- Rechecked Y8 Mathematics Standard Test 2 and Advance Test 2 against their authoritative v1.0 backend allocations; no corrections were required.
+- Added Y8 Mathematics Standard Test 3 from Standard backend Set 03 (45 unique Major Areas / 45 unique Standard Type Codes).
+- Added Y8 Mathematics Advance Test 3 from Advance backend Set 03 (45 unique Major Areas / 45 unique Advance Type Codes).
+- Set 3 wording follows the clarity rule: natural, unambiguous English without revealing solution methods.
+- v12.0 radical-vinculum display fix is preserved online and in PDF export.
+
+
+v12.3:
+- Rechecked Y8 Mathematics Standard Test 4 and Advance Test 4 against their authoritative v1.0 backends.
+- Corrected Y8 Advance Test 4 Q33 answer from 120 to 144 (greatest factor of 720 below 200 that is divisible by 24).
+- Added Y8 Mathematics Standard Test 5 from Standard backend Set 05 (45 unique Major Areas / 45 unique Standard Type Codes).
+- Added Y8 Mathematics Advance Test 5 from Advance backend Set 05 (45 unique Major Areas / 45 unique Advance Type Codes).
+- Set 5 wording follows the clarity rule and duplicate/similarity controls; radical display fix remains preserved.
+
+
+v12.4:
+- Added Aiden to year-level Y6 access. Student names remain case-insensitive.
+- Aiden now automatically receives every current and future catalog entry whose year is Y6.
+- Aiden does not receive Y7 or Y8 access from this rule.
+- Updated access.js cache-busting to v12.4 so browsers load the new permission rule immediately.
+- Existing EthanM, DYAA, df/DF permissions and all exam behaviour remain unchanged.

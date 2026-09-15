@@ -26,11 +26,20 @@
     return `<span class="math-frac" aria-label="${n} over ${d}"><span class="top">${n}</span><span class="bottom">${d}</span></span>`;
   }
 
+  function mathRadicalHtml(symbol,radicand){
+    const label=symbol==="∛" ? "cube root of" : "square root of";
+    return `<span class="math-root" aria-label="${label} ${radicand}"><span class="radical">${symbol}</span><span class="radicand">${radicand}</span></span>`;
+  }
+
+  function formatMathRadicals(value){
+    return String(value ?? "").replace(/([√∛])\s*(\d+(?:\.\d+)?)/g,(m,symbol,radicand)=>mathRadicalHtml(symbol,radicand));
+  }
+
   function formatY6ArithmeticFractions(value){
     let h=String(value ?? "");
     h=h.replace(/(^|[^\w.])(\d+)\s+(\d+)\s*\/\s*(\d+)(?![\w/])/g,(m,p,w,n,d)=>`${p}<span class="math-mixed"><span>${w}</span>${mathFractionHtml(n,d)}</span>`);
     h=h.replace(/(^|[^\w.])(\d+)\s*\/\s*(\d+)(?![\w/])/g,(m,p,n,d)=>`${p}${mathFractionHtml(n,d)}`);
-    return h;
+    return formatMathRadicals(h);
   }
 
   function imageUrl(q,set){
@@ -45,13 +54,13 @@
 
   function questionBody(q,set){
     const base=q.html ? String(q.html) : esc(q.text || "");
-    return ["Y6","Y7"].includes(set?.year) && set?.paper==="Arithmetic" ? formatY6ArithmeticFractions(base) : base;
+    return (["Y6","Y7"].includes(set?.year) && set?.paper==="Arithmetic") || (set?.year==="Y8" && set?.paper==="Mathematics") ? formatY6ArithmeticFractions(base) : base;
   }
 
   function choicesHtml(q,set){
     if(q.type!=="mcq" || !Array.isArray(q.choices)) return "";
     const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    return `<div class="pdf-choices">${q.choices.map((c,i)=>{const body=["Y6","Y7"].includes(set?.year)&&set?.paper==="Arithmetic"?formatY6ArithmeticFractions(esc(c)):esc(c);return `<div class="pdf-choice"><span class="choice-circle"></span><span><strong>${letters[i]||i+1}.</strong> ${body}</span></div>`}).join("")}</div>`;
+    return `<div class="pdf-choices">${q.choices.map((c,i)=>{const body=(["Y6","Y7"].includes(set?.year)&&set?.paper==="Arithmetic")||(set?.year==="Y8"&&set?.paper==="Mathematics")?formatY6ArithmeticFractions(esc(c)):esc(c);return `<div class="pdf-choice"><span class="choice-circle"></span><span><strong>${letters[i]||i+1}.</strong> ${body}</span></div>`}).join("")}</div>`;
   }
 
   function answerArea(q){

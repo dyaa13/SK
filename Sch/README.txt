@@ -1,4 +1,50 @@
-DYAA Scholarship Online Modular v12.2
+DYAA Scholarship Online Modular v12.9.1
+
+V12.9 Y8 MATHEMATICS STANDARD + ADVANCE SET 11 UPDATE:
+- Rechecked Y8 Mathematics Standard Test 10 and Advance Test 10 against their authoritative Backend v1.0 Set 10 allocations; no corrections were required.
+- Revalidated all 90 Test 10 answers and MCQ keys, and confirmed 45/45 Type Code + 45/45 Major Area alignment in each paper.
+- Added Y8 Mathematics Standard Test 11 from Standard Backend Set 11 and Advance Test 11 from Advance Backend Set 11, both in exact 45-question allocation order.
+- Each new Test 11 uses 45 different Major Areas and 45 different allocated Fine Type Codes.
+- All 90 Test 11 answers were independently recalculated/reasoned; MCQ keys and strict fraction/decimal/percentage representations were checked.
+- Exact duplicate stems against active Y8 Standard/Advance Tests 1–10 = 0.
+- Number-only template duplicates against active Y8 Standard/Advance Tests 1–10 = 0.
+- High-similarity stems (SequenceMatcher >= 0.88) against active Y8 Standard/Advance Tests 1–10 = 0; Standard-vs-Advance Test 11 internal high-similarity stems = 0.
+- The blank-working-space PDF layout is retained: no Answer label and no ruled answer lines are printed below questions.
+- Access rules are carried forward unchanged: AIDEN retains year-level access to all current and future Y6 papers.
+
+
+V12.8 Y8 MATHEMATICS STANDARD + ADVANCE SET 10 UPDATE:
+- Rechecked Y8 Mathematics Standard Test 9 and Advance Test 9 against their authoritative Backend v1.0 Set 09 allocations; no corrections were required.
+- Revalidated all 90 Test 9 answers and MCQ keys, and confirmed 45/45 Type Code + 45/45 Major Area alignment in each paper.
+- Added Y8 Mathematics Standard Test 10 from Standard Backend Set 10 and Advance Test 10 from Advance Backend Set 10, both in exact 45-question allocation order.
+- Each new Test 10 uses 45 different Major Areas and 45 different allocated Fine Type Codes.
+- All 90 Test 10 answers were independently recalculated/reasoned; MCQ keys and strict fraction/decimal/percentage representations were checked.
+- Exact duplicate stems against active Y8 Standard/Advance Tests 1–9 = 0.
+- Number-only template duplicates against active Y8 Standard/Advance Tests 1–9 = 0.
+- High-similarity stems (SequenceMatcher >= 0.88) against active Y8 Standard/Advance Tests 1–9 = 0; Standard-vs-Advance Test 10 internal high-similarity stems = 0.
+- The blank-working-space PDF layout is retained: no Answer label and no ruled answer lines are printed below questions.
+- Access rules are carried forward unchanged: AIDEN retains year-level access to all current and future Y6 papers.
+
+V12.7 Y8 MATHEMATICS STANDARD + ADVANCE SET 9 UPDATE:
+- Rechecked Y8 Mathematics Standard Test 8 and Advance Test 8 against their authoritative Backend v1.0 Set 08 allocations; no corrections were required.
+- Revalidated all 90 Test 8 answers and MCQ keys, and confirmed 45/45 Type Code + 45/45 Major Area alignment in each paper.
+- Added Y8 Mathematics Standard Test 9 from Standard Backend Set 09 and Advance Test 9 from Advance Backend Set 09, both in exact 45-question allocation order.
+- Each new Test 9 uses 45 different Major Areas and 45 different allocated Fine Type Codes.
+- All 90 Test 9 answers were independently recalculated/reasoned; MCQ keys and strict fraction/decimal/percentage representations were checked.
+- Exact duplicate stems against the active Y8 Standard/Advance Tests 1–8 = 0.
+- The blank-working-space PDF layout is retained: no Answer label and no ruled answer lines are printed below questions.
+- Access rules are carried forward unchanged: AIDEN retains year-level access to all current and future Y6 papers.
+
+V12.6 Y8 MATHEMATICS STANDARD + ADVANCE SET 8 UPDATE:
+- Rechecked Y8 Mathematics Standard Test 7 and Advance Test 7 against their authoritative Backend v1.0 Set 07 allocations; no corrections were required.
+- Revalidated all 90 Test 7 answers and MCQ keys, and confirmed 45/45 Type Code + 45/45 Major Area alignment in each paper.
+- Added Y8 Mathematics Standard Test 8 from Standard Backend Set 08 and Advance Test 8 from Advance Backend Set 08, both in exact 45-question allocation order.
+- Each new Test 8 uses 45 different Major Areas and 45 different allocated Fine Type Codes.
+- All 90 Test 8 answers were independently recalculated/reasoned; MCQ keys and strict fraction/decimal/percentage representations were checked.
+- Exact duplicate stems against the active Y8 Standard/Advance Tests 1–7 = 0.
+- The blank-working-space PDF layout is retained: no Answer label and no ruled answer lines are printed below questions.
+- Access rules are carried forward from v12.5.1: AIDEN retains year-level access to all current and future Y6 papers.
+
 
 V12.2 Y8 MATHEMATICS STANDARD + ADVANCE SET 4 UPDATE:
 - Rechecked Y8 Mathematics Standard Test 3 and Advance Test 3 against their authoritative Backend v1.0 Set 03 allocations.
@@ -641,8 +687,32 @@ v12.3:
 
 
 v12.4:
-- Added Aiden to year-level Y6 access. Student names remain case-insensitive.
-- Aiden now automatically receives every current and future catalog entry whose year is Y6.
-- Aiden does not receive Y7 or Y8 access from this rule.
-- Updated access.js cache-busting to v12.4 so browsers load the new permission rule immediately.
-- Existing EthanM, DYAA, df/DF permissions and all exam behaviour remain unchanged.
+- Added Y8 Mathematics Standard Test 6 from Standard backend Set 06 (45 unique Major Areas / 45 allocated Standard Type Codes).
+- Added Y8 Mathematics Advance Test 6 from Advance backend Set 06 (45 unique Major Areas / 45 allocated Advance Type Codes).
+- Test 6 questions were independently recalculated and checked against the allocation order.
+- Preserved the PDF blank-working-space change: exported questions do not print an Answer label or ruled answer lines below each question.
+
+
+v12.5:
+- Rechecked Y8 Mathematics Standard Test 6 and Advance Test 6 against their authoritative v1.0 backend Set 06 allocations and independently recalculated all answers.
+- Standard Test 6 Q26 wording was clarified so the HCF grouping condition is unambiguous; the correct answer remains 84.
+- Advance Test 6 Q12 was strengthened to include the allocated close-value comparison structure for A18.6.
+- Advance Test 6 Q28 was strengthened to include the allocated mixed-unit equal-distance average-speed structure for A32.3.
+- Added Y8 Mathematics Standard Test 7 from Standard backend Set 07 (45 unique Major Areas / 45 allocated Standard Type Codes).
+- Added Y8 Mathematics Advance Test 7 from Advance backend Set 07 (45 unique Major Areas / 45 allocated Advance Type Codes).
+- Test 7 answers were independently recalculated and type-code/order alignment was checked against the backend allocations.
+- Preserved the PDF blank-working-space change: exported questions do not print an Answer label or ruled answer lines below each question.
+
+v12.9.2 update:
+- Added teacher-only "Export Answers" for the selected paper.
+- Answer PDF contains question number + final answer only; no working/solution steps.
+- Student question PDF remains unchanged with blank working space.
+- Existing access rules retained, including AIDEN = all Y6.
+
+
+v12.9.4 update:
+- Rebased Y7 Arithmetic on v12.9.2 and reverted the broad v12.9.3 number simplification.
+- Only 9 genuinely cumbersome number sets were adjusted across Y7 Tests 1-12.
+- Mathematical structure, Type Codes, percentage rates and angles are preserved unless the awkward rate/result itself was the problem.
+- Test 2 Q15 remains unchanged at 85 degrees / 720 students.
+- Test 1 Q17 is adjusted to avoid an unnecessarily cumbersome percentage-change calculation.

@@ -1,1 +1,438 @@
-window.SCHOLARSHIP_Y7_ARITH_T10 = [{"topic":"Volume","typeCode":"51.5","text":"Two rectangular storage boxes have internal dimensions 1.2 m × 0.5 m × 0.4 m and 0.8 m × 0.6 m × 0.5 m. What is their total volume, in cubic metres?","answer":"0.48","answers":["0.48","0.48 m³","0.48 m3"]},{"topic":"Fraction Multiplication","typeCode":"13.2","html":"<p>Calculate 7/12 × 2 2/7.</p><p>Write the answer as a mixed number in simplest form.</p>","answer":"1 1/3","answerFormat":"mixedNumberSimplest"},{"topic":"Reverse Volume","typeCode":"52.4","text":"A cube-shaped container has an internal capacity of 3.375 L. What is its internal edge length, in centimetres?","answer":"15","answers":["15","15 cm"]},{"topic":"LCM","typeCode":"7.6","text":"What is the smallest positive whole number that is divisible by 18, 24 and 30?","answer":"360"},{"topic":"Ratio with Mixed Units","typeCode":"31.6","text":"A banner is 2.75 m long and 1.1 m high. Write the ratio length : height in simplest whole-number form.","answer":"5:2","answers":["5:2","5 : 2"]},{"topic":"Circle Arithmetic","typeCode":"50.5","html":"<p>A semicircle has diameter 14 cm. Use π = 22/7.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='330' height='190' viewBox='0 0 330 190' xmlns='http://www.w3.org/2000/svg'><path d='M65 145 A100 100 0 0 1 265 145' fill='none' stroke='#444' stroke-width='3'/><line x1='65' y1='145' x2='265' y2='145' stroke='#444' stroke-width='3'/><line x1='65' y1='157' x2='265' y2='157' stroke='#777'/><line x1='65' y1='153' x2='65' y2='161' stroke='#777'/><line x1='265' y1='153' x2='265' y2='161' stroke='#777'/><text x='165' y='177' text-anchor='middle' font-size='15'>14 cm</text></svg></div><p>What is the area of the semicircle, in cm²?</p>","answer":"77","answers":["77","77 cm²","77 cm2"]},{"topic":"Mixed Fraction Operations","typeCode":"15.7","html":"<p>Find the missing number □:</p><p>(□ − 1 1/4) × 2/3 = 5/6</p><p>Write □ as a mixed number in simplest form.</p>","answer":"2 1/2","answerFormat":"mixedNumberSimplest"},{"topic":"Combined / Weighted Average","typeCode":"56.7","html":"<p>Three groups took the same quiz.</p><table style='border-collapse:collapse;margin:8px auto;text-align:center'><tr><th style='border:1px solid #777;padding:6px 12px'>Group</th><th style='border:1px solid #777;padding:6px 12px'>Students</th><th style='border:1px solid #777;padding:6px 12px'>Mean score</th></tr><tr><td style='border:1px solid #777;padding:6px 12px'>A</td><td style='border:1px solid #777;padding:6px 12px'>8</td><td style='border:1px solid #777;padding:6px 12px'>14</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>B</td><td style='border:1px solid #777;padding:6px 12px'>12</td><td style='border:1px solid #777;padding:6px 12px'>17</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>C</td><td style='border:1px solid #777;padding:6px 12px'>10</td><td style='border:1px solid #777;padding:6px 12px'>20</td></tr></table><p>What is the mean score for all 30 students?</p>","answer":"17.2"},{"topic":"Multi-step Money Arithmetic","typeCode":"36.3","text":"A customer buys 3 notebooks at $4.75 each and 2 pens at $2.60 each. A fixed delivery fee of $5.50 is added. What is the total cost, in dollars?","answer":"24.95","answers":["24.95","$24.95"]},{"topic":"Percentage Decrease","typeCode":"25.6","text":"Two identical items each cost $360. The price of Item A is reduced by 15%, while the price of Item B is reduced by 22.5%. How much lower is the reduced price of Item B than the reduced price of Item A, in dollars?","answer":"27","answers":["27","27.00","$27","$27.00"]},{"topic":"Ratio Simplification – Advanced","typeCode":"28.1","text":"Simplify the ratio 84 : 126 : 210.","answer":"2:3:5","answers":["2:3:5","2 : 3 : 5"]},{"topic":"Complex Elapsed Time","typeCode":"43.6","text":"A cyclist starts at 9:35 am and finishes at 2:10 pm. During the trip, the cyclist takes a 45-minute break. How long is the cyclist actually riding?","answer":"3 hours 50 minutes","answers":["3 hours 50 minutes","3 h 50 min","3hr 50min","3 hrs 50 mins","3:50"]},{"topic":"Fraction of a Quantity – Advanced","typeCode":"16.1","html":"<p>A warehouse sends 11/18 of 1,620 cartons to stores.</p><p>How many cartons are sent?</p>","answer":"990"},{"topic":"Reverse Area","typeCode":"49.5","html":"<p>A parallelogram has an area of 198 cm² and a perpendicular height of 11 cm. Find the base length x.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='360' height='220' viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><polygon points='90,55 285,55 240,170 45,170' fill='none' stroke='#444' stroke-width='3'/><line x1='90' y1='55' x2='90' y2='170' stroke='#888' stroke-dasharray='5,4'/><text x='105' y='116' font-size='14'>11 cm</text><line x1='45' y1='188' x2='240' y2='188' stroke='#777'/><text x='143' y='208' text-anchor='middle' font-size='14'>x cm</text><text x='182' y='120' text-anchor='middle' font-size='15'>Area = 198 cm²</text></svg></div>","answer":"18","answers":["18","18 cm"]},{"topic":"HCF","typeCode":"6.4","text":"A whole number n is a multiple of 14 and lies between 50 and 80. The HCF of n and 84 is 14. What is n?","answer":"70"},{"topic":"FDP Conversion – Non-trivial","typeCode":"20.3","text":"A map has 40 equal grid squares, and 17 of them are shaded. Express the shaded part of the map as a percentage.","answer":"42.5%","answerFormat":"percentage"},{"topic":"Table Arithmetic","typeCode":"58.5","html":"<p>The table shows the number of books sold on five days.</p><table style='border-collapse:collapse;margin:8px auto;text-align:center'><tr><th style='border:1px solid #777;padding:6px 12px'>Day</th><th style='border:1px solid #777;padding:6px 12px'>Books sold</th></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Mon</td><td style='border:1px solid #777;padding:6px 12px'>14</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Tue</td><td style='border:1px solid #777;padding:6px 12px'>21</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Wed</td><td style='border:1px solid #777;padding:6px 12px'>18</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Thu</td><td style='border:1px solid #777;padding:6px 12px'>25</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Fri</td><td style='border:1px solid #777;padding:6px 12px'>14</td></tr></table><p>What is the mean number of books sold per day?</p>","answer":"18.4"},{"topic":"Percentage Change","typeCode":"26.3","text":"A service fee rises from $12.50 to $14.00. What is the percentage increase, using the original fee as the base?","answer":"12%","answerFormat":"percentage"},{"topic":"Fraction Comparison & Ordering","typeCode":"11.1","type":"mcq","html":"<p>Tank A is 7/12 full and Tank B is 11/18 full. Which tank has the greater fraction filled?</p>","choices":["Tank A","Tank B","They are equally full","Not enough information"],"answer":"Tank B"},{"topic":"Square & Cube Roots","typeCode":"9.7","text":"A square has an area of 361 cm². What is its perimeter, in centimetres?","answer":"76","answers":["76","76 cm"]},{"topic":"Mixed Metric Conversions","typeCode":"41.6","text":"One ribbon is 2.48 m long. Another ribbon is 2 m 53 cm long. How many centimetres longer is the second ribbon?","answer":"5","answers":["5","5 cm"]},{"topic":"Direct Proportion","typeCode":"32.2","text":"Eight metres of fabric cost $54.40. At the same rate, how much will 13 metres cost, in dollars?","answer":"88.4","answers":["88.4","88.40","$88.40","$88.4"]},{"topic":"Volume & Capacity","typeCode":"53.4","text":"A sports club has 17.5 L of juice. It is poured into bottles that each hold 625 mL. How many completely filled bottles can be made?","answer":"28"},{"topic":"Discount","typeCode":"38.5","type":"mcq","text":"Three identical shirts normally cost $18 each. Offer A sells all three for $48. Offer B gives 15% off the normal price of each shirt. Which offer is cheaper, and by how much?","choices":["Offer A by $2.10","Offer B by $2.10","Offer A by $6.00","Offer B by $6.00"],"answer":"Offer B by $2.10"},{"topic":"Reverse Percentage","typeCode":"23.7","text":"After a 12% increase, a tank holds 588 L. What was its capacity before the increase, in litres?","answer":"525","answers":["525","525 L"]},{"topic":"Graph Arithmetic","typeCode":"59.1","html":"<p>The grouped bar graph shows the number of items recorded by two teams.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='470' height='300' viewBox='0 0 470 300' xmlns='http://www.w3.org/2000/svg'><line x1='60' y1='230' x2='430' y2='230' stroke='#333' stroke-width='2'/><line x1='60' y1='40' x2='60' y2='230' stroke='#333' stroke-width='2'/><line x1='60' y1='200' x2='430' y2='200' stroke='#ddd'/><line x1='60' y1='170' x2='430' y2='170' stroke='#ddd'/><line x1='60' y1='140' x2='430' y2='140' stroke='#ddd'/><line x1='60' y1='110' x2='430' y2='110' stroke='#ddd'/><line x1='60' y1='80' x2='430' y2='80' stroke='#ddd'/><line x1='60' y1='50' x2='430' y2='50' stroke='#ddd'/><text x='48' y='234' text-anchor='end' font-size='11'>0</text><text x='48' y='204' text-anchor='end' font-size='11'>10</text><text x='48' y='174' text-anchor='end' font-size='11'>20</text><text x='48' y='144' text-anchor='end' font-size='11'>30</text><text x='48' y='114' text-anchor='end' font-size='11'>40</text><text x='48' y='84' text-anchor='end' font-size='11'>50</text><text x='48' y='54' text-anchor='end' font-size='11'>60</text><rect x='105' y='134' width='28' height='96' fill='#777'/><rect x='137' y='152' width='28' height='78' fill='#bbb'/><rect x='215' y='98' width='28' height='132' fill='#777'/><rect x='247' y='122' width='28' height='108' fill='#bbb'/><rect x='325' y='116' width='28' height='114' fill='#777'/><rect x='357' y='74' width='28' height='156' fill='#bbb'/><text x='135' y='252' text-anchor='middle' font-size='12'>Monday</text><text x='245' y='252' text-anchor='middle' font-size='12'>Tuesday</text><text x='355' y='252' text-anchor='middle' font-size='12'>Wednesday</text><rect x='300' y='270' width='14' height='10' fill='#777'/><text x='320' y='279' font-size='11'>Team A</text><rect x='365' y='270' width='14' height='10' fill='#bbb'/><text x='385' y='279' font-size='11'>Team B</text></svg></div><p>Across Tuesday and Wednesday, how many items did the two teams record altogether?</p>","answer":"170"},{"topic":"Ratio Sharing","typeCode":"29.6","text":"A charity fund of $864 is shared among three projects in the ratio 3 : 5 : 4. How many dollars more does the largest share receive than the smallest share?","answer":"144","answers":["144","144.00","$144","$144.00"]},{"topic":"Unit Rates","typeCode":"33.4","text":"A boat uses 17.5 L of fuel to travel 231 km. How many kilometres of travel does each litre of fuel provide?","answer":"13.2","answers":["13.2","13.2 km/L","13.2 km per litre"]},{"topic":"Negative Numbers","typeCode":"10.2","html":"<p>Calculate −18 − (−27) − 6.</p>","answer":"3"},{"topic":"Fraction Division","typeCode":"14.3","html":"<p>Calculate 7/9 ÷ 14/15.</p><p>Write the answer as a fraction in simplest form.</p>","answer":"5/6","answerFormat":"fractionSimplest"},{"topic":"Timetables","typeCode":"44.1","html":"<p>The timetable shows one bus journey.</p><table style='border-collapse:collapse;margin:8px auto;text-align:center'><tr><th style='border:1px solid #777;padding:6px 12px'>Stop</th><th style='border:1px solid #777;padding:6px 12px'>Arrive</th><th style='border:1px solid #777;padding:6px 12px'>Depart</th></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Central</td><td style='border:1px solid #777;padding:6px 12px'>—</td><td style='border:1px solid #777;padding:6px 12px'>10:42 am</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Riverside</td><td style='border:1px solid #777;padding:6px 12px'>11:18 am</td><td style='border:1px solid #777;padding:6px 12px'>11:26 am</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Hilltop</td><td style='border:1px solid #777;padding:6px 12px'>12:07 pm</td><td style='border:1px solid #777;padding:6px 12px'>—</td></tr></table><p>How long is the journey from Central to Hilltop, including the stop at Riverside?</p>","answer":"1 hour 25 minutes","answers":["1 hour 25 minutes","1 h 25 min","1hr 25min","1:25"]},{"topic":"Composite Area","typeCode":"48.3","html":"<p>The shape is made from a rectangle and a triangle. Find its total area.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='370' height='280' viewBox='0 0 370 280' xmlns='http://www.w3.org/2000/svg'><rect x='85' y='115' width='200' height='105' fill='none' stroke='#444' stroke-width='3'/><polygon points='85,115 285,115 185,45' fill='none' stroke='#444' stroke-width='3'/><text x='185' y='242' text-anchor='middle' font-size='14'>12 cm</text><text x='65' y='171' text-anchor='middle' font-size='14' transform='rotate(-90 65 171)'>7 cm</text><line x1='185' y1='45' x2='185' y2='115' stroke='#888' stroke-dasharray='5,4'/><text x='200' y='84' font-size='14'>5 cm</text></svg></div>","answer":"114","answers":["114","114 cm²","114 cm2"]},{"topic":"Unit Price & Best Buy","typeCode":"37.3","text":"A 1.6 kg bag of rice is priced at $11.52. At the same rate, what would exactly 1 kg cost, in dollars?","answer":"7.2","answers":["7.2","7.20","$7.20","$7.2"]},{"topic":"Decimal Mixed Operations","typeCode":"18.3","text":"A workshop has 18 m of wire. It is cut into pieces that are each 0.24 m long. How many complete pieces can be cut?","answer":"75"},{"topic":"GST / Tax / Surcharge","typeCode":"39.1","text":"A service costs $184 before GST. GST is 15%. What is the total price including GST, in dollars?","answer":"211.6","answers":["211.6","211.60","$211.60","$211.6"]},{"topic":"Rounding, Bounds & Estimation","typeCode":"3.5","type":"mcq","text":"Which is the best estimate of 48.7 × 19.6?","choices":["100","500","1,000","1,500"],"answer":"1,000"},{"topic":"Reverse Fraction Problems","typeCode":"17.1","html":"<p>11/15 of a budget is $660.</p><p>What is the full budget, in dollars?</p>","answer":"900","answers":["900","900.00","$900","$900.00"]},{"topic":"Best Rate Comparison","typeCode":"34.6","type":"mcq","text":"Machine A processes 420 items in 7 minutes. Machine B processes 504 items in 0.15 hours. Which machine has the higher rate, and by how many items per minute?","choices":["Machine A by 4 items per minute","Machine B by 4 items per minute","Machine A by 14 items per minute","Both machines have the same rate"],"answer":"Machine A by 4 items per minute"},{"topic":"Compound Measurement Arithmetic","typeCode":"42.6","text":"A sports club buys 3 ropes that are 1.75 m long and 4 ropes that are 85 cm long. What is the total length of all the ropes, in metres?","answer":"8.65","answers":["8.65","8.65 m"]},{"topic":"Reverse Perimeter","typeCode":"46.2","text":"A square courtyard has a wall along one side, so only the other three sides need fencing. A 1.5 m-wide gate is left unfenced in one of those sides. If 16.5 m of fencing is used, what is the side length of the courtyard, in metres?","answer":"6","answers":["6","6 m"]},{"topic":"Prime Factorisation","typeCode":"5.1","type":"mcq","text":"Which option writes 924 entirely as a product of prime powers?","choices":["2² × 3 × 7 × 11","2 × 3² × 7 × 11","2² × 3 × 7²","2³ × 3 × 7 × 11"],"answer":"2² × 3 × 7 × 11"},{"topic":"Missing Ratio & Equivalent Ratio","typeCode":"30.6","text":"Oats and nuts are mixed in the ratio 3 : 7. A scaled batch is four times as large as the original batch and contains 84 g of nuts. How many grams of oats were in the original batch?","answer":"9","answers":["9","9 g"]},{"topic":"Decimal Estimation & Accuracy","typeCode":"19.2","type":"mcq","text":"Which is the best estimate of 18.72 + 31.48 − 9.91?","choices":["30","40","50","60"],"answer":"40"},{"topic":"Successive Percentage Changes","typeCode":"27.1","text":"A bicycle costs $480. Its price is reduced by 20%, then the reduced price is discounted by a further 12.5%. What is the final price, in dollars?","answer":"336","answers":["336","336.00","$336","$336.00"]},{"topic":"Mean – Advanced","typeCode":"54.1","text":"Find the mean of 14.2, 15.7, 13.9, 16.8, 17.1, 14.6, 15.2 and 17.3.","answer":"15.6"}];
+window.SCHOLARSHIP_Y7_ARITH_T10 = [
+  {
+    "topic": "Volume",
+    "typeCode": "51.5",
+    "text": "Two rectangular storage boxes have internal dimensions 1.2 m × 0.5 m × 0.4 m and 0.8 m × 0.6 m × 0.5 m. What is their total volume, in cubic metres?",
+    "answer": "0.48",
+    "answers": [
+      "0.48",
+      "0.48 m³",
+      "0.48 m3"
+    ]
+  },
+  {
+    "topic": "Fraction Multiplication",
+    "typeCode": "13.2",
+    "html": "<p>Calculate 7/12 × 2 2/7.</p><p>Write the answer as a mixed number in simplest form.</p>",
+    "answer": "1 1/3",
+    "answerFormat": "mixedNumberSimplest"
+  },
+  {
+    "topic": "Reverse Volume",
+    "typeCode": "52.4",
+    "text": "A cube-shaped container has an internal capacity of 3.375 L. What is its internal edge length, in centimetres?",
+    "answer": "15",
+    "answers": [
+      "15",
+      "15 cm"
+    ]
+  },
+  {
+    "topic": "LCM",
+    "typeCode": "7.6",
+    "text": "What is the smallest positive whole number that is divisible by 18, 24 and 30?",
+    "answer": "360"
+  },
+  {
+    "topic": "Ratio with Mixed Units",
+    "typeCode": "31.6",
+    "text": "A banner is 2.75 m long and 1.1 m high. Write the ratio length : height in simplest whole-number form.",
+    "answer": "5:2",
+    "answers": [
+      "5:2",
+      "5 : 2"
+    ]
+  },
+  {
+    "topic": "Circle Arithmetic",
+    "typeCode": "50.5",
+    "html": "<p>A semicircle has diameter 14 cm. Use π = 22/7.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='330' height='190' viewBox='0 0 330 190' xmlns='http://www.w3.org/2000/svg'><path d='M65 145 A100 100 0 0 1 265 145' fill='none' stroke='#444' stroke-width='3'/><line x1='65' y1='145' x2='265' y2='145' stroke='#444' stroke-width='3'/><line x1='65' y1='157' x2='265' y2='157' stroke='#777'/><line x1='65' y1='153' x2='65' y2='161' stroke='#777'/><line x1='265' y1='153' x2='265' y2='161' stroke='#777'/><text x='165' y='177' text-anchor='middle' font-size='15'>14 cm</text></svg></div><p>What is the area of the semicircle, in cm²?</p>",
+    "answer": "77",
+    "answers": [
+      "77",
+      "77 cm²",
+      "77 cm2"
+    ]
+  },
+  {
+    "topic": "Mixed Fraction Operations",
+    "typeCode": "15.7",
+    "html": "<p>Find the missing number □:</p><p>(□ − 1 1/4) × 2/3 = 5/6</p><p>Write □ as a mixed number in simplest form.</p>",
+    "answer": "2 1/2",
+    "answerFormat": "mixedNumberSimplest"
+  },
+  {
+    "topic": "Combined / Weighted Average",
+    "typeCode": "56.7",
+    "html": "<p>Three groups took the same quiz.</p><table style='border-collapse:collapse;margin:8px auto;text-align:center'><tr><th style='border:1px solid #777;padding:6px 12px'>Group</th><th style='border:1px solid #777;padding:6px 12px'>Students</th><th style='border:1px solid #777;padding:6px 12px'>Mean score</th></tr><tr><td style='border:1px solid #777;padding:6px 12px'>A</td><td style='border:1px solid #777;padding:6px 12px'>8</td><td style='border:1px solid #777;padding:6px 12px'>14</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>B</td><td style='border:1px solid #777;padding:6px 12px'>12</td><td style='border:1px solid #777;padding:6px 12px'>17</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>C</td><td style='border:1px solid #777;padding:6px 12px'>10</td><td style='border:1px solid #777;padding:6px 12px'>20</td></tr></table><p>What is the mean score for all 30 students?</p>",
+    "answer": "17.2"
+  },
+  {
+    "topic": "Multi-step Money Arithmetic",
+    "typeCode": "36.3",
+    "text": "A customer buys 3 notebooks at $4.75 each and 2 pens at $2.60 each. A fixed delivery fee of $5.50 is added. What is the total cost, in dollars?",
+    "answer": "24.95",
+    "answers": [
+      "24.95",
+      "$24.95"
+    ]
+  },
+  {
+    "topic": "Percentage Decrease",
+    "typeCode": "25.6",
+    "text": "Two identical items each cost $360. The price of Item A is reduced by 15%, while the price of Item B is reduced by 22.5%. How much lower is the reduced price of Item B than the reduced price of Item A, in dollars?",
+    "answer": "27",
+    "answers": [
+      "27",
+      "27.00",
+      "$27",
+      "$27.00"
+    ]
+  },
+  {
+    "topic": "Ratio Simplification – Advanced",
+    "typeCode": "28.1",
+    "text": "Simplify the ratio 84 : 126 : 210.",
+    "answer": "2:3:5",
+    "answers": [
+      "2:3:5",
+      "2 : 3 : 5"
+    ]
+  },
+  {
+    "topic": "Complex Elapsed Time",
+    "typeCode": "43.6",
+    "text": "A cyclist starts at 9:35 am and finishes at 2:10 pm. During the trip, the cyclist takes a 45-minute break. How long is the cyclist actually riding?",
+    "answer": "3 hours 50 minutes",
+    "answers": [
+      "3 hours 50 minutes",
+      "3 h 50 min",
+      "3hr 50min",
+      "3 hrs 50 mins",
+      "3:50"
+    ]
+  },
+  {
+    "topic": "Fraction of a Quantity – Advanced",
+    "typeCode": "16.1",
+    "html": "<p>A warehouse sends 11/18 of 1,620 cartons to stores.</p><p>How many cartons are sent?</p>",
+    "answer": "990"
+  },
+  {
+    "topic": "Reverse Area",
+    "typeCode": "49.5",
+    "html": "<p>A parallelogram has an area of 198 cm² and a perpendicular height of 11 cm. Find the base length x.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='360' height='220' viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><polygon points='90,55 285,55 240,170 45,170' fill='none' stroke='#444' stroke-width='3'/><line x1='90' y1='55' x2='90' y2='170' stroke='#888' stroke-dasharray='5,4'/><text x='105' y='116' font-size='14'>11 cm</text><line x1='45' y1='188' x2='240' y2='188' stroke='#777'/><text x='143' y='208' text-anchor='middle' font-size='14'>x cm</text><text x='182' y='120' text-anchor='middle' font-size='15'>Area = 198 cm²</text></svg></div>",
+    "answer": "18",
+    "answers": [
+      "18",
+      "18 cm"
+    ]
+  },
+  {
+    "topic": "HCF",
+    "typeCode": "6.4",
+    "text": "A whole number n is a multiple of 14 and lies between 50 and 80. The HCF of n and 84 is 14. What is n?",
+    "answer": "70"
+  },
+  {
+    "topic": "FDP Conversion – Non-trivial",
+    "typeCode": "20.3",
+    "text": "A map has 40 equal grid squares, and 17 of them are shaded. Express the shaded part of the map as a percentage.",
+    "answer": "42.5%",
+    "answerFormat": "percentage"
+  },
+  {
+    "topic": "Table Arithmetic",
+    "typeCode": "58.5",
+    "html": "<p>The table shows the number of books sold on five days.</p><table style='border-collapse:collapse;margin:8px auto;text-align:center'><tr><th style='border:1px solid #777;padding:6px 12px'>Day</th><th style='border:1px solid #777;padding:6px 12px'>Books sold</th></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Mon</td><td style='border:1px solid #777;padding:6px 12px'>14</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Tue</td><td style='border:1px solid #777;padding:6px 12px'>21</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Wed</td><td style='border:1px solid #777;padding:6px 12px'>18</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Thu</td><td style='border:1px solid #777;padding:6px 12px'>25</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Fri</td><td style='border:1px solid #777;padding:6px 12px'>14</td></tr></table><p>What is the mean number of books sold per day?</p>",
+    "answer": "18.4"
+  },
+  {
+    "topic": "Percentage Change",
+    "typeCode": "26.3",
+    "text": "A service fee rises from $12.50 to $14.00. What is the percentage increase, using the original fee as the base?",
+    "answer": "12%",
+    "answerFormat": "percentage"
+  },
+  {
+    "topic": "Fraction Comparison & Ordering",
+    "typeCode": "11.1",
+    "type": "mcq",
+    "html": "<p>Tank A is 7/12 full and Tank B is 11/18 full. Which tank has the greater fraction filled?</p>",
+    "choices": [
+      "Tank A",
+      "Tank B",
+      "They are equally full",
+      "Not enough information"
+    ],
+    "answer": "Tank B"
+  },
+  {
+    "topic": "Square & Cube Roots",
+    "typeCode": "9.7",
+    "text": "A square has an area of 361 cm². What is its perimeter, in centimetres?",
+    "answer": "76",
+    "answers": [
+      "76",
+      "76 cm"
+    ]
+  },
+  {
+    "topic": "Mixed Metric Conversions",
+    "typeCode": "41.6",
+    "text": "One ribbon is 2.48 m long. Another ribbon is 2 m 53 cm long. How many centimetres longer is the second ribbon?",
+    "answer": "5",
+    "answers": [
+      "5",
+      "5 cm"
+    ]
+  },
+  {
+    "topic": "Direct Proportion",
+    "typeCode": "32.2",
+    "text": "Eight metres of fabric cost $54.40. At the same rate, how much will 13 metres cost, in dollars?",
+    "answer": "88.4",
+    "answers": [
+      "88.4",
+      "88.40",
+      "$88.40",
+      "$88.4"
+    ]
+  },
+  {
+    "topic": "Volume & Capacity",
+    "typeCode": "53.4",
+    "text": "A sports club has 17.5 L of juice. It is poured into bottles that each hold 625 mL. How many completely filled bottles can be made?",
+    "answer": "28"
+  },
+  {
+    "topic": "Discount",
+    "typeCode": "38.5",
+    "type": "mcq",
+    "text": "Three identical shirts normally cost $18 each. Offer A sells all three for $48. Offer B gives 15% off the normal price of each shirt. Which offer is cheaper, and by how much?",
+    "choices": [
+      "Offer A by $2.10",
+      "Offer B by $2.10",
+      "Offer A by $6.00",
+      "Offer B by $6.00"
+    ],
+    "answer": "Offer B by $2.10"
+  },
+  {
+    "topic": "Reverse Percentage",
+    "typeCode": "23.7",
+    "text": "After a 12% increase, a tank holds 588 L. What was its capacity before the increase, in litres?",
+    "answer": "525",
+    "answers": [
+      "525",
+      "525 L"
+    ]
+  },
+  {
+    "topic": "Graph Arithmetic",
+    "typeCode": "59.1",
+    "html": "<p>The grouped bar graph shows the number of items recorded by two teams.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='470' height='300' viewBox='0 0 470 300' xmlns='http://www.w3.org/2000/svg'><line x1='60' y1='230' x2='430' y2='230' stroke='#333' stroke-width='2'/><line x1='60' y1='40' x2='60' y2='230' stroke='#333' stroke-width='2'/><line x1='60' y1='200' x2='430' y2='200' stroke='#ddd'/><line x1='60' y1='170' x2='430' y2='170' stroke='#ddd'/><line x1='60' y1='140' x2='430' y2='140' stroke='#ddd'/><line x1='60' y1='110' x2='430' y2='110' stroke='#ddd'/><line x1='60' y1='80' x2='430' y2='80' stroke='#ddd'/><line x1='60' y1='50' x2='430' y2='50' stroke='#ddd'/><text x='48' y='234' text-anchor='end' font-size='11'>0</text><text x='48' y='204' text-anchor='end' font-size='11'>10</text><text x='48' y='174' text-anchor='end' font-size='11'>20</text><text x='48' y='144' text-anchor='end' font-size='11'>30</text><text x='48' y='114' text-anchor='end' font-size='11'>40</text><text x='48' y='84' text-anchor='end' font-size='11'>50</text><text x='48' y='54' text-anchor='end' font-size='11'>60</text><rect x='105' y='134' width='28' height='96' fill='#777'/><rect x='137' y='152' width='28' height='78' fill='#bbb'/><rect x='215' y='98' width='28' height='132' fill='#777'/><rect x='247' y='122' width='28' height='108' fill='#bbb'/><rect x='325' y='116' width='28' height='114' fill='#777'/><rect x='357' y='74' width='28' height='156' fill='#bbb'/><text x='135' y='252' text-anchor='middle' font-size='12'>Monday</text><text x='245' y='252' text-anchor='middle' font-size='12'>Tuesday</text><text x='355' y='252' text-anchor='middle' font-size='12'>Wednesday</text><rect x='300' y='270' width='14' height='10' fill='#777'/><text x='320' y='279' font-size='11'>Team A</text><rect x='365' y='270' width='14' height='10' fill='#bbb'/><text x='385' y='279' font-size='11'>Team B</text></svg></div><p>Across Tuesday and Wednesday, how many items did the two teams record altogether?</p>",
+    "answer": "170"
+  },
+  {
+    "topic": "Ratio Sharing",
+    "typeCode": "29.6",
+    "text": "A charity fund of $864 is shared among three projects in the ratio 3 : 5 : 4. How much more money does the largest share receive than the smallest share?",
+    "answer": "144",
+    "answers": [
+      "144",
+      "144.00",
+      "$144",
+      "$144.00"
+    ]
+  },
+  {
+    "topic": "Unit Rates",
+    "typeCode": "33.4",
+    "text": "A boat uses 17.5 L of fuel to travel 231 km. How many kilometres of travel does each litre of fuel provide?",
+    "answer": "13.2",
+    "answers": [
+      "13.2",
+      "13.2 km/L",
+      "13.2 km per litre"
+    ]
+  },
+  {
+    "topic": "Negative Numbers",
+    "typeCode": "10.2",
+    "html": "<p>Calculate −18 − (−27) − 6.</p>",
+    "answer": "3"
+  },
+  {
+    "topic": "Fraction Division",
+    "typeCode": "14.3",
+    "html": "<p>Calculate 7/9 ÷ 14/15.</p><p>Write the answer as a fraction in simplest form.</p>",
+    "answer": "5/6",
+    "answerFormat": "fractionSimplest"
+  },
+  {
+    "topic": "Timetables",
+    "typeCode": "44.1",
+    "html": "<p>The timetable shows one bus journey.</p><table style='border-collapse:collapse;margin:8px auto;text-align:center'><tr><th style='border:1px solid #777;padding:6px 12px'>Stop</th><th style='border:1px solid #777;padding:6px 12px'>Arrive</th><th style='border:1px solid #777;padding:6px 12px'>Depart</th></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Central</td><td style='border:1px solid #777;padding:6px 12px'>—</td><td style='border:1px solid #777;padding:6px 12px'>10:42 am</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Riverside</td><td style='border:1px solid #777;padding:6px 12px'>11:18 am</td><td style='border:1px solid #777;padding:6px 12px'>11:26 am</td></tr><tr><td style='border:1px solid #777;padding:6px 12px'>Hilltop</td><td style='border:1px solid #777;padding:6px 12px'>12:07 pm</td><td style='border:1px solid #777;padding:6px 12px'>—</td></tr></table><p>How long is the journey from Central to Hilltop, including the stop at Riverside?</p>",
+    "answer": "1 hour 25 minutes",
+    "answers": [
+      "1 hour 25 minutes",
+      "1 h 25 min",
+      "1hr 25min",
+      "1:25"
+    ]
+  },
+  {
+    "topic": "Composite Area",
+    "typeCode": "48.3",
+    "html": "<p>The shape is made from a rectangle and a triangle. Find its total area.</p><div style='display:flex;justify-content:center;margin:8px 0'><svg width='370' height='280' viewBox='0 0 370 280' xmlns='http://www.w3.org/2000/svg'><rect x='85' y='115' width='200' height='105' fill='none' stroke='#444' stroke-width='3'/><polygon points='85,115 285,115 185,45' fill='none' stroke='#444' stroke-width='3'/><text x='185' y='242' text-anchor='middle' font-size='14'>12 cm</text><text x='65' y='171' text-anchor='middle' font-size='14' transform='rotate(-90 65 171)'>7 cm</text><line x1='185' y1='45' x2='185' y2='115' stroke='#888' stroke-dasharray='5,4'/><text x='200' y='84' font-size='14'>5 cm</text></svg></div>",
+    "answer": "114",
+    "answers": [
+      "114",
+      "114 cm²",
+      "114 cm2"
+    ]
+  },
+  {
+    "topic": "Unit Price & Best Buy",
+    "typeCode": "37.3",
+    "text": "A 1.6 kg bag of rice is priced at $11.52. At the same rate, what would exactly 1 kg cost, in dollars?",
+    "answer": "7.2",
+    "answers": [
+      "7.2",
+      "7.20",
+      "$7.20",
+      "$7.2"
+    ]
+  },
+  {
+    "topic": "Decimal Mixed Operations",
+    "typeCode": "18.3",
+    "text": "A workshop has 18 m of wire. It is cut into 0.24 m pieces. What is the maximum number of complete pieces that can be cut?",
+    "answer": "75"
+  },
+  {
+    "topic": "GST / Tax / Surcharge",
+    "typeCode": "39.1",
+    "text": "A service costs $184 before GST. GST is 15%. What is the total price including GST, in dollars?",
+    "answer": "211.6",
+    "answers": [
+      "211.6",
+      "211.60",
+      "$211.60",
+      "$211.6"
+    ]
+  },
+  {
+    "topic": "Rounding, Bounds & Estimation",
+    "typeCode": "3.5",
+    "type": "mcq",
+    "text": "Which is the best estimate of 48.7 × 19.6?",
+    "choices": [
+      "100",
+      "500",
+      "1,000",
+      "1,500"
+    ],
+    "answer": "1,000"
+  },
+  {
+    "topic": "Reverse Fraction Problems",
+    "typeCode": "17.1",
+    "html": "<p>11/15 of a budget is $660.</p><p>What is the full budget, in dollars?</p>",
+    "answer": "900",
+    "answers": [
+      "900",
+      "900.00",
+      "$900",
+      "$900.00"
+    ]
+  },
+  {
+    "topic": "Best Rate Comparison",
+    "typeCode": "34.6",
+    "type": "mcq",
+    "text": "Machine A processes 420 items in 7 minutes. Machine B processes 504 items in 0.15 hours. Which machine has the higher rate, and by how many items per minute is its rate higher?",
+    "choices": [
+      "Machine A by 4 items per minute",
+      "Machine B by 4 items per minute",
+      "Machine A by 14 items per minute",
+      "Both machines have the same rate"
+    ],
+    "answer": "Machine A by 4 items per minute"
+  },
+  {
+    "topic": "Compound Measurement Arithmetic",
+    "typeCode": "42.6",
+    "text": "A sports club buys 3 ropes that are 1.75 m long and 4 ropes that are 85 cm long. What is the total length of all the ropes, in metres?",
+    "answer": "8.65",
+    "answers": [
+      "8.65",
+      "8.65 m"
+    ]
+  },
+  {
+    "topic": "Reverse Perimeter",
+    "typeCode": "46.2",
+    "text": "A square courtyard has a wall along one side, so only the other three sides need fencing. A 1.5 m-wide gate is left unfenced in one of those sides. If 16.5 m of fencing is used, what is the side length of the courtyard, in metres?",
+    "answer": "6",
+    "answers": [
+      "6",
+      "6 m"
+    ]
+  },
+  {
+    "topic": "Prime Factorisation",
+    "typeCode": "5.1",
+    "type": "mcq",
+    "text": "Which option writes 924 entirely as a product of prime powers?",
+    "choices": [
+      "2² × 3 × 7 × 11",
+      "2 × 3² × 7 × 11",
+      "2² × 3 × 7²",
+      "2³ × 3 × 7 × 11"
+    ],
+    "answer": "2² × 3 × 7 × 11"
+  },
+  {
+    "topic": "Missing Ratio & Equivalent Ratio",
+    "typeCode": "30.6",
+    "text": "Oats and nuts are mixed in the ratio 3 : 7. A scaled batch is four times as large as the original batch and contains 84 g of nuts. How many grams of oats were in the original batch?",
+    "answer": "9",
+    "answers": [
+      "9",
+      "9 g"
+    ]
+  },
+  {
+    "topic": "Decimal Estimation & Accuracy",
+    "typeCode": "19.2",
+    "type": "mcq",
+    "text": "Which is the best estimate of 18.72 + 31.48 − 9.91?",
+    "choices": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "answer": "40"
+  },
+  {
+    "topic": "Successive Percentage Changes",
+    "typeCode": "27.1",
+    "text": "A bicycle costs $480. Its price is reduced by 20%, then the reduced price is discounted by a further 12.5%. What is the final price, in dollars?",
+    "answer": "336",
+    "answers": [
+      "336",
+      "336.00",
+      "$336",
+      "$336.00"
+    ]
+  },
+  {
+    "topic": "Mean – Advanced",
+    "typeCode": "54.1",
+    "text": "Find the mean of 14.2, 15.7, 13.9, 16.8, 17.1, 14.6, 15.2 and 17.3.",
+    "answer": "15.6"
+  }
+];

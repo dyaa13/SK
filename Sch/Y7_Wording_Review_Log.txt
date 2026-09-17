@@ -1,0 +1,135 @@
+DYAA Y7 Arithmetic Tests 1–12 — Wording Clarity Review
+Version: v12.9.5
+
+Review standard
+---------------
+Preserve mathematical difficulty. Remove only unnecessary reading ambiguity.
+No numbers, percentages, fractions, units, Type Codes, answers, MCQ choices, or required reasoning were changed in this wording pass.
+No hint was added that reveals the solution method.
+
+540 questions reviewed (12 tests × 45).
+30 questions received wording-only revisions.
+510 questions were kept exactly as they were.
+
+Revisions
+---------
+
+Test 1 Q9 | Type 24.1 | Percentage Increase
+BEFORE: A club has 2,480 members. Membership increases by 12.5%. By how many members does the membership increase?
+AFTER:  A club has 2,480 members. Membership increases by 12.5%. How many members are added?
+
+Test 1 Q22 | Type 29.1 | Ratio Sharing
+BEFORE: A prize of $247.50 is shared in the ratio 3:2. How many dollars is the larger share?
+AFTER:  A prize of $247.50 is shared in the ratio 3:2. How much money is in the larger share?
+
+Test 1 Q44 | Type 44.1 | Timetables
+BEFORE: A bus route includes one intermediate stop. Location Arrive Depart Central — 8:42 am Riverside 9:18 am 9:26 am Hill Park 10:07 am — How many minutes does the full journey from Central to Hill Park take?
+AFTER:  A bus route includes one intermediate stop. Location Arrive Depart Central — 8:42 am Riverside 9:18 am 9:26 am Hill Park 10:07 am — How many minutes does the journey from Central to Hill Park take, including the stop at Riverside?
+
+Test 2 Q12 | Type 44.6 | Timetables
+BEFORE: Two services travel between the same two stations. Service Depart Arrive A 8:35 am 10:12 am B 8:52 am 10:20 am Which service has the shorter journey, and by how many minutes?
+AFTER:  Two services travel between the same two stations. Service Depart Arrive A 8:35 am 10:12 am B 8:52 am 10:20 am Which service has the shorter journey, and how many minutes shorter is it?
+
+Test 2 Q20 | Type 19.6 | Decimal Estimation & Accuracy
+BEFORE: A length is recorded as 7.3 m correct to the nearest 0.1 m, and another length is recorded as 4.4 m correct to the nearest 0.1 m. What is the upper bound for their total length, in metres? Give your answer as a decimal.
+AFTER:  Two lengths are measured as 7.3 m and 4.4 m, each rounded to the nearest 0.1 m. What is the upper bound of their combined actual length, in metres? Give your answer as a decimal.
+
+Test 2 Q23 | Type 54.6 | Mean – Advanced
+BEFORE: Two teams recorded the following times, in seconds. Team A 12.4 15.8 14.6 17.2 Team B 13.5 14.1 15.9 17.3 By how many seconds is the higher mean greater than the lower mean?
+AFTER:  Two teams recorded the following times, in seconds. Team A 12.4 15.8 14.6 17.2 Team B 13.5 14.1 15.9 17.3 What is the difference between the two teams' mean times, in seconds?
+
+Test 3 Q23 | Type 6.2 | HCF
+BEFORE: Three ribbons are 84 cm, 126 cm and 210 cm long. Each ribbon is cut into pieces of the same greatest possible length with no waste. What is the length of each piece, in centimetres?
+AFTER:  Three ribbons are 84 cm, 126 cm and 210 cm long. Each ribbon is cut into equal-length pieces, using the greatest possible piece length with no waste. What is the length of each piece, in centimetres?
+
+Test 3 Q24 | Type 42.4 | Compound Measurement Arithmetic
+BEFORE: A roll contains 18.9 m of ribbon. Each piece is 35 cm long. How many complete 35 cm pieces can be cut from the roll?
+AFTER:  A roll contains 18.9 m of ribbon. It is cut into 35 cm pieces. What is the maximum number of complete pieces that can be cut?
+
+Test 3 Q37 | Type 7.7 | LCM
+BEFORE: Two warning lights flash together at 9:00 am. Light A flashes every 12 minutes. The lights next flash together at 9:36 am. Light B flashes at a fixed whole-number interval greater than 12 minutes but less than 36 minutes. What is the interval between flashes for Light B?
+AFTER:  Two warning lights flash together at 9:00 am. Light A flashes every 12 minutes. Light B flashes at a fixed whole-number interval greater than 12 minutes but less than 36 minutes. The two lights next flash together at 9:36 am. What is the interval between flashes for Light B?
+
+Test 4 Q11 | Type 45.6 | Time Difference & Time Zones
+BEFORE: City P is 3 hours 45 minutes ahead of City Q. City R is 2 hours 30 minutes behind City Q. At one moment it is 6:20 pm in City R. What time is it in City P?
+AFTER:  City P is 3 hours 45 minutes ahead of City Q. City R is 2 hours 30 minutes behind City Q. At the same moment, it is 6:20 pm in City R. What time is it in City P?
+
+Test 4 Q24 | Type 27.7 | Successive Percentage Changes
+BEFORE: A price is increased by 20% and then the new price is decreased by 10%. Which single percentage change gives the same final price?
+AFTER:  A price is increased by 20% and then the new price is decreased by 10%. What single overall percentage change would produce the same final price?
+
+Test 4 Q35 | Type 41.5 | Mixed Metric Conversions
+BEFORE: A rope is 3.725 m long. A piece 0.925 m long is cut off. Give the remaining length in metres and centimetres.
+AFTER:  A rope is 3.725 m long. A piece 0.925 m long is cut off. Give the remaining length in mixed units, using metres and centimetres.
+
+Test 4 Q37 | Type 3.2 | Rounding, Bounds & Estimation
+BEFORE: A whole number rounds to 4,700 when rounded to the nearest hundred. Which interval contains every possible original whole number?
+AFTER:  A whole number is rounded to the nearest hundred and shown as 4,700. Which interval contains all possible original whole-number values?
+
+Test 6 Q30 | Type 41.5 | Mixed Metric Conversions
+BEFORE: A walking trail is 4.2 km long. A walker has completed 1.735 km. How far is left? Give the answer in kilometres and metres.
+AFTER:  A walking trail is 4.2 km long. A walker has completed 1.735 km. How much of the trail remains? Give your answer in mixed units, using kilometres and metres.
+
+Test 6 Q41 | Type 3.3 | Rounding, Bounds & Estimation
+BEFORE: A measurement rounds to 6.3 cm to the nearest tenth of a centimetre. Which interval contains all possible original values x?
+AFTER:  A length is rounded to the nearest tenth of a centimetre and shown as 6.3 cm. Which interval contains all possible actual lengths x?
+
+Test 7 Q29 | Type 16.4 | Fraction of a Quantity – Advanced
+BEFORE: A charity receives $96.00 from one stall. It donates 7/15 of this amount to a local project. How many dollars are donated?
+AFTER:  A charity receives $96.00 from one stall. It donates 7/15 of this amount to a local project. How much money is donated?
+
+Test 7 Q45 | Type 19.5 | Decimal Estimation & Accuracy
+BEFORE: A decimal x rounds to 2.36 to the nearest hundredth. Write the complete interval of possible values for x.
+AFTER:  A decimal x is rounded to the nearest hundredth and shown as 2.36. Write the complete interval of possible values for x.
+
+Test 8 Q34 | Type 3.4 | Rounding, Bounds & Estimation
+BEFORE: A mass is recorded as 8.2 kg after rounding to the nearest 0.1 kg. What is the smallest possible actual mass, in kilograms?
+AFTER:  A mass is rounded to the nearest 0.1 kg and recorded as 8.2 kg. What is the smallest possible actual mass, in kilograms?
+
+Test 8 Q35 | Type 42.4 | Compound Measurement Arithmetic
+BEFORE: A cable is 18.6 m long. It is cut into complete pieces that are each 75 cm long. How many complete pieces can be cut?
+AFTER:  A cable is 18.6 m long. It is cut into 75 cm pieces. What is the maximum number of complete pieces that can be cut?
+
+Test 9 Q41 | Type 41.5 | Mixed Metric Conversions
+BEFORE: Write 6.082 km as kilometres and metres.
+AFTER:  Write 6.082 km in mixed units, using kilometres and metres.
+
+Test 10 Q27 | Type 29.6 | Ratio Sharing
+BEFORE: A charity fund of $864 is shared among three projects in the ratio 3 : 5 : 4. How many dollars more does the largest share receive than the smallest share?
+AFTER:  A charity fund of $864 is shared among three projects in the ratio 3 : 5 : 4. How much more money does the largest share receive than the smallest share?
+
+Test 10 Q34 | Type 18.3 | Decimal Mixed Operations
+BEFORE: A workshop has 18 m of wire. It is cut into pieces that are each 0.24 m long. How many complete pieces can be cut?
+AFTER:  A workshop has 18 m of wire. It is cut into 0.24 m pieces. What is the maximum number of complete pieces that can be cut?
+
+Test 10 Q38 | Type 34.6 | Best Rate Comparison
+BEFORE: Machine A processes 420 items in 7 minutes. Machine B processes 504 items in 0.15 hours. Which machine has the higher rate, and by how many items per minute?
+AFTER:  Machine A processes 420 items in 7 minutes. Machine B processes 504 items in 0.15 hours. Which machine has the higher rate, and by how many items per minute is its rate higher?
+
+Test 11 Q12 | Type 59.2 | Graph Arithmetic
+BEFORE: The line graph shows the number of visitors in a gallery at four times during a day. 0 10 20 30 40 50 60 70 9 am 11 am 1 pm 3 pm By how many did the number of visitors increase from 9 am to 1 pm?
+AFTER:  The line graph shows the number of visitors in a gallery at four times during a day. 0 10 20 30 40 50 60 70 9 am 11 am 1 pm 3 pm By how many visitors did the number increase from 9 am to 1 pm?
+
+Test 11 Q15 | Type 3.2 | Rounding, Bounds & Estimation
+BEFORE: A whole-number attendance total is shown as 7,300 after rounding to the nearest hundred. Which pair gives the smallest and greatest possible original totals?
+AFTER:  An attendance total is rounded to the nearest hundred and shown as 7,300. Which pair gives the smallest and greatest possible original totals?
+
+Test 11 Q24 | Type 19.6 | Decimal Estimation & Accuracy
+BEFORE: One length is recorded as 7.4 cm correct to the nearest 0.1 cm, and another is recorded as 3.2 cm correct to the nearest 0.1 cm. Which interval must contain their actual total length?
+AFTER:  Two lengths are measured as 7.4 cm and 3.2 cm, each rounded to the nearest 0.1 cm. Which interval contains all possible values of their combined actual length?
+
+Test 11 Q30 | Type 29.2 | Ratio Sharing
+BEFORE: A grant of $918 is shared among three teams in the ratio 4 : 5 : 8. How many dollars does the middle share receive?
+AFTER:  A grant of $918 is shared among three teams in the ratio 4 : 5 : 8. How much does the team with the 5-part share receive, in dollars?
+
+Test 11 Q38 | Type 34.5 | Best Rate Comparison
+BEFORE: Machine A makes 540 parts in 9 minutes. Machine B makes 760 parts in 12.5 minutes. Which machine has the higher production rate, and by how many parts per minute?
+AFTER:  Machine A makes 540 parts in 9 minutes. Machine B makes 760 parts in 12.5 minutes. Which machine has the higher production rate, and by how many parts per minute is its rate higher?
+
+Test 12 Q42 | Type 29.2 | Ratio Sharing
+BEFORE: A total of $936 is shared among three groups in the ratio 3 : 5 : 4. How many dollars does the group with 5 parts receive?
+AFTER:  A total of $936 is shared among three groups in the ratio 3 : 5 : 4. How much does the group with the 5-part share receive, in dollars?
+
+Test 12 Q43 | Type 14.5 | Fraction Division
+BEFORE: A container holds 4 1/2 L. How many 3/5-L measures are equal to this amount? Write the answer as a mixed number in simplest form.
+AFTER:  A container holds 4 1/2 L. How many measures of 3/5 L are equivalent to this amount? Write the answer as a mixed number in simplest form.

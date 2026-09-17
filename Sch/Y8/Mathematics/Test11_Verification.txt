@@ -1,0 +1,133 @@
+Y8 Mathematics Standard Test 11 Verification
+===========================================
+
+Backend alignment:
+- Question count: 45 / 45
+- Type-code order match: PASS
+- Major-area order match: PASS
+- Unique Type Codes in set: 45 / 45
+- Unique Major Areas in set: 45 / 45
+- MCQ answer membership: PASS
+- Answers independently recalculated/reasoned: PASS
+
+Review notes:
+- Generated directly from authoritative Backend v1.0 Set 11.
+- Student-facing wording reviewed for clarity and to avoid revealing unnecessary solution steps.
+- Exact-duplicate scan against Tests 1–10: PASS.
+- Number-only template duplicate scan against Tests 1–10: PASS.
+- High-similarity stem scan (>=0.88) against Tests 1–10: PASS.
+
+Question allocation / answer check:
+01. 41.5 | Algebraic Index Laws | Simplify an expression with two different variables | Answer: 24x⁵y⁷
+02. 53.3 | Volume & Capacity Unit Conversion | Convert cm³ to mL | Answer: 3650
+03. 28.7 | Inverse Proportion – Introductory | Two-step inverse scaling in a practical context | Answer: 50
+04. 12.7 | Standard Form / Scientific Notation | Apply standard form to a practical very large or very small quantity | Answer: 9 × 10^7
+05. 56.7 | Triangle, Parallelogram & Trapezium Area | Applied area problem using triangle/parallelogram/trapezium | Answer: 270
+06. 45.1 | Fractional & Decimal Equations | Solve x/a+b=c | Answer: 84
+07. 34.7 | Profit, Loss & Mark-up | Multi-step discount then profit/mark-up problem | Answer: 12.5%
+08. 7.2 | Prime Factorisation | Reconstruct a number from its prime factorisation | Answer: 336
+09. 23.7 | Reverse Percentage | Reverse percentage involving a measurement or rate | Answer: 45
+10. 46.4 | Inequalities | Represent a simple inequality on a number line | Answer: Open circle at −2, shaded to the right
+11. 24.4 | Percentage Change, Successive Change & Error | Apply an increase followed by a decrease | Answer: 828
+12. 48.3 | Arithmetic Sequences & nth Term | Find an nth-term rule for a linear sequence | Answer: 6n + 5
+13. 51.2 | Metric & Compound Unit Conversions | Multi-step mass conversion inside a calculation | Answer: 9100
+14. 40.6 | Factorising by Common Factor | Choose the fully factorised common-factor form | Answer: 6xy(3x + 4y)
+15. 32.2 | Average Speed | Two stages with different speeds over different distances | Answer: 62.5
+16. 61.2 | Angles & Polygons | Use vertically opposite angles in a multi-angle diagram | Answer: 102
+17. 1.5 | Advanced Integer Mixed Operations | Reverse an integer operation chain from final value | Answer: 16
+18. 42.2 | One- & Two-Step Linear Equations | Solve ax−b=c | Answer: 11
+19. 5.2 | Divisibility & Digit Constraints | Missing digit so a number is divisible by 4 or 8 | Answer: 2, 6
+20. 30.2 | Unit & Compound Rates | Find items produced per minute/hour | Answer: 1500
+21. 47.6 | Formulae: Substitution & Rearrangement | Rearrange an A=lw or v=d/t style formula and calculate | Answer: 2.5
+22. 29.7 | Scale & Maps | Find simple area change from an integer scale factor | Answer: 22
+23. 57.1 | Composite Area | Area of an L- or T-shaped rectilinear figure | Answer: 96
+24. 17.7 | Mixed Fraction Operations | Find a missing value in a mixed fraction expression | Answer: 3 1/2
+25. 8.1 | Highest Common Factor (HCF) | Find HCF of two non-trivial numbers | Answer: 126
+26. 15.3 | Fraction Addition & Subtraction – Advanced | Add mixed numbers with unlike fractional parts | Answer: 6 8/15
+27. 11.4 | Powers, Roots & Numerical Index Laws | Evaluate a power of a power numerically | Answer: 4096
+28. 38.2 | Collecting Like Terms | Collect terms containing negative coefficients | Answer: −3b
+29. 20.7 | FDP Conversion & Comparison | Identify the closest equivalent or benchmark among FDP values | Answer: 0.62
+30. 10.1 | Number Constraints & Optimisation | Greatest integer satisfying several digit conditions | Answer: 972
+31. 52.6 | Area Unit Conversion | Compare two areas stated in different units | Answer: Area A, by 500 cm²
+32. 22.2 | Percentage of Quantity – Advanced | Find a decimal percentage of a quantity | Answer: 18.4
+33. 55.1 | Perimeter & Reverse Perimeter | Find perimeter of an irregular rectilinear shape | Answer: 40
+34. 33.4 | Unit Price & Best Buy | Compare a multi-buy offer with a single-pack offer | Answer: Offer A, by $0.07 per pen
+35. 63.3 | Pythagoras – Introductory | Identify whether a triangle can be right-angled from side lengths | Answer: Yes
+36. 66.3 | Probability – Y8 Standard | Find experimental probability from results | Answer: 3/10
+37. 62.2 | Coordinates & Transformations | Find a missing coordinate from a geometric condition | Answer: (-3, -4)
+38. 25.1 | Complex Ratios | Simplify a three-part ratio | Answer: 3 : 5 : 7
+39. 2.1 | Negative Number Operations | Mixed addition and subtraction with several signed integers | Answer: −11
+40. 19.3 | Advanced Decimals, Recurring Decimals & Accuracy | Decimal BODMAS with brackets | Answer: 4.8
+41. 35.4 | GST, Tax, Interest & Repeated Growth | Calculate simple interest for a stated time | Answer: 360
+42. 64.3 | Averages & Frequency Tables | Find combined mean of two unequal groups | Answer: 74.5
+43. 37.2 | Substitution | Substitute negative integers into an expression | Answer: −6
+44. 6.4 | Factors & Multiples | Find common multiples inside a specified interval | Answer: 72, 108, 144
+45. 50.3 | Algebraic Word Problems | Form and solve a number-relationship equation | Answer: 14
+
+
+Y8 Mathematics Advance Test 11 Verification
+===========================================
+
+Backend alignment:
+- Question count: 45 / 45
+- Type-code order match: PASS
+- Major-area order match: PASS
+- Unique Type Codes in set: 45 / 45
+- Unique Major Areas in set: 45 / 45
+- MCQ answer membership: PASS
+- Answers independently recalculated/reasoned: PASS
+
+Review notes:
+- Generated directly from authoritative Backend v1.0 Set 11.
+- Student-facing wording reviewed for clarity and to avoid revealing unnecessary solution steps.
+- Exact-duplicate scan against Tests 1–10: PASS.
+- Number-only template duplicate scan against Tests 1–10: PASS.
+- High-similarity stem scan (>=0.88) against Tests 1–10: PASS.
+
+Question allocation / answer check:
+01. A48.5 | Arithmetic Sequences & nth Term | Reverse / equivalence / original-expression version: Find the position of a given term | Answer: 22
+02. A59.3 | Cuboid & Prism Volume | Mixed-unit conversion embedded in the geometry: Find triangular prism volume | Answer: 135
+03. A31.7 | Speed–Distance–Time | Practical finance/rate context with hidden operation chain: Reverse SDT problem to find an original speed or time | Answer: 90
+04. A4.7 | Remainders & Integer Division | Applied context with the operation path hidden: Multi-condition remainder problem with a unique integer answer | Answer: 236
+05. A62.7 | Coordinates & Transformations | Cost, rate or practical application with hidden steps: Combine coordinate arithmetic with a transformation | Answer: (-4, 1)
+06. A37.1 | Substitution | Two-stage algebraic manipulation version: Substitute positive integers into a multi-term expression | Answer: 22
+07. A26.7 | Ratio Sharing & Reverse Ratio | Practical finance/rate context with hidden operation chain: Reverse a multi-stage ratio sharing problem | Answer: 600
+08. A12.2 | Standard Form / Scientific Notation | 3–5 step mixed-operation version: Write a small decimal in standard form | Answer: 6 × 10^-6
+09. A16.7 | Fraction Multiplication & Division | Applied money/measurement context with no method cue: Find a missing factor or divisor in a fraction calculation | Answer: 4
+10. A38.4 | Collecting Like Terms | Missing coefficient / parameter / constant version: Collect like terms in a two-variable expression | Answer: −4
+11. A17.4 | Mixed Fraction Operations | Less-friendly denominator / percentage / decimal version: Whole number, improper fraction and mixed number in one expression | Answer: 3 1/2
+12. A40.3 | Factorising by Common Factor | Combine with brackets or a second algebraic expression: Factorise using the greatest numerical and variable common factor | Answer: 21a³b²(2a² + 3b²)
+13. A57.2 | Composite Area | Composite-shape / combined-measure version: Composite rectangle plus triangle area | Answer: 143
+14. A47.6 | Formulae: Substitution & Rearrangement | Compare two forms or diagnose an algebraic error: Rearrange an A=lw or v=d/t style formula and calculate | Answer: t = d/v, 3.75 h
+15. A35.2 | GST, Tax, Interest & Repeated Growth | Multi-stage proportion or rate version: Remove included GST/tax from a final price | Answer: $230 and $34.50
+16. A54.2 | Time, Timetables & Time Zones – Advanced | Composite-shape / combined-measure version: Connection and waiting-time calculation | Answer: 183
+17. A6.5 | Factors & Multiples | Combine with a second number-property condition: Find a missing number from factor and multiple conditions | Answer: 180
+18. A49.2 | Functions, Input–Output & Linear Rules | Negative / fractional / decimal coefficient version: Use a rule to calculate an output | Answer: 7.8
+19. A10.2 | Number Constraints & Optimisation | 3–5 step mixed-operation version: Smallest integer satisfying several digit conditions | Answer: 1395
+20. A33.2 | Unit Price & Best Buy | Multi-stage proportion or rate version: Compare price per 100 g or kg | Answer: Pack B, by $0.05 per 100 g
+21. A39.6 | Expanding Single Brackets | Compare two forms or diagnose an algebraic error: Expand two separate single brackets joined by + or − | Answer: 9x − 7
+22. A32.7 | Average Speed | Practical finance/rate context with hidden operation chain: Find a missing journey segment from a required average speed | Answer: 80
+23. A63.1 | Pythagoras – Introductory | Reverse missing-dimension / original-measure version: Find hypotenuse from two integer legs | Answer: 25
+24. A21.7 | FDP Mixed Calculations | Applied money/measurement context with no method cue: Reverse an FDP relationship to find an original quantity | Answer: 500
+25. A13.1 | Rounding, Significant Figures & Bounds | Reverse / original-value version: Round a value to 2 or 3 decimal places in context | Answer: 7.550
+26. A19.3 | Advanced Decimals, Recurring Decimals & Accuracy | 3–5 step mixed-form calculation: Decimal BODMAS with brackets | Answer: 2.3
+27. A3.4 | Reverse Operations & Missing Values | Less-friendly-number exact-calculation version: Undo two operations to recover an original integer | Answer: 49
+28. A45.2 | Fractional & Decimal Equations | Negative / fractional / decimal coefficient version: Solve ax/b=c | Answer: −9
+29. A24.7 | Percentage Change, Successive Change & Error | Applied money/measurement context with no method cue: Calculate percentage error or relative difference from a reference value | Answer: 2.5%
+30. A2.1 | Negative Number Operations | Reverse / original-value version: Mixed addition and subtraction with several signed integers | Answer: 38
+31. A58.6 | Circles, Sectors & Arcs | Comparison / optimisation / maximum-minimum version: Find radius/diameter from circumference or area in a clean case | Answer: 30
+32. A15.2 | Fraction Addition & Subtraction – Advanced | Mixed fraction-decimal-percentage representation version: Subtract fractions requiring a non-trivial common denominator | Answer: 31/84
+33. A61.1 | Angles & Polygons | Reverse missing-dimension / original-measure version: Find missing angle using a line or point relationship | Answer: 145
+34. A25.4 | Complex Ratios | Combine ratio/rate with percentage or a second relationship: Simplify a ratio with different measurement units | Answer: 12 : 5 : 3
+35. A56.3 | Triangle, Parallelogram & Trapezium Area | Mixed-unit conversion embedded in the geometry: Find parallelogram area or a missing dimension | Answer: 1.65
+36. A64.3 | Averages & Frequency Tables | Percentage or rate integrated with the data: Find combined mean of two unequal groups | Answer: 75.2
+37. A55.2 | Perimeter & Reverse Perimeter | Composite-shape / combined-measure version: Find perimeter of a composite shape with a missing side | Answer: 48
+38. A28.1 | Inverse Proportion – Introductory | Reverse ratio / rate / original-value version: Workers versus time for fixed work | Answer: 24
+39. A7.1 | Prime Factorisation | Reverse / original-value version: Write a composite number as prime factors in index form | Answer: 2 × 3² × 7 × 11
+40. A23.3 | Reverse Percentage | 3–5 step mixed-form calculation: Sale price after discount → find original price | Answer: 300
+41. A27.4 | Direct Proportion | Combine ratio/rate with percentage or a second relationship: Find a missing value in a direct-proportion table | Answer: 22.5
+42. A65.3 | Tables, Graphs & Pie Charts | Percentage or rate integrated with the data: Percentage change using values read from a graph | Answer: 25%
+43. A44.2 | Unknown on Both Sides | Negative / fractional / decimal coefficient version: Solve with negative constants on one or both sides | Answer: −8
+44. A11.4 | Powers, Roots & Numerical Index Laws | Less-friendly-number exact-calculation version: Evaluate a power of a power numerically | Answer: 81
+45. A42.3 | One- & Two-Step Linear Equations | Combine with brackets or a second algebraic expression: Solve x/a+b=c | Answer: 20
+

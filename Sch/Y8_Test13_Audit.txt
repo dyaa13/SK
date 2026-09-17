@@ -1,0 +1,23 @@
+DYAA Y8 Mathematics — Test 12 Review + Test 13 Build
+Version: v12.11.1
+
+CURRENT SET REVIEW — TEST 12
+Standard Test 12: 45/45 backend allocation match — PASS
+Advance Test 12: 45/45 backend allocation match — PASS
+Major Area / Type Code / order — PASS
+Targeted independent answer recalculation — PASS
+No Test 12 corrections required.
+
+NEW SET — TEST 13
+Standard Test 13: 45 questions — PASS
+Advance Test 13: 45 questions — PASS
+Authoritative Set 13 allocation match — PASS
+Exact duplicate vs Y8 Tests 1–12: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–12: 0
+Number-only template duplicate scan completed: 3 generic template matches flagged for internal review; no exact duplicates.
+
+Preserved:
+- Existing Y7 selective-number and wording revisions
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden = all Y6 year-level access

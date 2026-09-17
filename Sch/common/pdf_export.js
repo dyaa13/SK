@@ -64,8 +64,9 @@
   }
 
   function answerArea(q){
-    if(q.type==="mcq" && Array.isArray(q.choices)) return "";
-    return `<div class="pdf-answer"><span>Answer:</span><span class="answer-line"></span></div><div class="working-lines"><i></i><i></i></div>`;
+    // PDF/print version intentionally leaves the remaining card area blank
+    // so students have maximum space for working and answers.
+    return "";
   }
 
   function cardClass(q){
@@ -124,16 +125,96 @@ html,body{margin:0;padding:0;font-family:"Segoe UI",Arial,sans-serif;color:#222;
 .pdf-card.dense .pdf-q-image{max-height:22mm}.pdf-card.very-dense .pdf-q-image{max-height:18mm}
 .pdf-choices{display:grid;gap:.8mm;margin-top:2mm;font-size:8.9pt;line-height:1.16}.very-dense .pdf-choices{font-size:8.2pt;gap:.45mm}
 .pdf-choice{display:flex;gap:1.5mm;align-items:flex-start}.choice-circle{width:3.2mm;height:3.2mm;border:.25mm solid #555;border-radius:50%;flex:0 0 3.2mm;margin-top:.15mm}
-.pdf-answer{display:flex;gap:2mm;align-items:flex-end;margin-top:2mm;font-size:8.7pt;font-weight:800;flex:0 0 auto}.answer-line{height:4mm;flex:1;border-bottom:.25mm solid #555}
-.working-lines{height:12mm;display:grid;grid-template-rows:1fr 1fr;gap:2mm;margin-top:1.5mm;flex:0 0 12mm}.working-lines i{display:block;border-bottom:.2mm dotted #a0a6ad}
 .math-frac{display:inline-block;vertical-align:middle;text-align:center;line-height:1;font-size:.9em;margin:0 .10em;min-width:1.25em;white-space:nowrap}.math-frac .top{display:block;border-bottom:1px solid currentColor;padding:0 .15em .08em;line-height:1}.math-frac .bottom{display:block;padding:.08em .15em 0;line-height:1}.math-mixed{display:inline-flex;align-items:center;vertical-align:middle;gap:.08em;white-space:nowrap;line-height:1}.math-root{display:inline-flex;align-items:flex-start;white-space:nowrap;line-height:1}.math-root .radical{font-family:Georgia,"Times New Roman",serif;font-size:1.24em;line-height:.93;margin-right:-.04em}.math-root .radicand{display:inline-block;border-top:1px solid currentColor;padding:.06em .09em 0 .08em;line-height:1.02}.math-power sup{font-size:.7em;vertical-align:super}
 @media print{html,body{background:#fff}.pdf-toolbar{display:none!important}.pdf-page{margin:0;box-shadow:none}.pdf-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 @media screen{.pdf-page{box-shadow:0 3px 14px rgba(0,0,0,.18)}}
 </style></head><body>
-<div class="pdf-toolbar"><button onclick="window.print()">Save as PDF / Print</button><span class="note">A4 · 2 × 3 cards · 6 questions per page · answers hidden</span></div>
+<div class="pdf-toolbar"><button onclick="window.print()">Save as PDF / Print</button><span class="note">A4 · 2 × 3 cards · 6 questions per page · blank working space</span></div>
 ${pageHtml}
 <script>(function(){function readyToPrint(){var imgs=[].slice.call(document.images);Promise.all(imgs.map(function(img){if(img.complete)return Promise.resolve();return new Promise(function(r){img.addEventListener('load',r,{once:true});img.addEventListener('error',r,{once:true});setTimeout(r,1800)})})).then(function(){setTimeout(function(){window.print()},250)})}if(document.readyState==='complete')readyToPrint();else window.addEventListener('load',readyToPrint,{once:true})})();<\/script>
 </body></html>`;
+  }
+
+  function canonicalAnswerHtml(q,set){
+    const raw=String(q && q.answer != null ? q.answer : "");
+    let prefix="";
+    if(q && q.type==="mcq" && Array.isArray(q.choices)){
+      const idx=q.choices.findIndex(c=>String(c)===raw);
+      if(idx>=0) prefix=`${"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[idx] || (idx+1)}. `;
+    }
+    const safe=esc(prefix+raw);
+    return ((["Y6","Y7"].includes(set?.year) && set?.paper==="Arithmetic") || (set?.year==="Y8" && set?.paper==="Mathematics"))
+      ? formatY6ArithmeticFractions(safe)
+      : formatMathRadicals(safe);
+  }
+
+  function answerKeyEntryHtml(q,i,set){
+    const answer=canonicalAnswerHtml(q,set);
+    const dense=String(q && q.answer != null ? q.answer : "").length>55 ? " dense" : "";
+    return `<div class="answer-key-item${dense}"><span class="answer-key-q">Q${i+1}</span><span class="answer-key-a">${answer || "-"}</span></div>`;
+  }
+
+  function buildAnswerDocument(set,bank){
+    const pages=chunks(bank,45);
+    const title=esc(set.label || `${set.year||""} ${set.paper||""} ${set.test||""}`);
+    const pageHtml=pages.map((page,pi)=>{
+      const start=pi*45;
+      const entries=page.map((q,j)=>answerKeyEntryHtml(q,start+j,set)).join("");
+      return `<div class="answer-page">
+        <header class="answer-page-head"><div><strong>${title}</strong></div><div class="answer-key-title">ANSWER KEY</div><div>Page ${pi+1} / ${pages.length}</div></header>
+        <main class="answer-key-grid">${entries}</main>
+      </div>`;
+    }).join("");
+
+    return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} - Answers</title>
+<style>
+@page{size:A4 portrait;margin:10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:"Segoe UI",Arial,sans-serif;color:#222;background:#e9edf2}
+.answer-toolbar{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:12px;align-items:center;padding:10px 14px;background:#263238;color:#fff;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.answer-toolbar button{border:0;border-radius:7px;padding:9px 16px;font-weight:800;cursor:pointer;background:#4caf50;color:#fff}.answer-toolbar .note{opacity:.92}
+.answer-page{width:190mm;min-height:277mm;margin:8mm auto;background:#fff;padding:0;break-after:page;page-break-after:always}.answer-page:last-child{break-after:auto;page-break-after:auto}
+.answer-page-head{height:13mm;display:grid;grid-template-columns:1fr auto 1fr;gap:5mm;align-items:center;border-bottom:.5mm solid #263238;padding:0 1mm 2mm;font-size:9pt;color:#333}.answer-page-head>div:last-child{text-align:right}.answer-key-title{font-size:12pt;font-weight:900;letter-spacing:.6px;color:#0d47a1}
+.answer-key-grid{padding-top:4mm;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:minmax(12mm,auto);gap:2.2mm 3mm;align-content:start}
+.answer-key-item{border:.3mm solid #a7afb7;border-radius:1.5mm;padding:2.2mm 2.5mm;display:flex;gap:2.5mm;align-items:flex-start;min-width:0;background:#fff;font-size:9.5pt;line-height:1.22}.answer-key-item.dense{font-size:8.5pt;line-height:1.15}.answer-key-q{font-weight:900;color:#0d47a1;min-width:8mm;flex:0 0 auto}.answer-key-a{font-weight:700;overflow-wrap:anywhere;min-width:0}
+.math-frac{display:inline-block;vertical-align:middle;text-align:center;line-height:1;font-size:.9em;margin:0 .10em;min-width:1.25em;white-space:nowrap}.math-frac .top{display:block;border-bottom:1px solid currentColor;padding:0 .15em .08em;line-height:1}.math-frac .bottom{display:block;padding:.08em .15em 0;line-height:1}.math-mixed{display:inline-flex;align-items:center;vertical-align:middle;gap:.08em;white-space:nowrap;line-height:1}.math-root{display:inline-flex;align-items:flex-start;white-space:nowrap;line-height:1}.math-root .radical{font-family:Georgia,"Times New Roman",serif;font-size:1.24em;line-height:.93;margin-right:-.04em}.math-root .radicand{display:inline-block;border-top:1px solid currentColor;padding:.06em .09em 0 .08em;line-height:1.02}
+@media print{html,body{background:#fff}.answer-toolbar{display:none!important}.answer-page{margin:0;box-shadow:none}.answer-key-item{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media screen{.answer-page{box-shadow:0 3px 14px rgba(0,0,0,.18)}}
+</style></head><body>
+<div class="answer-toolbar"><button onclick="window.print()">Save Answers as PDF / Print</button><span class="note">Answers only - no working or solutions</span></div>
+${pageHtml}
+<script>(function(){if(document.readyState==='complete')setTimeout(function(){window.print()},250);else window.addEventListener('load',function(){setTimeout(function(){window.print()},250)},{once:true})})();<\/script>
+</body></html>`;
+  }
+
+  function currentUserIsTeacher(){
+    const input=document.getElementById("nameInput");
+    const entered=String(input?.value || "").trim().replace(/\s+/g," ").toUpperCase();
+    const teacher=String((window.DYAA_SCHOLARSHIP_CONFIG && window.DYAA_SCHOLARSHIP_CONFIG.teacherName) || "DYAA").trim().replace(/\s+/g," ").toUpperCase();
+    return !!entered && entered===teacher;
+  }
+
+  async function exportScholarshipAnswers(set){
+    if(!set) return;
+    if(!currentUserIsTeacher()){
+      alert("Answer export is available only when signed in with the teacher account.");
+      return;
+    }
+    const popup=window.open("","_blank");
+    if(!popup){alert("The answer PDF preview was blocked by the browser. Please allow pop-ups for this page and try again.");return;}
+    popup.document.open();
+    popup.document.write(`<!doctype html><title>Preparing Answers...</title><body style="font-family:Segoe UI,Arial,sans-serif;padding:30px"><h3>Preparing answer key for ${esc(set.label||"test")}...</h3><p>Please keep this window open.</p></body>`);
+    popup.document.close();
+    try{
+      const bank=await loadBankScript(set);
+      popup.document.open();
+      popup.document.write(buildAnswerDocument(set,bank));
+      popup.document.close();
+    }catch(err){
+      popup.document.open();
+      popup.document.write(`<!doctype html><body style="font-family:Segoe UI,Arial,sans-serif;padding:30px;color:#c62828"><h3>Answer export failed</h3><p>${esc(err.message)}</p></body>`);
+      popup.document.close();
+    }
   }
 
   async function exportScholarshipPdf(set){
@@ -156,4 +237,5 @@ ${pageHtml}
   }
 
   window.exportScholarshipPdf=exportScholarshipPdf;
+  window.exportScholarshipAnswers=exportScholarshipAnswers;
 })();

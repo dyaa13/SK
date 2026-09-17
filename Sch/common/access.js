@@ -8,7 +8,8 @@ window.SCHOLARSHIP_FULL_ACCESS = ["ANGELAD", "DF"];
 // Students listed here automatically receive every current and future catalog paper for the specified year(s).
 window.SCHOLARSHIP_YEAR_ACCESS = {
   "ETHANM": ["Y6"],
-  "AIDEN": ["Y6"]
+  "AIDEN": ["Y6"],
+  "ETHANZ": ["Y6"]
 };
 
 window.SCHOLARSHIP_ACCESS = {

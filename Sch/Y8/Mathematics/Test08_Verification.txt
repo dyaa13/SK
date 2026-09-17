@@ -1,0 +1,127 @@
+Y8 Mathematics Standard Test 8 Verification
+===========================================
+
+Backend alignment:
+- Question count: 45 / 45
+- Type-code order match: PASS
+- Major-area order match: PASS
+- Unique Type Codes in set: 45 / 45
+- Unique Major Areas in set: 45 / 45
+- MCQ answer membership: PASS
+- Answers independently recalculated/reasoned: PASS
+
+Review notes:
+- Generated directly from Standard backend Set 08.
+- Student-facing wording reviewed for clarity and to avoid revealing unnecessary solution steps.
+- Exact-duplicate scan against Tests 1–7: PASS.
+
+Question allocation / answer check:
+01. 44.7 | Unknown on Both Sides | Check a both-sides equation solution | Answer: Yes, because both sides equal 22
+02. 7.6 | Prime Factorisation | Use prime factorisation to build a required multiple | Answer: 75
+03. 48.5 | Arithmetic Sequences & nth Term | Find the position of a given term | Answer: 34
+04. 13.7 | Rounding, Significant Figures & Bounds | Estimate a multi-step calculation and judge reasonableness | Answer: No, because 400 × 50 ÷ 20 is about 1,000
+05. 62.3 | Coordinates & Transformations | Apply a translation to coordinates | Answer: (3,-3)
+06. 47.6 | Formulae: Substitution & Rearrangement | Rearrange an A=lw or v=d/t style formula and calculate | Answer: 162
+07. 32.3 | Average Speed | Two stages with different speeds over equal distances | Answer: 72
+08. 2.4 | Negative Number Operations | Missing signed integer in an arithmetic statement | Answer: -6
+09. 24.3 | Percentage Change, Successive Change & Error | Apply two successive discounts | Answer: 336
+10. 42.1 | One- & Two-Step Linear Equations | Solve ax+b=c with positive coefficients | Answer: 8
+11. 25.3 | Complex Ratios | Simplify a ratio containing fractions | Answer: 9 : 10 : 6
+12. 52.2 | Area Unit Conversion | Convert cm² to m² or reverse | Answer: 3.75
+13. 46.1 | Inequalities | Solve a one-step inequality with an integer boundary | Answer: x ≤ 7
+14. 15.1 | Fraction Addition & Subtraction – Advanced | Add three fractions with unlike denominators | Answer: 1 2/5
+15. 60.6 | Surface Area | Surface area with unit conversion | Answer: 5900
+16. 11.4 | Powers, Roots & Numerical Index Laws | Evaluate a power of a power numerically | Answer: 729
+17. 36.4 | Algebraic Expressions & Notation | Write an expression for an age relationship | Answer: 2y − 4
+18. 10.4 | Number Constraints & Optimisation | Minimum value satisfying multiple and remainder conditions | Answer: 144
+19. 23.3 | Reverse Percentage | Sale price after discount → find original price | Answer: 230
+20. 4.6 | Remainders & Integer Division | Compare two packing/grouping plans using quotient and remainder | Answer: Plan A, by 2 cupcakes
+21. 63.4 | Pythagoras – Introductory | Find a rectangle diagonal | Answer: 17.5
+22. 33.5 | Unit Price & Best Buy | Compare discounted packages of different sizes | Answer: Pack B, by $0.30 per bar
+23. 53.3 | Volume & Capacity Unit Conversion | Convert cm³ to mL | Answer: 2840
+24. 31.6 | Speed–Distance–Time | Two-leg journey with one missing distance/time | Answer: 140
+25. 45.3 | Fractional & Decimal Equations | Solve (x+b)/a=c | Answer: 13.5
+26. 20.3 | FDP Conversion & Comparison | Convert a fraction to a percentage | Answer: 43.75%
+27. 9.7 | Lowest Common Multiple (LCM) | Reverse LCM condition with one missing cycle length | Answer: 20
+28. 21.5 | FDP Mixed Calculations | Compare two results expressed in different FDP forms | Answer: A is greater by 3
+29. 38.3 | Collecting Like Terms | Collect variable terms and constants | Answer: 10x + 3
+30. 6.6 | Factors & Multiples | Determine whether a constrained number has a stated number of factors | Answer: Yes, because (3 + 1)(2 + 1) = 12
+31. 14.5 | Fraction Comparison & Ordering – Advanced | Compare a fraction with a decimal without obvious equivalence | Answer: 0.69
+32. 37.4 | Substitution | Substitute fractions into a simple expression | Answer: 2
+33. 16.4 | Fraction Multiplication & Division | Divide a fraction by a mixed number | Answer: 2/3
+34. 51.1 | Metric & Compound Unit Conversions | Multi-step length conversion inside a calculation | Answer: 3600
+35. 27.2 | Direct Proportion | Find cost for a different quantity at constant price rate | Answer: 24
+36. 64.5 | Averages & Frequency Tables | Find mean from a frequency table | Answer: 3.8
+37. 39.4 | Expanding Single Brackets | Expand using a variable multiplier | Answer: 4x² − 7x
+38. 18.2 | Reverse Fraction & Fractional Change | Known remaining fraction → find original total | Answer: 88
+39. 59.1 | Cuboid & Prism Volume | Find cuboid volume with decimal dimensions | Answer: 1.44
+40. 28.3 | Inverse Proportion – Introductory | Machines versus production time | Answer: 10.5
+41. 66.6 | Probability – Y8 Standard | Find probability of a simple two-step event without replacement complexity | Answer: 1/8
+42. 1.2 | Advanced Integer Mixed Operations | Nested brackets with integer BODMAS | Answer: 38
+43. 30.3 | Unit & Compound Rates | Find flow rate in litres per minute | Answer: 60
+44. 49.6 | Functions, Input–Output & Linear Rules | Use y=mx+c to find a coordinate | Answer: (-3,13)
+45. 55.3 | Perimeter & Reverse Perimeter | Find a missing rectangle dimension from perimeter | Answer: 14.5
+
+Y8 Mathematics Advance Test 8 Verification
+==========================================
+
+Backend alignment:
+- Question count: 45 / 45
+- Type-code order match: PASS
+- Major-area order match: PASS
+- Unique Type Codes in set: 45 / 45
+- Unique Major Areas in set: 45 / 45
+- MCQ answer membership: PASS
+- Answers independently recalculated/reasoned: PASS
+
+Review notes:
+- Generated directly from Advance backend Set 08.
+- Student-facing wording reviewed for clarity and to avoid revealing unnecessary solution steps.
+- Exact-duplicate scan against Tests 1–7: PASS.
+
+Question allocation / answer check:
+01. A36.7 | Algebraic Expressions & Notation | Contextual modelling/application with minimal method cues: Interpret a multi-variable algebraic expression in words | Answer: Two point five times the square of a, minus three times the product of b and c, plus one quarter of d
+02. A12.6 | Standard Form / Scientific Notation | Comparison / error-check / reasonableness version: Divide two simple standard-form numbers | Answer: No, the correct answer is 4 × 10⁵
+03. A40.5 | Factorising by Common Factor | Reverse / equivalence / original-expression version: Factorise an expression containing negative terms | Answer: −7ab(2a + 3b − 1)
+04. A5.7 | Divisibility & Digit Constraints | Applied context with the operation path hidden: Multi-digit constraint using divisibility by 6 or 11 | Answer: 6
+05. A55.3 | Perimeter & Reverse Perimeter | Mixed-unit conversion embedded in the geometry: Find a missing rectangle dimension from perimeter | Answer: 185
+06. A39.6 | Expanding Single Brackets | Compare two forms or diagnose an algebraic error: Expand two separate single brackets joined by + or − | Answer: 5x − 27
+07. A35.3 | GST, Tax, Interest & Repeated Growth | Mixed-unit / compound-unit version: Apply a percentage surcharge | Answer: 94.5
+08. A7.4 | Prime Factorisation | Less-friendly-number exact-calculation version: Compare two numbers using their prime structures | Answer: 2 : 3
+09. A17.3 | Mixed Fraction Operations | 3–5 step mixed-form calculation: BODMAS with fractions and brackets | Answer: 2 29/40
+10. A49.1 | Functions, Input–Output & Linear Rules | Two-stage algebraic manipulation version: Find a two-step input-output rule from a table | Answer: y = 2.5x − 4
+11. A28.3 | Inverse Proportion – Introductory | Mixed-unit / compound-unit version: Machines versus production time | Answer: 120
+12. A58.2 | Circles, Sectors & Arcs | Composite-shape / combined-measure version: Find circle area from radius/diameter | Answer: 138
+13. A38.1 | Collecting Like Terms | Two-stage algebraic manipulation version: Collect like terms with positive coefficients | Answer: 10x + 8y
+14. A19.1 | Advanced Decimals, Recurring Decimals & Accuracy | Reverse / original-quantity version: Multi-step decimal multiplication and division | Answer: 5.12
+15. A53.6 | Volume & Capacity Unit Conversion | Comparison / optimisation / maximum-minimum version: Calculate volume then convert units | Answer: 16
+16. A3.4 | Reverse Operations & Missing Values | Less-friendly-number exact-calculation version: Undo two operations to recover an original integer | Answer: 65
+17. A43.4 | Equations with Brackets | Missing coefficient / parameter / constant version: Solve a bracket equation with a negative multiplier | Answer: 3
+18. A2.4 | Negative Number Operations | Less-friendly-number exact-calculation version: Missing signed integer in an arithmetic statement | Answer: -45
+19. A16.3 | Fraction Multiplication & Division | 3–5 step mixed-form calculation: Divide a whole number by a fraction | Answer: 17 3/4
+20. A9.6 | Lowest Common Multiple (LCM) | Comparison / error-check / reasonableness version: Timetable/cycle interval application | Answer: No, they next leave together at 9:12 am
+21. A56.4 | Triangle, Parallelogram & Trapezium Area | Less-friendly decimal or fractional dimensions: Find trapezium area | Answer: 45.12
+22. A25.5 | Complex Ratios | Missing parameter / missing stage version: Find a missing term in an equivalent ratio | Answer: 1.2
+23. A59.3 | Cuboid & Prism Volume | Mixed-unit conversion embedded in the geometry: Find triangular prism volume | Answer: 129.6
+24. A34.6 | Profit, Loss & Mark-up | Best-option / optimisation / comparison version: Find original cost from selling price and mark-up | Answer: Product Q, by $10
+25. A37.3 | Substitution | Combine with brackets or a second algebraic expression: Substitute decimals into an expression | Answer: 9.4
+26. A24.3 | Percentage Change, Successive Change & Error | 3–5 step mixed-form calculation: Apply two successive discounts | Answer: 476
+27. A1.7 | Advanced Integer Mixed Operations | Applied context with the operation path hidden: Applied multi-step integer calculation with quantities | Answer: 1104
+28. A14.5 | Fraction Comparison & Ordering – Advanced | Missing-value or inverse relationship version: Compare a fraction with a decimal without obvious equivalence | Answer: 12
+29. A45.3 | Fractional & Decimal Equations | Combine with brackets or a second algebraic expression: Solve (x+b)/a=c | Answer: 12.6
+30. A11.6 | Powers, Roots & Numerical Index Laws | Comparison / error-check / reasonableness version: Combine square/cube roots with arithmetic operations | Answer: No, the correct value is 21
+31. A18.5 | Reverse Fraction & Fractional Change | Missing-value or inverse relationship version: Apply two successive fractional changes | Answer: 600
+32. A44.4 | Unknown on Both Sides | Missing coefficient / parameter / constant version: Collect variable terms before constants | Answer: 3
+33. A20.4 | FDP Conversion & Comparison | Less-friendly denominator / percentage / decimal version: Convert a percentage greater than 100% to another form | Answer: 13/8
+34. A57.1 | Composite Area | Reverse missing-dimension / original-measure version: Area of an L- or T-shaped rectilinear figure | Answer: 6
+35. A30.2 | Unit & Compound Rates | Multi-stage proportion or rate version: Find items produced per minute/hour | Answer: 6300
+36. A65.5 | Tables, Graphs & Pie Charts | Compare two datasets or expected-versus-actual outcomes: Pie-chart angle ↔ percentage conversion | Answer: Actual is 3 percentage points higher
+37. A46.4 | Inequalities | Missing coefficient / parameter / constant version: Represent a simple inequality on a number line | Answer: k = 6, closed endpoint
+38. A22.2 | Percentage of Quantity – Advanced | Mixed fraction-decimal-percentage representation version: Find a decimal percentage of a quantity | Answer: 44
+39. A52.1 | Area Unit Conversion | Reverse missing-dimension / original-measure version: Convert mm² to cm² or reverse | Answer: 8
+40. A31.3 | Speed–Distance–Time | Mixed-unit / compound-unit version: Find time from distance and speed | Answer: 30
+41. A64.6 | Averages & Frequency Tables | Two-stage probability / weighted-data version: Find median/mode from frequency data | Answer: Median 5, mode 6
+42. A6.2 | Factors & Multiples | 3–5 step mixed-operation version: Find a number from a stated set of factor pairs | Answer: 84
+43. A33.3 | Unit Price & Best Buy | Mixed-unit / compound-unit version: Compare price per litre/mL | Answer: Bottle B, by $0.20 per litre
+44. A41.6 | Algebraic Index Laws | Compare two forms or diagnose an algebraic error: Use the zero index in an algebraic expression | Answer: The student is incorrect; the result is 6a⁵
+45. A61.3 | Angles & Polygons | Mixed-unit conversion embedded in the geometry: Use parallel-line angle relationships | Answer: 66

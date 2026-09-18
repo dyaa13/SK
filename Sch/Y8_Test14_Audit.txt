@@ -1,0 +1,31 @@
+DYAA Y8 Mathematics — Test 13 Review + Test 14 Build
+Version: v12.12.1
+
+CURRENT SET REVIEW — TEST 13
+Standard Test 13: 45/45 authoritative backend allocation match — PASS
+Advance Test 13: 45/45 authoritative backend allocation match — PASS
+Major Area / Type Code / order — PASS
+Independent answer recalculation across both papers — PASS
+Wording/readability review — PASS
+Corrections required: 0
+
+NEW SET — TEST 14
+Standard Test 14: 45 questions — PASS
+Advance Test 14: 45 questions — PASS
+Authoritative Set 14 allocation match — PASS
+45 distinct Major Areas and 45 distinct Type Codes in each paper — PASS
+Independent arithmetic/algebra answer verification — PASS
+Exact duplicates vs Y8 Tests 1–13: 0
+Number-only template duplicates vs Y8 Tests 1–13: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–13: 0
+
+Design rule used:
+Preserve mathematical difficulty. Keep wording clear. Avoid unnecessary reading obstacles and avoid ugly arithmetic unless the number complexity itself is part of the intended skill.
+
+Preserved:
+- Y7 selective-number and wording revisions already present
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden = all Y6 access
+- EthanM = all Y6 access
+- EthanZ = all Y6 access

@@ -9,7 +9,9 @@ window.SCHOLARSHIP_FULL_ACCESS = ["ANGELAD", "DF"];
 window.SCHOLARSHIP_YEAR_ACCESS = {
   "ETHANM": ["Y6"],
   "AIDEN": ["Y6"],
-  "ETHANZ": ["Y6"]
+  "ETHANZ": ["Y6"],
+  "DARRON": ["Y6"],
+  "LOUISM": ["Y6", "Y7"]
 };
 
 window.SCHOLARSHIP_ACCESS = {

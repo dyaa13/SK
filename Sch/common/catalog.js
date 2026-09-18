@@ -1237,5 +1237,61 @@ window.SCHOLARSHIP_CATALOG = [
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T13"
   }
 
+  ,
+  {
+    key: "Y8_MATH_STD_T14",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 14",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 14 (Bank v1.0), preserving scholarship-level reasoning while keeping wording clear and arithmetic purposeful.",
+    label: "Year 8 Mathematics · Test 14 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test14/questions.js?v=12.12.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T14"
+  },
+  {
+    key: "Y8_MATH_ADV_T14",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 14",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 14 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and combined-reasoning structures.",
+    label: "Year 8 Mathematics · Test 14 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test14/questions.js?v=12.12.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T14"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T15",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 15",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 15 (Bank v1.0), preserving scholarship-level reasoning with clear wording and purposeful arithmetic.",
+    label: "Year 8 Mathematics · Test 15 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test15/questions.js?v=12.13.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T15"
+  },
+  {
+    key: "Y8_MATH_ADV_T15",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 15",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 15 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 15 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test15/questions.js?v=12.13.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T15"
+  }
+
 
 ];

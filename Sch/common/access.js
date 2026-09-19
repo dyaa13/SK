@@ -11,7 +11,9 @@ window.SCHOLARSHIP_YEAR_ACCESS = {
   "AIDEN": ["Y6"],
   "ETHANZ": ["Y6"],
   "DARRON": ["Y6"],
-  "LOUISM": ["Y6", "Y7"]
+  "LOUISM": ["Y6", "Y7"],
+  "DOROTHY": ["Y8"],
+  "DAWN": ["Y8"]
 };
 
 window.SCHOLARSHIP_ACCESS = {

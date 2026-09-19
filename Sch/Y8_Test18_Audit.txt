@@ -1,0 +1,40 @@
+DYAA Y8 Mathematics — Test 17 Review + Test 18 Build
+Version: v12.16.1
+
+CURRENT SET REVIEW — TEST 17
+Standard Test 17:
+- 45/45 authoritative backend allocation match — PASS
+- Mathematical answer recalculation — PASS
+- No corrections required.
+
+Advance Test 17:
+- 45/45 authoritative backend allocation match — PASS after repair
+- Five issues were found and corrected:
+  1. Q29 A57.3 Composite Area: question content was unrelated to the allocated Composite Area type. Replaced with a mixed-unit rectangle + trapezium composite-area question.
+  2. Q31 A49.7 Functions/Input-Output: question content was a fraction calculation. Replaced with a linear-rule table question.
+  3. Q35 A9.7 LCM: question content was a ratio comparison. Replaced with a reverse-LCM repeating-cycle problem.
+  4. Q37 A10.5 Number Constraints: canonical answer 72 was correct, but the accepted-answer aliases were unrelated. Accepted answers corrected.
+  5. Q44 A24.7 Percentage Error: question content was unrelated to percentage error. Replaced with a reference-vs-actual percentage-error problem.
+- Repaired Test17 questions were checked against Tests 1–16 for accidental duplication.
+
+NEW SET — TEST 18
+Standard Test 18: 45 questions — PASS
+Advance Test 18: 45 questions — PASS
+Authoritative Set 18 allocation match — PASS
+45 distinct Major Areas and 45 distinct Type Codes in each paper — PASS
+Independent answer verification — PASS
+Canonical-answer / accepted-answer consistency — PASS
+Exact duplicates vs Y8 Tests 1–17: 0
+Number-only template duplicates vs Y8 Tests 1–17: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–17: 0
+Standard vs Advance Test 18 high wording similarity >= 0.92: 0
+
+Design rule:
+Preserve mathematical difficulty. Remove unnecessary reading obstacles. Avoid ugly arithmetic unless the arithmetic complexity itself is the intended skill.
+
+Preserved:
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden / EthanM / EthanZ / Darron = all Y6
+- LouisM = all Y6 + Y7
+- Dorothy / Dawn = all Y8

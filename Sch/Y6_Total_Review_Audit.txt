@@ -1,0 +1,60 @@
+DYAA Y6 — TOTAL REVIEW
+Version: v12.22.1
+Scope: Y6 Arithmetic Standard + Advance Tests 1–25, plus Y6 Reasoning MC + Mixed Test 1
+
+SCOPE
+- Arithmetic Standard: 25 × 45 = 1,125 questions.
+- Arithmetic Advance: 25 × 45 = 1,125 questions.
+- Arithmetic total: 2,250 questions.
+- Reasoning MC: 35 questions.
+- Reasoning Mixed: 35 questions.
+- Total Y6 bank entries reviewed: 2,320.
+
+ALLOCATION / STRUCTURE
+- Standard Arithmetic: 1,125/1,125 questions match the authoritative Type Code / Major Topic allocation recorded in Y6/Arithmetic/README.txt.
+- Advance Arithmetic: 1,125/1,125 questions preserve the corresponding Advance A-Type Code / Major Topic slot structure.
+- Every Arithmetic paper retains 45 different Major Topics and 45 different Fine Type Codes.
+- Missing questions: 0.
+- Missing answers: 0.
+- Canonical-answer / accepted-answer consistency checks: PASS.
+- MCQ answer-key / choice consistency checks: PASS.
+- HTML table / SVG syntax checks: PASS.
+
+MATHEMATICAL REVIEW
+- All 25 Standard and all 25 Advance Arithmetic papers were reviewed question by question.
+- The review was supplemented by deterministic recalculation of direct arithmetic expressions, percentage / ratio / conversion patterns, geometry / number-property patterns, and targeted MCQ checks.
+- All 38 Arithmetic Logic / Number Constraints questions were separately checked for the stated conditions and uniqueness.
+- No new incorrect final answer was found in the current Y6 Arithmetic bank.
+- Y6 Reasoning MC and Mixed contain the same 35 reasoning tasks in two response formats by design. Their answer pairs were checked for consistency.
+- All 13 shared Reasoning SVG diagrams were inspected against the intended answers; no reasoning-answer correction was required.
+
+VISUAL / GRAPH REVIEW
+Six Arithmetic graph questions used exact off-grid data values that were not directly readable from the labelled scale. Exact value labels were added, matching the existing plotted data and existing answers:
+1. Standard Test 04 Q17 — bar values 65 and 40.
+2. Standard Test 13 Q13 — bar values 32, 45 and 28.
+3. Standard Test 17 Q27 — point values 12, 18, 15 and 20.
+4. Advance Test 10 Q34 — bar values 45, 65, 35 and 40.
+5. Advance Test 13 Q13 — bar values 40, 65, 55 and 70.
+6. Advance Test 17 Q27 — point values 35, 42, 38, 51 and 47.
+No mathematical data or answer changed in these six questions.
+
+DUPLICATE / REPETITION REVIEW
+- Exact normalized duplicate stems across the 2,250 Arithmetic questions: 0.
+- Exact cross-year duplicate stems involving current Y6 vs current Y7/Y8: 0.
+- Foundational Y6 question families intentionally reuse simple formats such as fraction conversion, direct operations and unit conversion; these are retained because they are skill practice rather than exact duplicate questions.
+
+REASONING REVIEW
+- MC: 35/35 questions have one valid keyed choice and all required images exist.
+- Mixed: 35/35 questions have matching underlying reasoning answers.
+- Shared images / diagrams: 13/13 parse successfully.
+- Checked examples include magic square, shaded fraction grid, joined-rectangle perimeter reasoning, journey graph, rotation, circle sector area, pyramid surface area, spinner probability, Pythagoras-square areas, bar-graph interpretation and tank displacement.
+
+PRESERVED SYSTEM FEATURES / ACCESS
+- Teacher Export Answers remains present.
+- PDF question export remains the blank-working-space version with no printed answers.
+- Aiden / EthanM / EthanZ / Darron = all Y6.
+- LouisM = all Y6 + Y7.
+- Dorothy / Dawn = all Y8.
+
+FINAL STATUS
+PASS after the six off-grid graph readability refinements. No Y6 answer correction was required.

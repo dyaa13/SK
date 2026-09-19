@@ -1,0 +1,34 @@
+DYAA Y8 Mathematics — Test 18 Review + Test 19 Build
+Version: v12.17.1
+
+CURRENT SET REVIEW — TEST 18
+Standard Test 18:
+- 45/45 authoritative backend allocation match — PASS
+- Mathematical answer and accepted-answer review — PASS
+- No corrections required.
+
+Advance Test 18:
+- 45/45 authoritative backend allocation match — PASS after repair
+- Three semantic allocation issues were found and corrected:
+  1. Q9 A3.5 Reverse Operations & Missing Values: content had been an FDP ordering question. Replaced with a repeated-change reverse-operations problem.
+  2. Q15 A61.5 Angles & Polygons: content had been an inverse-proportion taps problem. Replaced with a quadrilateral angle-sum problem.
+  3. Q29 A59.1 Cuboid & Prism Volume: content had been a reverse-percentage mass problem. Replaced with a cuboid-volume problem.
+- No other Test 18 mathematical or accepted-answer issues found.
+
+NEW SET — TEST 19
+Standard Test 19: 45 questions — PASS
+Advance Test 19: 45 questions — PASS
+Authoritative Set 19 allocation match — PASS
+45 distinct Major Areas and 45 distinct Type Codes in each paper — PASS
+Independent answer verification — PASS
+Canonical-answer / accepted-answer consistency — PASS
+Exact duplicates vs Y8 Tests 1–18: 0
+Number-only template duplicates vs Y8 Tests 1–18: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–18: 0
+
+Preserved:
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden / EthanM / EthanZ / Darron = all Y6
+- LouisM = all Y6 + Y7
+- Dorothy / Dawn = all Y8

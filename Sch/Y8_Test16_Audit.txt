@@ -1,0 +1,31 @@
+DYAA Y8 Mathematics — Test 15 Review + Test 16 Build
+Version: v12.14.1
+
+CURRENT SET REVIEW — TEST 15
+Standard Test 15: 45/45 authoritative backend allocation match — PASS
+Advance Test 15: 45/45 authoritative backend allocation match — PASS
+Mathematical answer recalculation — PASS
+
+Two wording-only corrections were made:
+1) Advance Test 15 Q26: aligned the prompt with the existing final cost answer so the question asks only for the total painting cost; the area calculation remains required internally.
+2) Advance Test 15 Q43: removed ambiguity caused by a tie for the smallest revenue by asking for the difference from the smallest total revenue rather than naming a single smallest activity.
+
+No mathematical difficulty, Type Code, numbers or answer values were changed.
+
+NEW SET — TEST 16
+Standard Test 16: 45 questions — PASS
+Advance Test 16: 45 questions — PASS
+Authoritative Set 16 allocation match — PASS
+45 distinct Major Areas and 45 distinct Type Codes in each paper — PASS
+Independent answer verification — PASS
+Exact duplicates vs Y8 Tests 1–15: 0
+Number-only template duplicates vs Y8 Tests 1–15: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–15: 0
+Standard vs Advance Test 16 high wording similarity >= 0.92: 0
+
+Preserved:
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden / EthanM / EthanZ / Darron = all Y6
+- LouisM = all Y6 + Y7
+- Dorothy / Dawn = all Y8

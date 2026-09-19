@@ -48,7 +48,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic set generated from the original 25-test backend type plan. Difficulty: Standard. This series follows the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 1 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test01/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test01/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T01"
   },
   {
@@ -61,7 +61,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic set generated from the original 25-test backend type plan. Difficulty: Standard. This series follows the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 2 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test02/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test02/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T02"
   },
   {
@@ -74,7 +74,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic set generated from the original 25-test backend type plan. Difficulty: Standard. This series follows the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 3 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test03/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test03/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T03"
   },
   {
@@ -87,7 +87,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 4 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test04/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test04/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T04"
   },
   {
@@ -100,7 +100,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 5 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test05/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test05/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T05"
   },
   {
@@ -113,7 +113,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 6 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test06/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test06/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T06"
   },
   {
@@ -126,7 +126,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 7 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test07/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test07/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T07"
   },
   {
@@ -139,7 +139,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 8 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test08/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test08/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T08"
   },
   {
@@ -152,7 +152,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 9 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test09/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test09/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T09"
   },
   {
@@ -165,7 +165,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 10 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test10/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test10/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T10"
   },
   {
@@ -178,7 +178,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 11 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test11/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test11/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T11"
   },
   {
@@ -191,7 +191,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 12 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test12/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test12/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T12"
   },
   {
@@ -204,7 +204,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 13 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test13/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test13/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T13"
   },
   {
@@ -217,7 +217,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 14 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test14/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test14/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T14"
   },
   {
@@ -230,7 +230,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 15 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test15/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test15/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T15"
   },
   {
@@ -243,7 +243,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 16 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test16/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test16/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T16"
   },
   {
@@ -256,7 +256,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 17 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test17/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test17/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T17"
   },
   {
@@ -269,7 +269,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 18 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test18/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test18/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T18"
   },
   {
@@ -282,7 +282,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 19 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test19/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test19/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T19"
   },
   {
@@ -295,7 +295,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 20 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test20/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test20/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T20"
   },
   {
@@ -308,7 +308,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 21 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test21/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test21/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T21"
   },
   {
@@ -321,7 +321,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 22 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test22/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test22/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T22"
   },
   {
@@ -334,7 +334,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 23 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test23/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test23/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T23"
   },
   {
@@ -347,7 +347,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 24 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test24/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test24/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T24"
   },
   {
@@ -360,7 +360,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 arithmetic Standard set generated from the original 25-test backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 25 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Test25/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Test25/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_T25"
   },
   {
@@ -373,7 +373,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows the Advance 25-set backend allocation and raises difficulty through larger numbers, reverse problems, multi-step arithmetic, mixed units and mixed forms.",
     label: "Year 6 Arithmetic · Test 1 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test01/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test01/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T01"
   },
   {
@@ -386,7 +386,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 02 and increases difficulty through larger numbers, reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 2 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test02/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test02/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T02"
   },
   {
@@ -399,7 +399,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 03 and increases difficulty through close-value comparisons, reverse problems, multi-step arithmetic, mixed units and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 3 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test03/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test03/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T03"
   },
   {
@@ -412,7 +412,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 04 and increases difficulty through larger numbers, reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 4 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test04/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test04/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T04"
   },
   {
@@ -425,7 +425,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 05 and increases difficulty through larger numbers, reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 5 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test05/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test05/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T05"
   },
   {
@@ -438,7 +438,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 06 and increases difficulty through reverse problems, mixed units, multi-step arithmetic and mixed forms without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 6 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test06/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test06/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T06"
   },
   {
@@ -451,7 +451,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 07 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 7 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test07/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test07/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T07"
   },
   {
@@ -464,7 +464,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 08 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 8 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test08/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test08/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T08"
   },
   {
@@ -477,7 +477,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 09 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 9 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test09/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test09/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T09"
   },
   {
@@ -490,7 +490,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 10 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 10 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test10/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test10/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T10"
   },
   {
@@ -503,7 +503,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 11 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 11 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test11/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test11/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T11"
   },
   {
@@ -516,7 +516,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 12 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 12 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test12/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test12/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T12"
   },
   {
@@ -529,7 +529,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 13 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 13 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test13/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test13/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T13"
   },
   {
@@ -542,7 +542,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set. It follows Advance backend Set 14 and increases difficulty through reverse problems, mixed units, multi-step arithmetic, mixed forms and constraints without revealing solution steps.",
     label: "Year 6 Arithmetic · Test 14 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test14/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test14/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T14"
   },
   {
@@ -555,7 +555,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 15 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test15/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test15/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T15"
   },
   {
@@ -568,7 +568,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 16 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test16/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test16/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T16"
   },
   {
@@ -581,7 +581,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 17 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test17/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test17/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T17"
   },
   {
@@ -594,7 +594,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 18 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test18/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test18/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T18"
   },
   {
@@ -607,7 +607,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 19 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test19/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test19/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T19"
   },
   {
@@ -620,7 +620,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 20 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test20/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test20/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T20"
   },
   {
@@ -633,7 +633,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 21 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test21/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test21/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T21"
   },
   {
@@ -646,7 +646,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 22 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test22/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test22/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T22"
   },
   {
@@ -659,7 +659,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 23 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test23/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test23/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T23"
   },
   {
@@ -672,7 +672,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 24 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test24/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test24/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T24"
   },
   {
@@ -685,7 +685,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y6 Arithmetic Advance set generated from the Advance 25-set backend knowledge and Type Code plan.",
     label: "Year 6 Arithmetic · Test 25 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y6/Arithmetic/Advance/Test25/questions.js?v=10.8",
+    questionsScript: "Y6/Arithmetic/Advance/Test25/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y6_ARITH_ADV_T25"
   },
   {
@@ -722,7 +722,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from the reviewed Y7 25-set backend allocation (Bank v1.1). Y7 Standard removes many repeatedly practised Y6 basics as standalone types and emphasises mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 1 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test01/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test01/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T01"
   },
   {
@@ -735,7 +735,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 02 (Bank v1.1), with mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 2 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test02/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test02/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T02"
   },
   {
@@ -748,7 +748,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 03 (Bank v1.1), with mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 3 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test03/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test03/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T03"
   },
   {
@@ -761,7 +761,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 04 (Bank v1.1), with mixed, inverse, applied and less-routine arithmetic.",
     label: "Year 7 Arithmetic · Test 4 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test04/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test04/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T04"
   },
   {
@@ -774,7 +774,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 05 (Bank v1.1), with clear student-facing wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 5 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test05/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test05/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T05"
   },
   {
@@ -787,7 +787,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 06 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 6 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test06/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test06/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T06"
   },
   {
@@ -800,7 +800,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 07 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 7 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test07/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test07/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T07"
   },
   {
@@ -813,7 +813,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 08 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 8 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test08/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test08/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T08"
   },
   {
@@ -826,7 +826,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 09 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 9 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test09/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test09/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T09"
   },
   {
@@ -839,7 +839,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 10 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 10 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test10/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test10/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T10"
   },
   {
@@ -852,7 +852,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 11 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 11 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test11/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test11/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T11"
   },
   {
@@ -865,7 +865,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y7 Arithmetic Standard set generated from reviewed backend Set 12 (Bank v1.1), with clear wording and mixed, inverse, applied arithmetic.",
     label: "Year 7 Arithmetic · Test 12 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y7/Arithmetic/Test12/questions.js?v=12.9.5",
+    questionsScript: "Y7/Arithmetic/Test12/questions.js?v=12.20.1",
     bankVar: "SCHOLARSHIP_Y7_ARITH_T12"
   },
   {
@@ -878,7 +878,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 01 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 1 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test01/questions.js?v=11.7",
+    questionsScript: "Y8/Mathematics/Standard/Test01/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T01"
   },
   {
@@ -891,7 +891,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 01 (Bank v1.0), using the same Y8 syllabus with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 1 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test01/questions.js?v=11.8",
+    questionsScript: "Y8/Mathematics/Advance/Test01/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T01"
   }
 
@@ -906,7 +906,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 02 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 2 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test02/questions.js?v=11.9",
+    questionsScript: "Y8/Mathematics/Standard/Test02/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T02"
   },
   {
@@ -919,7 +919,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 02 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 2 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test02/questions.js?v=11.9",
+    questionsScript: "Y8/Mathematics/Advance/Test02/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T02"
   }
 
@@ -935,7 +935,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 03 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 3 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test03/questions.js?v=12.2",
+    questionsScript: "Y8/Mathematics/Standard/Test03/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T03"
   },
   {
@@ -948,7 +948,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 03 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 3 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test03/questions.js?v=12.2",
+    questionsScript: "Y8/Mathematics/Advance/Test03/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T03"
   }
 
@@ -963,7 +963,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 04 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 4 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test04/questions.js?v=12.2",
+    questionsScript: "Y8/Mathematics/Standard/Test04/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T04"
   },
   {
@@ -976,7 +976,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 04 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 4 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test04/questions.js?v=12.3",
+    questionsScript: "Y8/Mathematics/Advance/Test04/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T04"
   }
 
@@ -991,7 +991,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 05 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 5 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test05/questions.js?v=12.3",
+    questionsScript: "Y8/Mathematics/Standard/Test05/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T05"
   },
   {
@@ -1004,7 +1004,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 05 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 5 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test05/questions.js?v=12.3",
+    questionsScript: "Y8/Mathematics/Advance/Test05/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T05"
   }
 
@@ -1020,7 +1020,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 06 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 6 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test06/questions.js?v=12.5",
+    questionsScript: "Y8/Mathematics/Standard/Test06/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T06"
   },
   {
@@ -1033,7 +1033,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 06 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 6 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test06/questions.js?v=12.5",
+    questionsScript: "Y8/Mathematics/Advance/Test06/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T06"
   }
 
@@ -1049,7 +1049,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 07 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 7 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test07/questions.js?v=12.5",
+    questionsScript: "Y8/Mathematics/Standard/Test07/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T07"
   },
   {
@@ -1062,7 +1062,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 07 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 7 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test07/questions.js?v=12.5",
+    questionsScript: "Y8/Mathematics/Advance/Test07/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T07"
   }
 
@@ -1078,7 +1078,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 08 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 8 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test08/questions.js?v=12.6.1",
+    questionsScript: "Y8/Mathematics/Standard/Test08/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T08"
   },
   {
@@ -1091,7 +1091,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 08 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 8 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test08/questions.js?v=12.6.1",
+    questionsScript: "Y8/Mathematics/Advance/Test08/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T08"
   }
 
@@ -1107,7 +1107,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 09 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 9 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test09/questions.js?v=12.7.1",
+    questionsScript: "Y8/Mathematics/Standard/Test09/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T09"
   },
   {
@@ -1120,7 +1120,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 09 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 9 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test09/questions.js?v=12.7.1",
+    questionsScript: "Y8/Mathematics/Advance/Test09/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T09"
   }
 
@@ -1135,7 +1135,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 10 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 10 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test10/questions.js?v=12.8.1",
+    questionsScript: "Y8/Mathematics/Standard/Test10/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T10"
   },
   {
@@ -1148,7 +1148,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 10 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 10 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test10/questions.js?v=12.8.1",
+    questionsScript: "Y8/Mathematics/Advance/Test10/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T10"
   }
 
@@ -1163,7 +1163,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 11 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 11 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test11/questions.js?v=12.9.1",
+    questionsScript: "Y8/Mathematics/Standard/Test11/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T11"
   },
   {
@@ -1176,7 +1176,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 11 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 11 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test11/questions.js?v=12.9.1",
+    questionsScript: "Y8/Mathematics/Advance/Test11/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T11"
   }
 
@@ -1192,7 +1192,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 12 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 12 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test12/questions.js?v=12.10.1",
+    questionsScript: "Y8/Mathematics/Standard/Test12/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T12"
   },
   {
@@ -1205,7 +1205,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 12 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 12 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test12/questions.js?v=12.10.1",
+    questionsScript: "Y8/Mathematics/Advance/Test12/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T12"
   }
 
@@ -1220,7 +1220,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 13 (Bank v1.0), with systematic coverage of number, FDP, ratio/rates, algebra, geometry and data/probability.",
     label: "Year 8 Mathematics · Test 13 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test13/questions.js?v=12.11.1",
+    questionsScript: "Y8/Mathematics/Standard/Test13/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T13"
   },
   {
@@ -1233,7 +1233,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 13 (Bank v1.0), with more reverse, multi-stage, mixed-form, constraint, combined-algebra and reverse/composite-geometry structures.",
     label: "Year 8 Mathematics · Test 13 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test13/questions.js?v=12.11.1",
+    questionsScript: "Y8/Mathematics/Advance/Test13/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T13"
   }
 
@@ -1248,7 +1248,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 14 (Bank v1.0), preserving scholarship-level reasoning while keeping wording clear and arithmetic purposeful.",
     label: "Year 8 Mathematics · Test 14 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test14/questions.js?v=12.12.1",
+    questionsScript: "Y8/Mathematics/Standard/Test14/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T14"
   },
   {
@@ -1261,7 +1261,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 14 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and combined-reasoning structures.",
     label: "Year 8 Mathematics · Test 14 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test14/questions.js?v=12.12.1",
+    questionsScript: "Y8/Mathematics/Advance/Test14/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T14"
   }
 
@@ -1276,7 +1276,7 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 15 (Bank v1.0), preserving scholarship-level reasoning with clear wording and purposeful arithmetic.",
     label: "Year 8 Mathematics · Test 15 · Standard",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Standard/Test15/questions.js?v=12.13.1",
+    questionsScript: "Y8/Mathematics/Standard/Test15/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_STD_T15"
   },
   {
@@ -1289,8 +1289,176 @@ window.SCHOLARSHIP_CATALOG = [
     description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 15 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
     label: "Year 8 Mathematics · Test 15 · Advance",
     durationMinutes: 45,
-    questionsScript: "Y8/Mathematics/Advance/Test15/questions.js?v=12.13.1",
+    questionsScript: "Y8/Mathematics/Advance/Test15/questions.js?v=12.22.1",
     bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T15"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T16",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 16",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 16 (Bank v1.0), preserving scholarship-level reasoning with clear wording and purposeful arithmetic.",
+    label: "Year 8 Mathematics · Test 16 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test16/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T16"
+  },
+  {
+    key: "Y8_MATH_ADV_T16",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 16",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 16 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 16 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test16/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T16"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T17",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 17",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 17 (Bank v1.0), preserving scholarship-level reasoning with clear wording and purposeful arithmetic.",
+    label: "Year 8 Mathematics · Test 17 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test17/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T17"
+  },
+  {
+    key: "Y8_MATH_ADV_T17",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 17",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 17 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 17 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test17/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T17"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T18",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 18",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 18 (Bank v1.0), preserving scholarship-level reasoning with clear wording and purposeful arithmetic.",
+    label: "Year 8 Mathematics · Test 18 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test18/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T18"
+  },
+  {
+    key: "Y8_MATH_ADV_T18",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 18",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 18 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 18 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test18/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T18"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T19",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 19",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 19 (Bank v1.0), preserving scholarship-level reasoning with clear wording and purposeful arithmetic.",
+    label: "Year 8 Mathematics · Test 19 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test19/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T19"
+  },
+  {
+    key: "Y8_MATH_ADV_T19",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 19",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 19 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 19 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test19/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T19"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T20",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 20",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 20 (Bank v1.0), with broad integrated coverage and clear scholarship-style wording.",
+    label: "Year 8 Mathematics · Test 20 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test20/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T20"
+  },
+  {
+    key: "Y8_MATH_ADV_T20",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 20",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 20 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 20 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test20/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T20"
+  }
+
+  ,
+  {
+    key: "Y8_MATH_STD_T21",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 21",
+    version: "Mixed Response",
+    difficulty: "Standard",
+    description: "45-question Y8 Mathematics Standard set generated from reviewed backend Set 21 (Bank v1.0), with broad integrated coverage and clear scholarship-style wording.",
+    label: "Year 8 Mathematics · Test 21 · Standard",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Standard/Test21/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_STD_T21"
+  },
+  {
+    key: "Y8_MATH_ADV_T21",
+    year: "Y8",
+    paper: "Mathematics",
+    test: "Test 21",
+    version: "Mixed Response",
+    difficulty: "Advance",
+    description: "45-question Y8 Mathematics Advance set generated from reviewed Advance backend Set 21 (Bank v1.0), using reverse, multi-stage, mixed-form, constraint and applied reasoning structures.",
+    label: "Year 8 Mathematics · Test 21 · Advance",
+    durationMinutes: 45,
+    questionsScript: "Y8/Mathematics/Advance/Test21/questions.js?v=12.22.1",
+    bankVar: "SCHOLARSHIP_Y8_MATH_ADV_T21"
   }
 
 

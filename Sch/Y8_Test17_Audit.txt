@@ -1,0 +1,31 @@
+DYAA Y8 Mathematics — Test 16 Review + Test 17 Build
+Version: v12.15.1
+
+CURRENT SET REVIEW — TEST 16
+Standard Test 16: 45/45 authoritative backend allocation match — PASS
+Advance Test 16: 45/45 authoritative backend allocation match — PASS
+Major Area / Type Code / order — PASS
+Independent mathematical answer recalculation — PASS
+Wording/readability review — PASS
+Corrections required: 0
+
+NEW SET — TEST 17
+Standard Test 17: 45 questions — PASS
+Advance Test 17: 45 questions — PASS
+Authoritative Set 17 allocation match — PASS
+45 distinct Major Areas and 45 distinct Type Codes in each paper — PASS
+Independent arithmetic/algebra/geometry answer verification — PASS
+Exact duplicates vs Y8 Tests 1–16: 0
+Number-only template duplicates vs Y8 Tests 1–16: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–16: 0
+Standard vs Advance Test 17 high wording similarity >= 0.92: 0
+
+Design rule:
+Preserve mathematical difficulty. Remove unnecessary reading barriers and avoid ugly arithmetic unless the number complexity itself is part of the intended skill.
+
+Preserved:
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden / EthanM / EthanZ / Darron = all Y6
+- LouisM = all Y6 + Y7
+- Dorothy / Dawn = all Y8

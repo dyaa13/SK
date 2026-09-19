@@ -1,3 +1,14 @@
+TOTAL REVIEW — v12.20.1
+- All current Y7 Standard Tests 1–12 were rechecked question by question (540 questions).
+- All 540 current questions remain aligned with the recorded Y7 backend Type Code + Major Topic allocation.
+- Mathematical answers and MCQ keys were independently rechecked.
+- Test 11 Q29 was corrected for a genuine ambiguity: the previous condition allowed both 405 and 495; the revised condition uniquely gives 495.
+- Test 10 Q26 and Test 11 Q12 now display the exact graph data values needed for an unambiguous reading.
+- Seven wording-only clarity refinements were made; numbers, Type Codes and answers are unchanged in those wording edits.
+- The previous selective-number-cleanup policy is preserved: do not reduce mathematical difficulty merely to make arithmetic easier.
+- Exact stem duplicates: 0. Number-only template duplicates: 0. High wording similarity >= 0.94 across tests: 0.
+- Pairwise Fine Type Code overlap remains controlled at 3–4 between every pair of current tests.
+
 DYAA Y7 Arithmetic – Standard
 
 Backend authority:

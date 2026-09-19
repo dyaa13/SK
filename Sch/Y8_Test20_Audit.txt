@@ -1,0 +1,34 @@
+DYAA Y8 Mathematics — Test 19 Review + Test 20 Build
+Version: v12.18.1
+
+CURRENT SET REVIEW — TEST 19
+Standard Test 19:
+- 45/45 authoritative backend allocation match — PASS
+- Independent mathematical answer recalculation — PASS
+- Canonical/accepted-answer consistency — PASS
+- Corrections required: 0
+
+Advance Test 19:
+- 45/45 authoritative backend allocation match — PASS
+- Independent mathematical answer recalculation — PASS
+- Canonical/accepted-answer consistency — PASS
+- Corrections required: 0
+
+NEW SET — TEST 20
+Standard Test 20: 45 questions — PASS
+Advance Test 20: 45 questions — PASS
+Authoritative Set 20 allocation match — PASS
+45 distinct Major Areas and 45 distinct Type Codes in each paper — PASS
+Independent answer verification — PASS
+Canonical-answer / accepted-answer consistency — PASS
+Exact duplicates vs Y8 Tests 1–19: 0
+Number-only template duplicates vs Y8 Tests 1–19: 0
+High wording similarity >= 0.92 vs Y8 Tests 1–19: 0
+Standard vs Advance Test 20 high wording similarity >= 0.92: 0
+
+Preserved:
+- PDF blank working-space format
+- Teacher Export Answers
+- Aiden / EthanM / EthanZ / Darron = all Y6
+- LouisM = all Y6 + Y7
+- Dorothy / Dawn = all Y8

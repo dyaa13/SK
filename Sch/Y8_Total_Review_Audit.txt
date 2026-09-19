@@ -1,0 +1,53 @@
+DYAA Y8 Mathematics — TOTAL REVIEW
+Version: v12.22.1
+Scope: Current Y8 Mathematics Standard + Advance Tests 1–21
+
+SCOPE
+- Standard: 21 tests × 45 questions = 945 questions.
+- Advance: 21 tests × 45 questions = 945 questions.
+- Total Y8 question bank reviewed: 1,890 questions.
+
+ALLOCATION / STRUCTURE
+- 1,890/1,890 questions retain their authoritative Set / question order / Major Area / Fine Type Code allocation.
+- Every paper retains 45 different Major Areas and 45 different Fine Type Codes.
+- Missing questions: 0.
+- Missing answers: 0.
+- Canonical-answer / accepted-answer consistency checks: PASS.
+- MCQ answer-key / choice consistency checks: PASS.
+- SVG / HTML structural checks: PASS.
+
+MATHEMATICAL / CONTENT REVIEW
+- The full Y8 bank was re-read across Standard and Advance Tests 1–21.
+- Previously generated later-set audit fixes were preserved.
+- 81 questions were refined during this total review:
+  - 31 questions had question data / answer values changed to remove genuine or disguised mathematical repetition.
+  - 50 questions had wording / representation only changed; their mathematical answer stayed unchanged.
+- Every one of the 31 answer-changing revisions was independently recalculated after editing.
+- No Type Code or Major Area was changed by the de-duplication work.
+
+DUPLICATE / REPETITION REVIEW
+Final Y8 bank:
+- Exact normalized duplicate groups within Y8: 0.
+- Number-only template duplicate groups within Y8: 0.
+- Same-difficulty / same-Fine-Type wording similarity >= 0.92: 0.
+- Exact cross-year duplicate groups involving Y8 vs current Y6/Y7: 0.
+
+DESIGN RULE
+- Mathematical difficulty and assigned Fine Type are preserved.
+- Repetition was removed by changing context, data, or wording rather than making questions easier.
+- Reading barriers were reduced where possible without giving away the solution method.
+
+CHANGE SUMMARY
+- Questions changed vs v12.20.1 base: 81.
+- Answer-changing revisions: 31.
+- Wording/representation-only revisions: 50.
+
+PRESERVED SYSTEM FEATURES / ACCESS
+- Teacher Export Answers remains present.
+- PDF question export remains the blank-working-space version with no printed answers.
+- Aiden / EthanM / EthanZ / Darron = all Y6.
+- LouisM = all Y6 + Y7.
+- Dorothy / Dawn = all Y8.
+
+FINAL STATUS
+PASS.

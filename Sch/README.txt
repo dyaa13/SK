@@ -1,3 +1,9 @@
+TOTAL REVIEW STATUS — v12.22.1
+- Y7 total review preserved from v12.20.1.
+- Y8 Standard + Advance Tests 1–21 total review completed; see Y8_Total_Review_Audit.txt.
+- Y6 Standard + Advance Tests 1–25 and Reasoning Test 1 total review completed; see Y6_Total_Review_Audit.txt.
+- Existing access, Teacher Export Answers and blank-working-space PDF behavior are preserved.
+
 DYAA Scholarship Online Modular v12.9.1
 
 V12.9 Y8 MATHEMATICS STANDARD + ADVANCE SET 11 UPDATE:

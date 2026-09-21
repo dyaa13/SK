@@ -1,68 +1,64 @@
-DYAA Y7 Arithmetic — TOTAL REVIEW
-Version: v12.20.1
-Scope: Current Y7 Standard Tests 1–12
+DYAA Y7 ARITHMETIC STANDARD — FULL SERIES FINAL RECHECK
+Version: v12.40.1
+Scope: Tests 1–25
 
 SCOPE
-- 12 tests × 45 questions = 540 questions.
-- Review was performed against the current authoritative allocation recorded in Y7/Arithmetic/README.txt.
-- The prior Y7 number-cleanup review workbook (175 changed questions) was also rechecked against the current bank.
+- 25 tests × 45 questions = 1,125 questions.
+- Authoritative source: DYAA_Y7_Arithmetic_Standard_25_Set_Backend_Allocation_v1.1.
+- This final review supersedes the earlier v12.20.1 total-review audit that covered Tests 1–12 only.
 
-ALLOCATION / STRUCTURE
-- 540/540 questions match their recorded Test, question order, Type Code and Major Topic.
-- Every paper contains 45 different Major Topics and 45 different Fine Type Codes.
-- Pairwise Fine Type Code overlap across the 12 current papers is 3–4 for every test pair:
-  50 pairs overlap by 3 Type Codes; 16 pairs overlap by 4.
-- Missing questions: 0
-- Missing answers: 0
-- Canonical-answer / accepted-answer inconsistencies: 0
-- MCQ key / choice inconsistencies: 0
+AUTHORITATIVE ALLOCATION / BANK
+- Position + Major Area + Standard Fine Type Code alignment: 1,125/1,125 PASS.
+- Standard Fine Type Codes represented: 420/420.
+- Major Areas represented: 60/60.
+- Every test has 45 different Fine Type Codes: PASS.
+- Every test has 45 different Major Areas: PASS.
+- Fine Type occurrence count across series: every Type Code occurs 2–3 times.
+- Major Area occurrence count across series: every Major Area occurs 18–19 times.
+- Pairwise Fine Type overlap: 3–4.
+  * overlap 3: 210 test pairs
+  * overlap 4: 90 test pairs
+- Pairwise Major Area overlap: 33–34.
+  * overlap 33: 210 test pairs
+  * overlap 34: 90 test pairs
 
-MATHEMATICAL REVIEW
-- All 540 answers were reworked/reasoned through during the total review.
-- No incorrect final answer was found in the current bank.
-- One genuine question ambiguity was found:
-  Test 11 Q29 · Type 4.7 · Divisibility & Number Properties
-  OLD: "A locker code is an odd multiple of 45 and lies between 400 and 500. What is the code?"
-  Problem: both 405 and 495 satisfy the wording.
-  NEW: "A locker code is an odd multiple of 45 and is greater than 450 but less than 500. What is the code?"
-  Correct answer remains 495.
+ANSWER / MATHEMATICAL REVIEW COVERAGE
+- Tests 1–12: byte-identical to v12.20.1 Total Review, where all 540 answers were reworked.
+- Tests 13–24: byte-identical to the versions in which each test received its subsequent 45/45 current-set recheck.
+- Test 25: independent 45/45 mathematical verification recorded in v12.39.1.
+- Therefore every question file in the final Tests 1–25 series is unchanged from a mathematically reviewed version.
+- Missing canonical answers: 0.
+- Canonical / accepted-answer inconsistencies: 0.
+- MCQ duplicate-choice issues: 0.
+- MCQ key-not-uniquely-present issues: 0.
 
-VISUAL / GRAPH REVIEW
-- 40 SVG diagrams parsed successfully.
-- 32 HTML table questions passed tag-balance checks.
-- Test 10 Q26: exact bar values 32, 26, 44, 36, 38, 52 were added to the graph because the original off-grid bars did not provide exact readable values.
-- Test 11 Q12: exact point values 42, 55, 68, 61 were added to the graph for the same reason.
-- No answer changed in either graph question.
+QUESTION / WORDING / STRUCTURE REVIEW
+- Empty stems: 0.
+- Answer leakage in question stems: 0.
+- TODO / TBC / PENDING / invalid placeholder text: 0.
+- Exact normalized stem duplicate groups: 0.
+- Same-Type number-only template duplicate groups: 0.
+- Same-Type wording similarity >= 0.92: 0.
+- Exact cross-year duplicates against current Y6/Y8: 0.
 
-WORDING CLARITY REFINEMENTS
-1. Test 2 Q20 — "combined actual length" -> "sum of their actual lengths".
-2. Test 4 Q35 — removed unnecessary "mixed units" terminology.
-3. Test 6 Q30 — removed unnecessary "mixed units" terminology.
-4. Test 8 Q25 — "How many dollars..." -> "How much money...".
-5. Test 9 Q41 — direct wording: "using kilometres and metres".
-6. Test 11 Q24 — "combined actual length" -> "sum of their actual lengths".
-7. Test 12 Q43 — clearer fraction-division wording.
-All seven are wording-only; mathematical data, answer and Type Code are unchanged.
+VISUAL CONTENT
+- SVG diagrams parsed successfully: 76.
+- HTML table questions with balanced table tags: 69.
+- Invalid SVGs: 0.
+- Unbalanced table structures: 0.
 
-DUPLICATE / REPETITION REVIEW
-- Exact normalized stem duplicate groups across Tests 1–12: 0
-- Number-only template duplicate groups: 0
-- Cross-test wording similarity >= 0.94: 0
-- Highest same-Fine-Type wording similarity remained below 0.90.
+SYSTEM / DELIVERY INVARIANTS
+- Y7 Arithmetic catalog entries: 25/25.
+- Current student year-access rules preserved.
+- Teacher Export Answers preserved.
+- Student PDF export retains blank working space and no printed answer key.
+- Existing Y6/Y8 papers preserved.
 
-175-QUESTION NUMBER-CLEANUP RECHECK
-Current bank compared with the prior v12.9.2 -> v12.9.3 change workbook:
-- 165 questions use the original numeric data.
-- 8 questions use selective/custom number cleanup.
-- 1 question retains the v12.9.3 numeric data.
-- 1 question had the same numeric data in both versions.
-- All 46 high-priority change rows were rechecked; the only high-priority row not using the exact original numeric data is Test 2 Q4, which preserves the original 18.5% rate while changing only the starting amount.
-- The conservative rule remains: preserve rates/angles/steps whenever possible and change numbers only where arithmetic is unnecessarily awkward.
-
-PRESERVED SYSTEM FEATURES / ACCESS
-- Teacher Export Answers remains present.
-- PDF question export remains the blank-working-space version with no printed answers.
-- Existing access rules are preserved, including LouisM = all Y6 + Y7 and Dorothy/Dawn = all Y8.
+CONTENT CHANGES IN THIS FINAL REVIEW
+- New mathematical corrections required: 0.
+- New wording corrections required: 0.
+- New diagram/table corrections required: 0.
+- The review/audit documentation was updated to cover the complete 25-test series.
 
 FINAL STATUS
-PASS after the Test 11 Q29 ambiguity fix and the visual/wording clarity refinements above.
+PASS — Y7 Arithmetic Standard Tests 1–25 are ready as the completed final-reviewed series.

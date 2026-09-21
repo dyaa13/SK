@@ -1,0 +1,68 @@
+DYAA Y7 Arithmetic — TOTAL REVIEW
+Version: v12.20.1
+Scope: Current Y7 Standard Tests 1–12
+
+SCOPE
+- 12 tests × 45 questions = 540 questions.
+- Review was performed against the current authoritative allocation recorded in Y7/Arithmetic/README.txt.
+- The prior Y7 number-cleanup review workbook (175 changed questions) was also rechecked against the current bank.
+
+ALLOCATION / STRUCTURE
+- 540/540 questions match their recorded Test, question order, Type Code and Major Topic.
+- Every paper contains 45 different Major Topics and 45 different Fine Type Codes.
+- Pairwise Fine Type Code overlap across the 12 current papers is 3–4 for every test pair:
+  50 pairs overlap by 3 Type Codes; 16 pairs overlap by 4.
+- Missing questions: 0
+- Missing answers: 0
+- Canonical-answer / accepted-answer inconsistencies: 0
+- MCQ key / choice inconsistencies: 0
+
+MATHEMATICAL REVIEW
+- All 540 answers were reworked/reasoned through during the total review.
+- No incorrect final answer was found in the current bank.
+- One genuine question ambiguity was found:
+  Test 11 Q29 · Type 4.7 · Divisibility & Number Properties
+  OLD: "A locker code is an odd multiple of 45 and lies between 400 and 500. What is the code?"
+  Problem: both 405 and 495 satisfy the wording.
+  NEW: "A locker code is an odd multiple of 45 and is greater than 450 but less than 500. What is the code?"
+  Correct answer remains 495.
+
+VISUAL / GRAPH REVIEW
+- 40 SVG diagrams parsed successfully.
+- 32 HTML table questions passed tag-balance checks.
+- Test 10 Q26: exact bar values 32, 26, 44, 36, 38, 52 were added to the graph because the original off-grid bars did not provide exact readable values.
+- Test 11 Q12: exact point values 42, 55, 68, 61 were added to the graph for the same reason.
+- No answer changed in either graph question.
+
+WORDING CLARITY REFINEMENTS
+1. Test 2 Q20 — "combined actual length" -> "sum of their actual lengths".
+2. Test 4 Q35 — removed unnecessary "mixed units" terminology.
+3. Test 6 Q30 — removed unnecessary "mixed units" terminology.
+4. Test 8 Q25 — "How many dollars..." -> "How much money...".
+5. Test 9 Q41 — direct wording: "using kilometres and metres".
+6. Test 11 Q24 — "combined actual length" -> "sum of their actual lengths".
+7. Test 12 Q43 — clearer fraction-division wording.
+All seven are wording-only; mathematical data, answer and Type Code are unchanged.
+
+DUPLICATE / REPETITION REVIEW
+- Exact normalized stem duplicate groups across Tests 1–12: 0
+- Number-only template duplicate groups: 0
+- Cross-test wording similarity >= 0.94: 0
+- Highest same-Fine-Type wording similarity remained below 0.90.
+
+175-QUESTION NUMBER-CLEANUP RECHECK
+Current bank compared with the prior v12.9.2 -> v12.9.3 change workbook:
+- 165 questions use the original numeric data.
+- 8 questions use selective/custom number cleanup.
+- 1 question retains the v12.9.3 numeric data.
+- 1 question had the same numeric data in both versions.
+- All 46 high-priority change rows were rechecked; the only high-priority row not using the exact original numeric data is Test 2 Q4, which preserves the original 18.5% rate while changing only the starting amount.
+- The conservative rule remains: preserve rates/angles/steps whenever possible and change numbers only where arithmetic is unnecessarily awkward.
+
+PRESERVED SYSTEM FEATURES / ACCESS
+- Teacher Export Answers remains present.
+- PDF question export remains the blank-working-space version with no printed answers.
+- Existing access rules are preserved, including LouisM = all Y6 + Y7 and Dorothy/Dawn = all Y8.
+
+FINAL STATUS
+PASS after the Test 11 Q29 ambiguity fix and the visual/wording clarity refinements above.

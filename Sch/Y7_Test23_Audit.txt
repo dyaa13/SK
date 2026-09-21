@@ -1,0 +1,33 @@
+DYAA Y7 Arithmetic Standard — TEST 22 RECHECK + TEST 23
+Version: v12.37.1
+
+CURRENT SET RECHECK — TEST 22
+- Questions: 45
+- Authoritative Bank v1.1 allocation match: 45/45
+- Independent mathematical recheck: 45/45
+- Stored canonical / accepted answers: PASS
+- MCQ key integrity: PASS
+- Corrections required: 0
+
+NEW STANDARD TEST 23
+- Questions: 45
+- Exact authoritative Bank v1.1 Set 23 Major Area / Type Code / order match: 45/45
+- Independent mathematical verification: 45/45
+- Missing answers: 0
+- Canonical / accepted-answer inconsistencies: 0
+- MCQ key inconsistencies: 0
+- Exact stem duplicates vs Y7 Tests 1–22: 0
+- Same-Type number-only template duplicates vs Y7 Tests 1–22: 0
+- Same-Type wording similarity >= 0.92 vs Y7 Tests 1–22: 0
+- Exact cross-year duplicates vs current Y6/Y8: 0
+
+PRESERVED
+- Y7 Standard authoritative Bank v1.1 allocation
+- Existing Y7 Tests 1–22
+- Existing Y6 and Y8 content
+- Current student access rules
+- Teacher Export Answers
+- Student PDF blank working-space behavior
+
+FINAL STATUS
+PASS.

@@ -1,0 +1,55 @@
+DYAA Y8 Mathematics — Test 24 Review + Test 25 Build
+Version: v12.26.1
+
+CURRENT SET REVIEW — TEST 24
+Standard Test 24:
+- 45/45 authoritative backend allocation match — PASS
+- Independent mathematical recalculation: 45/45 — PASS
+- Canonical / accepted-answer consistency — PASS
+- Corrections required: 0
+
+Advance Test 24:
+- 45/45 authoritative backend allocation match — PASS
+- Independent mathematical recalculation: 45/45 — PASS
+- Canonical / accepted-answer consistency — PASS
+- Corrections required: 0
+
+NEW SET — TEST 25
+Standard Test 25:
+- 45 questions
+- 45 distinct Major Areas
+- 45 distinct Fine Type Codes
+- Exact authoritative Set 25 allocation match — PASS
+- Independent mathematical verification: 45/45 — PASS
+
+Advance Test 25:
+- 45 questions
+- 45 distinct Major Areas
+- 45 distinct Fine Type Codes
+- Exact authoritative Set 25 allocation match — PASS
+- Independent mathematical verification: 45/45 — PASS
+
+REPETITION / ORIGINALITY
+Compared with reviewed Y8 Tests 1–24:
+- Exact duplicate questions: 0
+- Number-only template duplicate questions: 0
+- Same-difficulty / same-Fine-Type wording similarity >= 0.92: 0
+- Standard Test 25 vs Advance Test 25 wording similarity >= 0.92: 0
+- Exact cross-year duplicates against current Y6/Y7: 0
+
+SERIES STATUS
+- Y8 Mathematics Standard now contains Tests 1–25.
+- Y8 Mathematics Advance now contains Tests 1–25.
+- This completes the currently planned 25-set Y8 Standard and Advance backend allocation.
+
+PRESERVED
+- Y6/Y7/Y8 total-review fixes
+- Teacher Export Answers
+- Student PDF blank working-space format
+- Current year-level access:
+  Aiden / EthanM / EthanZ / Darron = Y6
+  LouisM = Y6 + Y7
+  Dorothy / Dawn = Y8
+
+FINAL STATUS
+PASS.

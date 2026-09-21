@@ -1,0 +1,46 @@
+DYAA Y6 Integrated Mathematics · Advance — TEST 3
+Version: v12.43.1
+Backend: v1.3
+
+PREVIOUS SET RECHECK
+- Test 2 received a content-level recheck before Test 3 was started.
+- Seven Test 2 questions were refined for clarity, scholarship feel or age-appropriate depth.
+- Test 2 was then reverified 35/35 and is preserved in this package as v12.42.2 content.
+
+TEST 3 DESIGN
+- 35-question integrated scholarship mathematics paper.
+- Target candidates sit in May after completing Year 5 and only a small part of Year 6.
+- Knowledge depth remains mainly Year 5 + early Year 6.
+- Difficulty comes from reasoning, integration, reverse thinking, diagrams, data, patterns and constraints.
+- No Pythagoras or later-year theorem-based geometry.
+
+AUTHORITATIVE BACKEND
+- Set 3 question slots: 35
+- Question order + Major Area + Fine Type Code match: 35/35
+- Fine Type overlap with Set 1: 2
+- Fine Type overlap with Set 2: 1
+
+ANSWER REVIEW
+- Independent mathematical verification: 35/35
+- Missing canonical answers: 0
+- Accepted-answer inconsistencies: 0
+- Duplicate MCQ choices: 0
+- MCQ key-not-present issues: 0
+
+ORIGINALITY / STRUCTURE
+- Exact duplicate stems vs current Y6/Y7/Y8 + Sets 1–2: 0
+- Very-high wording similarity >= 0.94: 0
+- Same-Type number-only template repetition vs Sets 1–2: 0
+- SVG diagrams: 5, all valid
+- HTML table questions: 3, valid
+
+DISPLAY / SYSTEM
+- Mathematical stacked-fraction display preserved for Integrated Mathematics.
+- Test 1 Q14 diagram fix preserved.
+- Rechecked Test 2 content preserved.
+- Teacher Export Answers preserved.
+- Student PDF blank working-space behavior preserved.
+- Existing access rules preserved.
+
+FINAL STATUS
+PASS.

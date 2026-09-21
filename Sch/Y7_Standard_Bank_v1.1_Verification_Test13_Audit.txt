@@ -1,0 +1,51 @@
+DYAA Y7 Arithmetic Standard — BANK v1.1 FORMAL VERIFICATION + TEST 13
+Version: v12.27.1
+
+UPLOADED AUTHORITATIVE BANK
+File checked:
+DYAA_Y7_Arithmetic_Standard_25_Set_Backend_Allocation_v1.1(1).xlsx
+
+BANK INTERNAL CONSISTENCY
+- Sets: 25
+- Questions per set: 45
+- Total allocation rows: 1,125
+- Major Areas: 60
+- Standard Fine Type Codes: 420
+- Each set: 45 unique Major Areas — PASS
+- Each set: 45 unique Standard Type Codes — PASS
+- Fine Type usage across 25 sets: 2–3 — PASS
+- Major Area usage across 25 sets: 18–19 — PASS
+- Pairwise Fine Type overlap: 3–4 — PASS
+  overlap 3: 210 set pairs
+  overlap 4: 90 set pairs
+- Pairwise Major Area overlap: 33–34 — PASS
+  overlap 33: 210 set pairs
+  overlap 34: 90 set pairs
+
+CURRENT ONLINE TEST 1–12 VS BANK
+- Positions checked: 540
+- Exact Question Number + Major Area + Type Code matches: 540/540
+- Mismatches: 0
+- Result: PASS
+
+NEW TEST 13
+- Questions: 45
+- Exact Bank Set 13 Major Area / Type Code / order match: 45/45
+- Independent mathematical verification: 45/45
+- Missing answers: 0
+- Canonical / accepted-answer inconsistencies: 0
+- MCQ key inconsistencies: 0
+- Exact stem duplicates vs Y7 Tests 1–12: 0
+- Same-Type number-only template duplicates vs Y7 Tests 1–12: 0
+- Same-Type wording similarity >= 0.92 vs Y7 Tests 1–12: 0
+- Exact cross-year duplicates vs current Y6/Y8: 0
+
+PRESERVED
+- Existing Y6, Y7 Test 1–12 and Y8 content
+- Y8 v12.26.2 final recheck refinements
+- Current student access rules
+- Teacher Export Answers
+- Student PDF blank working-space behavior
+
+FINAL STATUS
+PASS.

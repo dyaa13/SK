@@ -42,6 +42,11 @@
     return formatMathRadicals(h);
   }
 
+  function shouldFormatScholarshipMath(set){
+    return ["Y6","Y7","Y8"].includes(set?.year) &&
+      ["Arithmetic","Mathematics","Integrated Mathematics"].includes(set?.paper);
+  }
+
   function imageUrl(q,set){
     if(!q.image) return "";
     let src=String(q.image);
@@ -54,13 +59,13 @@
 
   function questionBody(q,set){
     const base=q.html ? String(q.html) : esc(q.text || "");
-    return (["Y6","Y7"].includes(set?.year) && set?.paper==="Arithmetic") || (set?.year==="Y8" && set?.paper==="Mathematics") ? formatY6ArithmeticFractions(base) : base;
+    return shouldFormatScholarshipMath(set) ? formatY6ArithmeticFractions(base) : base;
   }
 
   function choicesHtml(q,set){
     if(q.type!=="mcq" || !Array.isArray(q.choices)) return "";
     const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    return `<div class="pdf-choices">${q.choices.map((c,i)=>{const body=(["Y6","Y7"].includes(set?.year)&&set?.paper==="Arithmetic")||(set?.year==="Y8"&&set?.paper==="Mathematics")?formatY6ArithmeticFractions(esc(c)):esc(c);return `<div class="pdf-choice"><span class="choice-circle"></span><span><strong>${letters[i]||i+1}.</strong> ${body}</span></div>`}).join("")}</div>`;
+    return `<div class="pdf-choices">${q.choices.map((c,i)=>{const body=shouldFormatScholarshipMath(set)?formatY6ArithmeticFractions(esc(c)):esc(c);return `<div class="pdf-choice"><span class="choice-circle"></span><span><strong>${letters[i]||i+1}.</strong> ${body}</span></div>`}).join("")}</div>`;
   }
 
   function answerArea(q){
@@ -143,7 +148,7 @@ ${pageHtml}
       if(idx>=0) prefix=`${"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[idx] || (idx+1)}. `;
     }
     const safe=esc(prefix+raw);
-    return ((["Y6","Y7"].includes(set?.year) && set?.paper==="Arithmetic") || (set?.year==="Y8" && set?.paper==="Mathematics"))
+    return shouldFormatScholarshipMath(set)
       ? formatY6ArithmeticFractions(safe)
       : formatMathRadicals(safe);
   }

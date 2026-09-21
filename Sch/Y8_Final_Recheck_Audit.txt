@@ -1,0 +1,43 @@
+DYAA Y8 Mathematics — FINAL RECHECK
+Version: v12.26.2
+Scope: Standard Tests 1–25 + Advance Tests 1–25
+
+QUESTION BANK
+- Standard: 25 × 45 = 1,125 questions
+- Advance: 25 × 45 = 1,125 questions
+- Total: 2,250 questions
+
+BACKEND / STRUCTURE
+- 2,250/2,250 question positions match the authoritative backend allocation.
+- Each paper retains 45 distinct Major Areas and 45 distinct Fine Type Codes.
+- Missing questions: 0
+- Missing answers: 0
+- Accepted-answer / canonical-answer mismatches: 0
+- MCQ key/choice mismatches: 0
+
+FINAL REPETITION REVIEW
+- Exact duplicate stems inside Y8: 0
+- Same-difficulty + same-Fine-Type number-only template duplicates: 0
+- Same-difficulty + same-Fine-Type wording similarity >= 0.92: 0
+- Exact cross-year duplicates against current Y6/Y7: 0
+- Two mathematically correct questions were reworded in this final pass to remove the last same-Type numeric-template repetitions:
+  1. Standard Test 19 Q30 (20.7), answer remains 67%
+  2. Advance Test 13 Q30 (A45.7), answer remains 7
+
+VISUAL / HTML
+- Tables checked: 63
+- SVGs checked: 34
+- SVG parse failures: 0
+- Placeholder text: 0
+- Answer leakage in question stems: 0
+
+SYSTEM INTEGRITY
+- Catalog contains Y8 Standard Tests 1–25 and Advance Tests 1–25.
+- Current year-level access rules preserved.
+- Teacher Export Answers preserved.
+- Student PDF working-space behavior preserved.
+- JavaScript syntax check: PASS.
+- ZIP CRC/integrity: PASS.
+
+FINAL STATUS
+PASS. Y8 Standard and Advance 25-set series is ready to use as the completed Y8 baseline.

@@ -1,0 +1,50 @@
+DYAA Y6 Integrated Mathematics · Advance — TEST 1
+Version: v12.41.1
+Backend: v1.3
+
+DESIGN
+- 35-question integrated scholarship mathematics paper.
+- Target candidates sit in May after completing Year 5 and only a small part of Year 6.
+- The mathematics knowledge is intentionally basic-to-moderate; challenge comes from reasoning and integration.
+- No Pythagoras or later-year theorem-based geometry.
+
+AUTHORITATIVE BACKEND
+- Set 1 question slots: 35
+- Question order + Major Area + Fine Type Code match: 35/35
+
+ANSWER REVIEW
+- Independent mathematical verification: 35/35
+- Missing canonical answers: 0
+- Accepted-answer inconsistencies: 0
+- Duplicate MCQ choices: 0
+- MCQ key-not-present issues: 0
+
+ORIGINALITY / STRUCTURE
+- Exact duplicate stems vs current Y6/Y7/Y8: 0
+- Very-high wording similarity >= 0.94 after revision: 0
+- Intra-set exact duplicates: 0
+- SVG diagrams: 7, all valid
+- HTML table questions: 1, valid
+
+PRESERVED SYSTEM FEATURES
+- Existing Y6/Y7/Y8 papers
+- Year-level access rules
+- Teacher Export Answers
+- Student PDF blank working-space behavior
+
+FINAL STATUS
+PASS — suitable for user review as the first Y6 Integrated Mathematics · Advance set.
+
+DISPLAY FIX — v12.41.2
+- Root cause: the shared fraction renderer was enabled for Y6/Y7 Arithmetic and Y8 Mathematics, but not for the new Y6 Integrated Mathematics paper type.
+- Fixed online question display for Integrated Mathematics.
+- Fixed MCQ choice fraction display for Integrated Mathematics.
+- Fixed PDF question/choice fraction display.
+- Fixed Teacher Answer Export fraction display.
+- Standalone review HTML rebuilt with stacked mathematical fractions.
+- Question content and answers unchanged.
+
+Q14 DIAGRAM FIX — v12.41.3
+- Removed the two short tick-like marks on the sloping sides of the isosceles triangle.
+- Added wording: “The triangle is isosceles. The two sloping sides are equal in length, so the two base angles are equal.”
+- Preserved the mathematical intent and answer.

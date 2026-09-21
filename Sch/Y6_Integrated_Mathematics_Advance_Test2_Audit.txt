@@ -1,0 +1,50 @@
+DYAA Y6 Integrated Mathematics · Advance — TEST 2
+Version: v12.42.1
+Backend: v1.3
+
+DESIGN
+- 35-question integrated scholarship mathematics paper.
+- Target candidates sit in May after completing Year 5 and only a small part of Year 6.
+- Knowledge depth remains mainly Year 5 + early Year 6.
+- Challenge comes from reasoning, integration, reverse thinking, diagrams, data, patterns and constraints.
+- No Pythagoras or later-year theorem-based geometry.
+
+AUTHORITATIVE BACKEND
+- Set 2 question slots: 35
+- Question order + Major Area + Fine Type Code match: 35/35
+- Fine Type overlap with Set 1: 2
+
+ANSWER REVIEW
+- Independent mathematical verification: 35/35
+- Missing canonical answers: 0
+- Accepted-answer inconsistencies: 0
+- Duplicate MCQ choices: 0
+- MCQ key-not-present issues: 0
+
+ORIGINALITY / STRUCTURE
+- Exact duplicate stems vs current Y6/Y7/Y8 + Set 1: 0
+- Very-high wording similarity >= 0.94: 0
+- Same-Type number-only template repetition vs Set 1: 0
+- SVG diagrams: 5, all valid
+- HTML table questions: 2, valid
+
+DISPLAY / SYSTEM
+- Mathematical stacked-fraction display preserved for Integrated Mathematics.
+- Existing Test 1 Q14 diagram fix preserved.
+- Teacher Export Answers preserved.
+- Student PDF blank working-space behavior preserved.
+- Existing access rules preserved.
+
+FINAL STATUS
+PASS.
+
+CONTENT-LEVEL RECHECK — v12.42.2
+- Q20 clarified that the initial 9:00 am simultaneous ring is included.
+- Q22 upgraded from direct volume conversion to a 2-stage capacity/fraction application.
+- Q24 upgraded from routine one-step mark-up to a short 2-stage money problem.
+- Q25 removed unnecessary algebra-style x / (x+30) labels; retained basic angle reasoning.
+- Q28 upgraded from direct regular-polygon side recovery to a second-step tape calculation.
+- Q29 retained bounds reasoning but explicitly explained nearest-centimetre intervals so no later-year formal technique is assumed.
+- Q34 upgraded from direct missing-frequency recovery to a second-step comparison.
+- Authoritative Major Area / Fine Type allocation remained unchanged.
+- Full 35/35 mathematical recheck after edits: PASS.

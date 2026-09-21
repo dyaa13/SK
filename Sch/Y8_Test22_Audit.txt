@@ -1,0 +1,50 @@
+DYAA Y8 Mathematics — Test 21 Review + Test 22 Build
+Version: v12.23.1
+
+CURRENT SET REVIEW — TEST 21
+Standard Test 21:
+- 45/45 authoritative backend allocation match — PASS
+- Independent answer recalculation: 45/45 — PASS
+- Canonical/accepted-answer consistency — PASS
+- No correction required.
+
+Advance Test 21:
+- 45/45 authoritative backend allocation match — PASS
+- Independent answer recalculation: 45/45 — PASS
+- Canonical/accepted-answer consistency — PASS
+- No correction required.
+
+NEW SET — TEST 22
+Standard Test 22:
+- 45 questions
+- 45 distinct Major Areas
+- 45 distinct Fine Type Codes
+- Exact authoritative Set 22 allocation match — PASS
+- Independent answer verification — PASS
+
+Advance Test 22:
+- 45 questions
+- 45 distinct Major Areas
+- 45 distinct Fine Type Codes
+- Exact authoritative Set 22 allocation match — PASS
+- Independent answer verification — PASS
+
+REPETITION / ORIGINALITY
+Compared with reviewed Y8 Tests 1–21:
+- Exact duplicate questions: 0
+- Number-only template duplicate questions: 0
+- Same-difficulty / same-Fine-Type wording similarity >= 0.92: 0
+- Standard Test 22 vs Advance Test 22 wording similarity >= 0.92: 0
+- Exact cross-year duplicates against current Y6/Y7: 0
+
+PRESERVED
+- Y6/Y7/Y8 total-review fixes from v12.22.1
+- Teacher Export Answers
+- Student PDF blank working-space format
+- Current year-level access:
+  Aiden / EthanM / EthanZ / Darron = Y6
+  LouisM = Y6 + Y7
+  Dorothy / Dawn = Y8
+
+FINAL STATUS
+PASS.

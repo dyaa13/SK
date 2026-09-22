@@ -53,3 +53,36 @@ TEST 3 RECHECK + TEST 4 — v12.44.1
 - Same-Type number-only template repetition vs Tests 1–3: 0.
 - Knowledge depth remains mainly completed Year 5 + early Year 6.
 
+STRICT TEST 4 RECHECK + TEST 5 — v12.45.1
+- Test 4 strict recheck: Backend 35/35, mathematics 35/35, answer/key/visual checks PASS, exact duplicates 0, high similarity >=0.94 = 0, corrections required 0.
+- Test 5 authoritative Set 5 allocation match: 35/35.
+- Test 5 independent mathematical verification: 35/35.
+- Test 5 exact duplicate stems vs current Y6/Y7/Y8 + Tests 1–4: 0.
+- Test 5 very-high wording similarity >=0.94: 0.
+- Same-Type number-only template repetition vs Tests 1–4: 0.
+- Fine Type overlap with Tests 1–4: 2 / 2 / 2 / 2.
+- PDF question export remains 4 questions per A4 page (2 × 2).
+- Knowledge depth remains mainly completed Year 5 + early Year 6.
+
+STRICT TEST 5 RECHECK + TEST 6 — v12.46.1
+- Test 5 strict recheck: Backend 35/35, mathematics 35/35, answer/MCQ/visual checks PASS, exact duplicates 0, high similarity >=0.94 = 0, corrections required 0.
+- Test 6 authoritative Backend v1.3 Set 6 alignment: 35/35.
+- Test 6 independent mathematical verification: 35/35.
+- Test 6 exact duplicate stems vs current Y6/Y7/Y8 + Tests 1–5: 0.
+- Test 6 very-high wording similarity >=0.94: 0.
+- Same-Type number-only template repetition vs Tests 1–5: 0.
+- Fine Type overlap with Tests 1–5: 2 / 2 / 2 / 1 / 2.
+- PDF remains A4, 4 questions/page (2 × 2).
+- Knowledge depth remains mainly completed Year 5 + early Year 6.
+
+STRICT TEST 6 RECHECK + TEST 7 — v12.47.1
+- Test 6 strict package recheck: Backend 35/35, key/visual/scope checks PASS, PDF 4Q/page intact, corrections required 0.
+- Test 7 authoritative Backend v1.3 Set 7 alignment: 35/35.
+- Test 7 independent mathematical verification: 35/35.
+- Test 7 exact duplicate stems vs current Y6/Y7/Y8 + Tests 1–6: 0.
+- Test 7 very-high wording similarity >=0.94: 0.
+- Same-Type number-only template repetition vs Tests 1–6: 0.
+- Fine Type overlap with Tests 1–6: 2 / 2 / 2 / 2 / 2 / 1.
+- PDF remains A4, 4 questions/page (2 × 2).
+- Knowledge depth remains mainly completed Year 5 + early Year 6.
+

@@ -97,10 +97,10 @@
   }
 
   function buildPrintDocument(set,bank){
-    const pages=chunks(bank,6);
+    const pages=chunks(bank,4);
     const title=esc(set.label || `${set.year||""} ${set.paper||""} ${set.test||""}`);
     const pageHtml=pages.map((page,pi)=>{
-      const start=pi*6;
+      const start=pi*4;
       const cards=page.map((q,j)=>cardHtml(q,start+j,set)).join("");
       return `<div class="pdf-page">
         <header class="pdf-page-head"><div><strong>${title}</strong></div><div class="name-field">Name: <span></span></div><div>Page ${pi+1} / ${pages.length}</div></header>
@@ -120,21 +120,21 @@ html,body{margin:0;padding:0;font-family:"Segoe UI",Arial,sans-serif;color:#222;
 .pdf-page:last-child{break-after:auto;page-break-after:auto}
 .pdf-page-head{height:10mm;flex:0 0 10mm;display:grid;grid-template-columns:1fr auto auto;gap:7mm;align-items:center;border-bottom:.4mm solid #0d47a1;padding:0 1mm 1.6mm;font-size:8.5pt;color:#333}
 .name-field{white-space:nowrap}.name-field span{display:inline-block;width:35mm;border-bottom:.25mm solid #555;vertical-align:middle;margin-left:2mm}
-.pdf-grid{height:264mm;flex:0 0 264mm;padding-top:3mm;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:4mm}
-.pdf-card{border:.35mm solid #69727c;border-radius:2.2mm;padding:3.6mm;min-width:0;min-height:0;display:flex;flex-direction:column;background:#fff;overflow:hidden}
+.pdf-grid{height:264mm;flex:0 0 264mm;padding-top:3mm;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:5mm}
+.pdf-card{border:.35mm solid #69727c;border-radius:2.2mm;padding:4mm;min-width:0;min-height:0;display:flex;flex-direction:column;background:#fff;overflow:hidden}
 .pdf-qno{font-size:8.5pt;font-weight:900;color:#0d47a1;border-bottom:.2mm solid #dfe4ea;padding-bottom:1.4mm;margin-bottom:2.2mm;flex:0 0 auto}
 .pdf-qcontent{min-height:0;flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-start}
-.pdf-qtext{font-size:10.2pt;line-height:1.33;font-weight:600;overflow-wrap:anywhere}
-.pdf-card.dense .pdf-qtext{font-size:9.4pt;line-height:1.25}.pdf-card.very-dense .pdf-qtext{font-size:8.7pt;line-height:1.18}
-.pdf-q-image{display:block;max-width:100%;max-height:25mm;object-fit:contain;margin:0 auto 2mm}
-.pdf-card.dense .pdf-q-image{max-height:22mm}.pdf-card.very-dense .pdf-q-image{max-height:18mm}
+.pdf-qtext{font-size:10.5pt;line-height:1.36;font-weight:600;overflow-wrap:anywhere}
+.pdf-card.dense .pdf-qtext{font-size:9.8pt;line-height:1.29}.pdf-card.very-dense .pdf-qtext{font-size:9.1pt;line-height:1.22}
+.pdf-q-image{display:block;max-width:100%;max-height:40mm;object-fit:contain;margin:0 auto 2.5mm}
+.pdf-card.dense .pdf-q-image{max-height:34mm}.pdf-card.very-dense .pdf-q-image{max-height:29mm}
 .pdf-choices{display:grid;gap:.8mm;margin-top:2mm;font-size:8.9pt;line-height:1.16}.very-dense .pdf-choices{font-size:8.2pt;gap:.45mm}
 .pdf-choice{display:flex;gap:1.5mm;align-items:flex-start}.choice-circle{width:3.2mm;height:3.2mm;border:.25mm solid #555;border-radius:50%;flex:0 0 3.2mm;margin-top:.15mm}
 .math-frac{display:inline-block;vertical-align:middle;text-align:center;line-height:1;font-size:.9em;margin:0 .10em;min-width:1.25em;white-space:nowrap}.math-frac .top{display:block;border-bottom:1px solid currentColor;padding:0 .15em .08em;line-height:1}.math-frac .bottom{display:block;padding:.08em .15em 0;line-height:1}.math-mixed{display:inline-flex;align-items:center;vertical-align:middle;gap:.08em;white-space:nowrap;line-height:1}.math-root{display:inline-flex;align-items:flex-start;white-space:nowrap;line-height:1}.math-root .radical{font-family:Georgia,"Times New Roman",serif;font-size:1.24em;line-height:.93;margin-right:-.04em}.math-root .radicand{display:inline-block;border-top:1px solid currentColor;padding:.06em .09em 0 .08em;line-height:1.02}.math-power sup{font-size:.7em;vertical-align:super}
 @media print{html,body{background:#fff}.pdf-toolbar{display:none!important}.pdf-page{margin:0;box-shadow:none}.pdf-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 @media screen{.pdf-page{box-shadow:0 3px 14px rgba(0,0,0,.18)}}
 </style></head><body>
-<div class="pdf-toolbar"><button onclick="window.print()">Save as PDF / Print</button><span class="note">A4 · 2 × 3 cards · 6 questions per page · blank working space</span></div>
+<div class="pdf-toolbar"><button onclick="window.print()">Save as PDF / Print</button><span class="note">A4 · 2 × 2 cards · 4 questions per page · extra blank working space</span></div>
 ${pageHtml}
 <script>(function(){function readyToPrint(){var imgs=[].slice.call(document.images);Promise.all(imgs.map(function(img){if(img.complete)return Promise.resolve();return new Promise(function(r){img.addEventListener('load',r,{once:true});img.addEventListener('error',r,{once:true});setTimeout(r,1800)})})).then(function(){setTimeout(function(){window.print()},250)})}if(document.readyState==='complete')readyToPrint();else window.addEventListener('load',readyToPrint,{once:true})})();<\/script>
 </body></html>`;

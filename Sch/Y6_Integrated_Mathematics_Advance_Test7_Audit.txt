@@ -1,0 +1,49 @@
+DYAA Y6 Integrated Mathematics · Advance — STRICT TEST 6 RECHECK + TEST 7
+Version: v12.47.1
+Backend: v1.3
+
+STRICT CURRENT-SET RECHECK — TEST 6
+- Final package Backend alignment: 35/35
+- Answer/MCQ integrity: PASS
+- SVG/table validity: PASS
+- Age/scope exclusions: PASS
+- PDF 4-question-per-page layout: PASS
+- Corrections required: 0
+
+NEW TEST 7
+- Questions: 35
+- Authoritative question order + Major Area + Fine Type Code: 35/35
+- Independent mathematical verification: 35/35
+- Missing canonical answers: 0
+- Accepted-answer inconsistencies: 0
+- Duplicate MCQ choices: 0
+- MCQ key-not-present issues: 0
+- Exact duplicate stems vs current Y6/Y7/Y8 + Tests 1–6: 0
+- Very-high wording similarity >= 0.94: 0
+- Same-Type number-only template repetition vs Tests 1–6: 0
+- Fine Type overlap: Test1=2, Test2=2, Test3=2, Test4=2, Test5=2, Test6=1
+- SVG diagrams: 6, all valid
+- HTML table questions: 3, valid
+
+STRICT CONTENT CORRECTIONS / REFINEMENTS DURING TEST 7 BUILD
+- Q4 frequency table corrected so Class B genuinely has the higher median.
+- Q2 contextualised to avoid a near-duplicate closest-to-1 fraction stem.
+- Q5 changed from a bare missing-factor equation to a ribbon context.
+- Q6 changed to a different repeated-groups structure from earlier papers.
+- Q14 changed to a tank/FDP context rather than repeating the earlier template.
+- Q20 changed from another sports win-ratio template to a mixture-ratio comparison.
+- Q28 changed to a different small-power comparison and the MCQ key/options were revalidated.
+
+AGE / SCHOLARSHIP SCOPE
+- Designed for May scholarship testing after completed Year 5 + limited early Year 6.
+- Challenge comes from integration, reverse reasoning, constraints, diagrams, data, patterns and multi-step use of basic knowledge.
+- No Pythagoras or later-year theorem-based geometry.
+
+PDF / SYSTEM
+- Student question PDF remains A4, 2 × 2 cards, 4 questions/page.
+- Mathematical stacked-fraction display preserved.
+- Teacher Export Answers preserved.
+- Existing access rules preserved.
+
+FINAL STATUS
+PASS.

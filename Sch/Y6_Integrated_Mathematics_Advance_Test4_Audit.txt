@@ -40,3 +40,11 @@ PRESERVED
 
 FINAL STATUS
 PASS.
+
+PDF LAYOUT UPDATE — v12.44.2
+- Student question PDF changed from 6 questions per page (2 × 3) to 4 questions per page (2 × 2).
+- Each question card now has substantially more vertical working space.
+- Diagram maximum height increased to make visual questions clearer.
+- Question text sizing was slightly increased because the larger cards allow it.
+- Teacher Answer Export layout is unchanged.
+- This is a shared common/pdf_export.js change, so future papers inherit the 4-question-per-page layout.

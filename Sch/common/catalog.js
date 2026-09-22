@@ -765,6 +765,45 @@ window.SCHOLARSHIP_CATALOG = [
     bankVar: "SCHOLARSHIP_Y6_MATH_ADV_T04"
   },
   {
+    key: "Y6_MATH_ADV_T05",
+    year: "Y6",
+    paper: "Integrated Mathematics",
+    test: "Test 5",
+    version: "Written Answer",
+    difficulty: "Advance",
+    description: "35-question Y6 Integrated Mathematics Advance scholarship-style set. Knowledge depth is mainly completed Year 5 plus early Year 6; difficulty comes from reasoning, integration, reverse thinking, diagrams, data, patterns and constraints.",
+    label: "Year 6 Integrated Mathematics · Test 5 · Advance",
+    durationMinutes: 40,
+    questionsScript: "Y6/Mathematics/Advance/Test05/questions.js?v=12.45.1",
+    bankVar: "SCHOLARSHIP_Y6_MATH_ADV_T05"
+  },
+  {
+    key: "Y6_MATH_ADV_T06",
+    year: "Y6",
+    paper: "Integrated Mathematics",
+    test: "Test 6",
+    version: "Written Answer",
+    difficulty: "Advance",
+    description: "35-question Y6 Integrated Mathematics Advance scholarship-style set. Knowledge depth is mainly completed Year 5 plus early Year 6; difficulty comes from reasoning, integration, reverse thinking, diagrams, data, patterns and constraints.",
+    label: "Year 6 Integrated Mathematics · Test 6 · Advance",
+    durationMinutes: 40,
+    questionsScript: "Y6/Mathematics/Advance/Test06/questions.js?v=12.46.1",
+    bankVar: "SCHOLARSHIP_Y6_MATH_ADV_T06"
+  },
+  {
+    key: "Y6_MATH_ADV_T07",
+    year: "Y6",
+    paper: "Integrated Mathematics",
+    test: "Test 7",
+    version: "Written Answer",
+    difficulty: "Advance",
+    description: "35-question Y6 Integrated Mathematics Advance scholarship-style set. Knowledge depth is mainly completed Year 5 plus early Year 6; difficulty comes from reasoning, integration, reverse thinking, diagrams, data, patterns and constraints.",
+    label: "Year 6 Integrated Mathematics · Test 7 · Advance",
+    durationMinutes: 40,
+    questionsScript: "Y6/Mathematics/Advance/Test07/questions.js?v=12.47.1",
+    bankVar: "SCHOLARSHIP_Y6_MATH_ADV_T07"
+  },
+  {
     key: "Y7_ARITH_T01",
     year: "Y7",
     paper: "Arithmetic",

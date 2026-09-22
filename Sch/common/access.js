@@ -13,7 +13,8 @@ window.SCHOLARSHIP_YEAR_ACCESS = {
   "DARRON": ["Y6"],
   "LOUISM": ["Y6", "Y7"],
   "DOROTHY": ["Y8"],
-  "DAWN": ["Y8"]
+  "DAWN": ["Y8"],
+  "HANTING": ["Y8"]
 };
 
 window.SCHOLARSHIP_ACCESS = {

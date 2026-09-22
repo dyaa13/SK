@@ -1,0 +1,52 @@
+DYAA Y6 Integrated Mathematics · Advance — STRICT TEST 5 RECHECK + TEST 6
+Version: v12.46.1
+Backend: v1.3
+
+STRICT CURRENT-SET RECHECK — TEST 5
+- Authoritative Backend alignment: 35/35
+- Fresh independent mathematics / answer-key recheck: 35/35
+- MCQ / accepted-answer integrity: PASS
+- SVG / table structure: PASS
+- Exact duplicates vs prior current content: 0
+- Very-high wording similarity >= 0.94: 0
+- Age/scope check: PASS
+- PDF 4-question-per-page layout: PASS
+- Corrections required: 0
+
+NEW TEST 6
+- Questions: 35
+- Authoritative question order + Major Area + Fine Type Code: 35/35
+- Independent mathematical verification: 35/35
+- Missing canonical answers: 0
+- Accepted-answer inconsistencies: 0
+- Duplicate MCQ choices: 0
+- MCQ key-not-present issues: 0
+- Exact duplicate stems vs current Y6/Y7/Y8 + Tests 1–5: 0
+- Very-high wording similarity >= 0.94: 0
+- Same-Type number-only template repetition vs Tests 1–5: 0
+- Fine Type overlap: Test1=2, Test2=2, Test3=2, Test4=1, Test5=2
+- SVG diagrams: 4, all valid
+- HTML table questions: 4, valid
+
+STRICT CONTENT CORRECTIONS / REFINEMENTS DURING TEST 6 BUILD
+- Q4 narrowed the range so the condition problem has one unique answer.
+- Q5 added an upper bound so the counting problem has the intended 15 outcomes.
+- Q7 pattern diagram corrected and simplified to show Figure 1 and Figure 2 accurately.
+- Q11 clue range tightened so the number puzzle has one unique solution.
+- Q12 contextualised the fraction-ratio task to avoid a near-template repeat.
+- Q20 rewritten as an actual comparison of two totals using divisibility/factor structure.
+- Q30 changed to a different reverse-rule structure to avoid same-Type template repetition.
+
+AGE / SCHOLARSHIP SCOPE
+- Designed for May scholarship testing after completed Year 5 + limited early Year 6.
+- Challenge comes from integration, reverse reasoning, constraints, diagrams, data, patterns and multi-step use of basic knowledge.
+- No Pythagoras or later-year theorem-based geometry.
+
+PDF / SYSTEM
+- Student question PDF remains A4, 2 × 2 cards, 4 questions/page.
+- Mathematical stacked-fraction display preserved.
+- Teacher Export Answers preserved.
+- Existing access rules preserved.
+
+FINAL STATUS
+PASS.
